@@ -86,7 +86,10 @@ p {
   width: 100%;
 }
 
-
+.pilot-head {
+  font-weight: 800;
+  font-size: 20px;
+}
 .img-area {
   margin-left: 1em;
   padding-left: 2em;
