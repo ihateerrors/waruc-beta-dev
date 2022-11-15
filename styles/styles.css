@@ -8560,7 +8560,7 @@ textarea.form-control-lg {
   filter: invert(1) grayscale(100);
 }
 .carousel-dark .carousel-indicators [data-bs-target] {
-  background-color: #000;
+  background-color: #007059;
 }
 .carousel-dark .carousel-caption {
   color: #000;
