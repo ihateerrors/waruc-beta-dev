@@ -104,30 +104,34 @@ h1, h2, h3 {
   }
   
 #flipnav nav {  
-  padding: 15px;
-  margin: 12px 80px;
+  font-size: 16px;
+  padding: 8px;
+  margin: 3px 40px;
   display: flex;
 justify-content: space-around;
 flex-direction: row;
 align-items: center;
+margin-right: 20px;
+
 }
 
 #flipnav ul {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: center;
   justify-content: space-around;
 align-items: center;
   list-style-type: none;
 }
 #flipnav ul li {
   list-style-type: none;
-  padding: 5px;margin: 5px;
+  /* padding: 5px; */
+  margin: 5px;
 }
 #flipnav ul li a {
   position: relative;
   display: block;
-  padding: 5px;
+  padding: 14px;
   font-family: Lato, sans-serif;
   color: rgb(84, 82, 105);
   font-weight: 700;
@@ -228,10 +232,10 @@ align-items: center;
     flex-direction: row;
   }
 
-/* .flipcard {
-  min-width: 20vw;
-  max-width: 33vw;
-} */
+.flipcard {
+  min-width: 350px;
+  max-width: 400px;
+}
 
   .h2-centered {
     font-size: 35x;
