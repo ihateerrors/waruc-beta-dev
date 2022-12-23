@@ -1,0 +1,485 @@
+
+@import url(//db.onlinewebfonts.com/c/45b15486d0864073a3e347324830d85f?family=Duotone);
+@font-face {font-family: "Duotone"; src: url("//db.onlinewebfonts.com/t/45b15486d0864073a3e347324830d85f.eot"); src: url("//db.onlinewebfonts.com/t/45b15486d0864073a3e347324830d85f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/45b15486d0864073a3e347324830d85f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/45b15486d0864073a3e347324830d85f.woff") format("woff"), url("//db.onlinewebfonts.com/t/45b15486d0864073a3e347324830d85f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/45b15486d0864073a3e347324830d85f.svg#Duotone") format("svg"); }
+
+body {
+  background-color: #fff;
+}
+*,*:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.masthead {
+    /* min-height: 600px;
+    background-image:url('/img2/FlipYourTripSalBannerWithSDOTLogo2.png'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  .centered-img {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+.centered-img figcaption {
+    margin-top: 12px;
+     color: #3498db;
+     font-weight: 500;
+   
+  }
+
+#fliplinks a {
+  margin-top: 14px;
+  margin-bottom: 25px;
+  color: #3498db;
+  padding-top: 10px;;
+
+}
+.fliplinks a {
+  margin-top: 14px;
+  margin-bottom: 25px;
+  color: #3498db;
+  padding-top: 10px;;
+
+}
+/* 
+#flipnav a {
+  position: relative;
+  text-decoration: none;
+  margin: 20px;
+}
+
+#flipnav a::before {
+  content: "";
+  position: absolute;            
+  height: 3px;
+  right: 15px;
+  bottom: -3px;
+  left: 0px;
+  background-color: #3498db;
+}
+
+
+
+
+#flipnav ul {        
+    display: flex;
+    align-items: center;
+}
+
+#flipnav ul li {
+    margin-right: 20px;
+} */
+
+
+h1 a {
+  font-family: "Duotone"; 
+  font-weight: 500;
+  color: #3498db;
+  font-size: 40px;
+  }
+
+h1 {
+  font-size: 45px;
+
+}
+p {
+  font-size: 20px;
+}
+h1, h2, h3 {
+  font-family: "Duotone"; 
+  font-weight: 500;
+  color: #3498db;
+  /* letter-spacing: .1px; */
+  }
+  
+#flipnav nav {  
+  padding: 15px;
+  margin: 12px 80px;
+  display: flex;
+justify-content: space-around;
+flex-direction: row;
+align-items: center;
+}
+
+#flipnav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-around;
+align-items: center;
+  list-style-type: none;
+}
+#flipnav ul li {
+  list-style-type: none;
+  padding: 5px;margin: 5px;
+}
+#flipnav ul li a {
+  position: relative;
+  display: block;
+  padding: 5px;
+  font-family: Lato, sans-serif;
+  color: rgb(84, 82, 105);
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+#flipnav ul li a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+#flipnav ul li a:hover {
+  color: rgb(84, 82, 105);
+}
+#flipnav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
+.flipblue {
+  color: #1891d0;
+}
+.blue-h2 {
+  color: #1891d0;
+  font-weight: 600;
+  font-size: 1.7em;
+  margin-bottom: .65em;
+}
+
+.card-title .flipblue {
+  margin-left: 15px;
+  padding-left: 30px;
+}
+
+.cardtext-wrapper {
+  margin-left: 15px;;
+ }
+
+  .card {
+    color: rgba(250, 250, 250, 0.8);
+    margin-bottom: 2rem;
+  }
+
+  /* .btn {
+    border: 5px solid;
+    border-image-slice: 1;
+    background: var(--gradient) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    border-image-source:  var(--gradient) !important; 
+    text-decoration: none;
+    transition: all .4s ease;
+  }
+  
+  .btn:hover, .btn:focus {
+        background: var(--gradient) !important;
+    -webkit-background-clip: none !important;
+    -webkit-text-fill-color: #fff !important;
+    border: 5px solid #fff !important; 
+    box-shadow: #222 1px 0 10px;
+    text-decoration: underline;
+  } */
+
+  #twocard-1 .card {
+  
+      width: 300px;
+      display: inline-block;
+      margin: 1rem;
+      border-radius: 4px;
+      box-shadow: 0 -1px 1px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.2);
+      transition: all .2s ease;
+      background: #fff;
+      position: relative;
+      overflow: hidden;
+
+  }
+
+  #twocard {
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+
+  
+  .twocard {
+    margin-left: 11%;
+    margin-right: 11%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+/* .flipcard {
+  min-width: 20vw;
+  max-width: 33vw;
+} */
+
+  .h2-centered {
+    font-size: 35x;
+    font-weight: 600;
+  }
+  .centered {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .centered2 {
+    line-height: 35px;
+    font-size: 22px;
+    /* letter-spacing: 1px; */
+    font-weight: 500;
+    /* color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%); */
+  }
+
+  /* .img-area{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: right;
+    justify-content: space-between;
+  } */
+/* 
+  .img-area{
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  } */
+  .threecard {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .threecard {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+
+  .cardbgimg {
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+.vidrow {
+  margin-top: 3em;
+}
+/* flip code btn */
+
+.button-container {
+  display: flex;
+  padding-right: 4px;
+  height: 100%;
+  width: 100%;
+  perspective: 1000px;
+}
+.button-container .button-flipper {
+  transition: 0.8s cubic-bezier(0.775, 0.07, 0.575, 0.995);
+  transform-style: preserve-3d;
+  position: absolute;
+  padding-right: 3px;
+  align-items: left;
+}
+
+.button-container .button-flipper:hover {
+  transform: rotateX(180deg);
+}
+.button-container .front-button {
+  cursor: pointer;
+  width: 125px;
+  height: 35px;
+  background-color: #1891d0;
+  border: none;
+  font-size: 1em;
+    font-weight: 600;
+  border-radius: 4px;
+  color: #ead70e;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  z-index: 2;
+  transform: rotateX(0deg);
+  position: absolute;
+  box-shadow: 0px 8px 12px #ccc;
+}
+
+
+.button-container .front-button a {
+  color:#ead70e;
+  text-decoration: none;
+}
+
+.button-container .back-button {
+  cursor: pointer;
+  width: 125px;
+  height: 35px;
+  background-color: #ead70e;
+  border: none;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 1em;
+  color: #1891d0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: rotateX(-180deg);
+  position: relative;
+  box-shadow: 0px 8px 12px #ccc;
+}
+
+.button-container .back-button a {
+  color:#1891d0;
+}
+
+
+.button-container2 {
+  display: flex;
+  align-items: right;
+  height: 100%;
+  width: 100%;
+  perspective: 1000px;
+}
+.button-container2 .button-flipper2 {
+  transition: 0.8s cubic-bezier(0.775, 0.07, 0.575, 0.995);
+  transform-style: preserve-3d;
+  position: absolute;
+  padding-left: 6px;
+}
+.button-container2 .button-flipper2:hover {
+  transform: rotateX(180deg);
+}
+.button-container2 .front-button2 {
+  cursor: pointer;
+  width: 125px;
+  height: 35px;
+  background-color: #1891d0;
+  border: none;
+  font-size: 1em;
+    font-weight: 600;
+  border-radius: 4px;
+  color: #ead70e;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  z-index: 2;
+  transform: rotateX(0deg);
+  position: absolute;
+  box-shadow: 0px 8px 12px #ccc;
+}
+
+.button-container2 .front-button2 a {
+  color:#ead70e;
+  text-decoration: none;
+}
+.button-container2 .back-button2 {
+  cursor: pointer;
+  width: 125px;
+  height: 35px;
+  background-color: #ead70e;
+  border: none;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 1em;
+  color: #1891d0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: rotateX(-180deg);
+  position: relative;
+  box-shadow: 0px 8px 12px #ccc;
+}
+
+.button-container2 .back-button2 a {
+  color:#1891d0;
+}
+
+.tworow-btn {
+  display: flex;
+  justify-content: space-between;
+ align-items: center;
+padding-top: 5px;
+padding-bottom: 16px;
+ margin-bottom: 30px;
+}
+
+
+/* END flip code btn */
+
+
+
+#flipspan a {
+  color: #1891d0;
+  text-decoration: none;
+  transition: color 0.3s;
+  outline: none;
+}
+#flipspan 
+a:hover,
+a:focus {
+  color: #1891d0;
+}
+
+#flipspan a.flip-animate {
+  perspective: 1000px;
+}
+#flipspan a.flip-animate span {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  transition: transform 0.3s;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+}
+#flipspan a.flip-animate span:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: attr(data-hover);
+  transition: color 0.3s;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+  text-align: center;
+}
+#flipspan a.flip-animate:hover span, a.flip-animate:focus span {
+  transform: rotateX(90deg) translateY(-22px);
+}
+#flipspan a.flip-animate:hover span:before, a.flip-animate:focus span:before {
+  color: #1891d0;
+}/*# sourceMappingURL=styles2.css.map */
+
+
+#post-inner a {
+  color: #1891d0;
+}

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+       
+        <title>Flip Your Trip!</title>
+      
+        <link href="styles/style-custom-landing.css" rel="stylesheet" />
+        <link href="styles/styles.css" rel="stylesheet" />
+        <link href="styles/flip-styles.css" rel="stylesheet" />
+        <!-- <link href="css/styles2.css" rel="stylesheet" /> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="icon" type="image/x-icon" href="waruc-favicon.png" />
+        <link href="styles/style-custom-landing.css" rel="stylesheet" />
+        <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
+        
+        <link rel="icon" type="image/x-icon" href="favicon.png" />
+        <style>
+
+
+#flipspan a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+  outline: none;
+}
+#flipspan 
+a:hover,
+a:focus {
+  color: #222;
+}
+
+#flipspan a.flip-animate {
+  perspective: 1000px;
+}
+#flipspan a.flip-animate span {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  transition: transform 0.3s;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+}
+#flipspan a.flip-animate span:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: attr(data-hover);
+  transition: color 0.3s;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+  text-align: center;
+}
+#flipspan a.flip-animate:hover span, a.flip-animate:focus span {
+  transform: rotateX(90deg) translateY(-22px);
+}
+#flipspan a.flip-animate:hover span:before, a.flip-animate:focus span:before {
+  color: rgb(210, 73, 54);
+}/*# sourceMappingURL=styles2.css.map */
+
+
+        </style>
+    </head>
+    <body>
+              <main>
+           
+                          <header class="masthead">
+                           
+                            <img class="img-fluid" src="/img2/FlipYourTripSalBannerWithSDOTLogo2.png">
+                        
+                          </header>
+
+
+                       <section class="rowofbuttons py-6">
+                        <div class="container">
+
+                        <div class="row gx-5 justify-content-center mt-4 mb-4">
+                        <div class="col-md-10 justify-content-center align-items-center center">
+                           
+
+                            <button type="button" class="btn btn-outline-dark btn-lg">Dark</button> <button type="button" class="btn btn-outline-dark btn-lg">Dark</button> <button type="button" class="btn btn-outline-dark btn-lg">Dark</button> <button type="button" class="btn btn-outline-dark btn-lg">Dark</button> <button type="button" class="btn btn-outline-dark btn-lg">Dark</button>
+
+                        </div>
+
+                        </div>
+                        </div>
+
+                        </section>
+
+<!-- ## end button section -->
+
+
+<div id="flipnav">
+  <nav>
+    <ul class="navboxes">
+        <li class="navbox"><a href="#public-transit"> Public Transit </a></li>
+        <li class="navbox"><a href="#bike-scoot"> Bike & Scoot </a></li>
+        <li class="navbox"><a href="#walk-roll"> Walk & Roll </a></li>
+        <li class="navbox"><a href="#vanpool"> Vanpool </a></li>
+        <li class="navbox"><a href="#stay-local"> Stay Local </a></li>
+        <li class="navbox"><a href="#drive-safe"> Drive Safe </a></li>
+    </ul>
+  </nav>
+  </div>
+
+<!-- <ul>
+  <li><a href="#">home</a></li>
+  <li><a href="#">archives</a></li>
+  <li><a href="#">tags</a></li>
+  <li><a href="#">categories</a></li>
+  <li><a href="#">about</a></li>
+</ul>
+
+<div class="button-container py-10">
+   
+  <div class="button-flipper">
+     <button class="front-button" >Front</button>
+     <button class="back-button" onc>Back</button>
+  </div>
+  
+</div> -->
+
+<!-- start video section 1 -->
+<section class="video1 py-6">
+    <div class="container">
+
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-9">
+                <div class="card">
+                    <div class="card-body p-2">
+                        <div class="video overlay bg-img-cover rounded" style="background-image: url('https://source.unsplash.com/wD1LRb9OeEo/1500x900')">
+                            <a class="video-link" href="https://youtu.be/0WfBGdDjTxU" data-lity=""><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>         
+    </div>
+</section>
+<div class="paragrah py-6">
+ <div class="container">
+  <div class="row mt-6 mb-6 gx-5 justify-content-center">
+   <div class="col-lg-9 ml-2 mr-2 mt-4 pt-3 mb-4">
+
+    <div id="flipspan"> 
+
+    <h1><a href="#" class="flip-animate" target="_blank">Plan Your <span data-hover="Trip">Trip</span></a></h1>
+
+  </div>
+
+        <h2 class="blue-h2">Public Transit</h2>
+        <p>Reducing congestion and greenhouse gas emissions is crucial to getting people and goods moving, while keeping our communities livable. Whether by walking, biking, scooting, riding transit, vanpooling, or staying local – we all have options to make a difference. This online guide provides tools and resources to make it easy and Sal the SpokeSalmon makes it fun!  </p>
+       </div>
+  </div>
+
+ </div>
+
+
+</div>
+<!-- END video section 1 -->
+    <section class="public-transit py-6">
+
+        <div class="container">
+           <!-- header image -->
+            <div class="row gx-5 justify-content-center z-1">
+                <div class="col-lg-9 gx-5 mt-4 mb-4 justify-content-center">
+                    <div class="card">
+                        <div class="card-body p-2">
+                       <img class="img-fluid" src="/img2/PublicTransitSectionHeaderImage.png" loading="lazy">
+                    </div> 
+                    </div>                    
+                </div>
+            </div>
+        <!-- end image -->
+        </section>
+   
+
+
+                    <!-- two-card take 2 start  -->
+                    <section class="twocard py-6"> 
+                        <div class="container mt-4 mr-4 ml-4">
+                         <div id="twocard">
+                            <div class="row row-cols-1 row-cols-md-2 gx-8 pr-2 pl-2">
+                                <div class="col ml-2">
+                                  <div class="card h-100 ml-2">
+                                    <img src="/img2/CommuterSpotlightVideoImage.png" class="card-img-top" alt="traveler in Seattle on public transportation">
+                                     
+                                    <div class="card-body">
+                                        <h3 class="card-title flipblue">Commuter Spotlight Video
+                                        </h3>
+                                             <p class="card-text">Sean, getting downtown from West Seattle. 
+                                            </p>
+                                      <a href="#" class="btn mr-2"> Visit Site</a>
+                                    
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col mr-2">
+                                  <div class="card h-100 mr-2">
+                                    <img src="/img2/flip-payment.png" class="card-img-top"
+                                      alt="" />
+                                    <div class="card-body">
+                                        <h3 class="card-title flipblue">Payment Options</h3>
+                      
+                                        <p class="card-text">Start riding today! Get an ORCA Card or the Transit Go Ticket App. 
+                                        </p>
+                                        <a href="#" class="btn  mr-2">Orca Card</a>
+                                        <a href="#" class="btn">Transit Go Github</a>
+                                    </div>
+                                  </div>
+                                </div>   
+                            </div>
+                         </div>
+                        </section>
+                    <!-- two-card take 2 end  -->
+
+                    <!-- three-card row start  -->
+                    <section class="twocard py-6"> 
+                        <div class="container mt-4 mr-4 ml-4">
+                         <div id="threecard">
+                            <div class="row row-cols-3 row-cols-md-3 gx-8 pr-2 pl-2 mt-6 mb-6">
+                                <div class="col">
+                                  <div class="card h-100 ml-2">
+                                    <img src="/img2/CommuterSpotlightVideoImage.png" class="card-img-top" alt="traveler in Seattle on public transportation">
+                                     
+                                    <div class="card-body">
+                                        <h3 class="card-title flipblue">Plan Your Trip
+
+                                        </h3>
+                                             <p class="card-text">Track your bus or ferry’s arrival time with these tools. 
+
+                                            </p>
+                                      <a href="flipyourtrip-planyourtrip.html" class="btn mr-2">Learn More</a>
+                                    
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card h-100 mr-2">
+                                    <img src="/img2/flip-payment.png" class="card-img-top"
+                                      alt="" />
+                                    <div class="card-body">
+                                        <h3 class="card-title flipblue">Assisted Transit</h3>
+                      
+                                        <p class="card-text"> Explore nearby transit options for older adults and people with disabilities.
+                                        </p>
+                                        <a href="#" class="btn  mr-2">Learn More</a>
+                                
+                                    </div>
+                                  </div>
+                                </div>   
+
+                                <div class="col">
+                                    <div class="card h-100 mr-2">
+                                      <img src="/img2/flip-payment.png" class="card-img-top"
+                                        alt="" />
+                                      <div class="card-body">
+                                          <h3 class="card-title flipblue">Transit 101</h3>
+                        
+                                          <p class="card-text">A short slide about using transit in Seattle.
+
+                                          </p>
+                                          <a href="#" class="btn  mr-2">Learn More</a>
+                                       
+                                      </div>
+                                    </div>
+                                  </div>  
+                            </div>
+                         </div>
+                        </section>
+                    <!-- three-card row end  -->
+
+
+                 <!-- ## End PUBLIC TRANSIT section  -->
+ 
+
+                 <!-- START bike and scoot image 3-card row -->
+                <section id="bike-scoot" class="bike-and-scoot py-10">
+                   <div class="container">
+                    <!-- header image area -->
+                    <div class="row gx-5 justify-content-center z-1">
+                        <div class="col-lg-9 gx-5 mt-4 mb-4 justify-content-center">
+                            <div class="card">
+                                <div class="card-body p-2">
+                            <img class="img-fluid" src="/img2/PublicTransitSectionHeaderImage.png" loading="lazy">
+                            </div> 
+                            </div>                    
+                        </div>
+                    </div>
+                    <!-- end image area -->
+
+                    <!-- start 3-card row  -->
+                    <div class="threecard">
+                        <div class="row row-cols-3 row-cols-md-3 gx-8 pr-2 pl-2 mt-6 mb-6">
+                            <div class="col">
+                              <div class="card h-100 ml-2">
+                                <img src="/img2/CommuterSpotlightVideoImage.png" class="card-img-top" alt="traveler in Seattle on public transportation">
+                                 
+                                <div class="card-body">
+                                    <h3 class="card-title flipblue blue-h2">Plan Your Trip
+
+                                    </h3>
+                                         <p class="card-text">Track your bus or ferry’s arrival time with these tools. 
+
+                                        </p>
+                                  <a href="flipyourtrip-planyourtrip.html" class="btn mr-2">Learn More</a>
+                                
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card h-100 mr-2">
+                                <img src="/img2/flip-payment.png" class="card-img-top"
+                                  alt="" />
+                                <div class="card-body">
+                                    <h3 class="card-title flipblue">Assisted Transit</h3>
+                  
+                                    <p class="card-text"> Explore nearby transit options for older adults and people with disabilities.
+                                    </p>
+                                    <a href="#" class="btn  mr-2">Learn More</a>
+                            
+                                </div>
+                              </div>
+                            </div>   
+
+                            <div class="col">
+                                <div class="card h-100 mr-2">
+                                  <img src="/img2/flip-payment.png" class="card-img-top"
+                                    alt="" />
+                                  <div class="card-body">
+                                      <h3 class="card-title flipblue">Transit 101</h3>
+                    
+                                      <p class="card-text">A short slide about using transit in Seattle.
+
+                                      </p>
+                                      <a href="#" class="btn  mr-2">Learn More</a>
+                                   
+                                  </div>
+                                </div>
+                              </div>  
+                        </div>
+                     </div>
+                    </section>
+                <!-- three-card row end  -->
+                   </div>
+
+                </section>
+
+               <!-- END bike and scoot image 3-card row -->
+
+                    </main>
+      
+
+            <!-- ## start footer div  -->
+            <!-- <div id="layoutDefault_footer" style="background-color: #06233E;">
+                <footer class="footer pt-1 pb-1 mt-auto" style="background-color: #06233E;; color: #ffff">
+                    <div class="container px-5">
+                 
+                    </div>
+                </footer>
+            </div> -->
+         <!-- ### end footer div  -->
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                disable: 'mobile',
+                duration: 600,
+                once: true,
+            });
+        </script>
+    </body>
+</html>
