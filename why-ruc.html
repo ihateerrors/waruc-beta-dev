@@ -17,11 +17,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
         <link rel="icon" type="image/x-icon" href="favicon.png" />
     </head>
-    <body>
-              <main>
+    <body style="width: 100vw;">
+              <main style="width: 100vw;">
                                <!-- Navbar-->
                                <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light" style="z-index: 1000;">
-                                <div class="container px-5">
+                                <div class="container-fluid">
                                     <a class="navbar-brand text-primary" href="/"><img class="logo-resize" style="width:226px; height: auto;" src="img/Logo_full_color_horzional_sm.png" alt="WA-RUC logo"></a>
                                  
                                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
@@ -54,7 +54,7 @@
                         <!-- ### END Navbar ### -->
 
                     <!-- Page Header-->
-                        <header class="page-header bg-img-cover" style="background-image: url('https://env.blob.core.windows.net/wa-ruc/WhyRUC_HeroImage.png'); min-height: 600px;">                                          
+                        <header class="page-header bg-img-cover" style="background-image: url('img/Trip2_0547.jpg'); min-height: 500px; display: flex;">                                          
                   
                      
                             <div class="page-header position-relative">
@@ -81,14 +81,12 @@
                        <!-- ### 2 col img LEFT row start  -->
                        <div class="row">
                           <div class="rigthwrap text-left align-left col-lg-6">
-                          <img src="img/gastax-current.png" loading="lazy" alt="placeholder" width="600px" height="346px "style="margin-top: 40px; margin-left: -15px; position: relative;">
+                          <img class="img-fluid" src="img/gastax-current.png" loading="lazy" alt="placeholder" width="600px" height="346px "style="margin-top: 40px; margin-left: -15px; position: relative;">
                           </div>
 
                           <div class="col-lg-6 text-left col-lg-5">                            
                             <div class="rightcol-text">
-                                <h2 class="darkblue-wr fw-700" style="font-size: 1.7em; font: arial-narrow;">GAS TAX:</strong></h2>
-                                <p class="circle-header">Our current funding source for 
-                                    roads and bridges</p>
+                              <p class="circle-header">The gas tax currently funds our roads and bridges</p>
                                 <p class="circle-para mb-0 mt-2">The construction and maintenance of highways is currently funded through a state gas tax of 49.4 cents per gallon that drivers pay at the pump.</p>
                              </div> 
                            </div>
@@ -101,7 +99,6 @@
 
                                 <div class="col-lg-6 text-left col-lg-5">                            
                                   <div class="leftcol-text">
-                                    <h2 class="darkblue-wr fw-700" style="font-size: 1.7em; font: arial-narrow;">THE FUNDING SOURCE WILL RUN OUT</strong></h2>
                                     <p class="circle-header">Washington State law has set forth the goal of no more gas-powered cars by 
                                         2030.</p>
                                         <p class="circle-para mb-0 mt-2">As more of the cars on our roads are 
@@ -156,49 +153,52 @@
                   <!-- ### RUC 101 w/Icons section START ### -->
 
                   <section class="bg-gray-wr" style="padding-top: 45px;" id="key-considerations">
-                    <div class="container px-5">
+                    <div class="container-fluid">
                         <h2 class="large-title-cap mt-4 mb-6 pb-3" style="display: none;">RUC 101</h2>
                         <!-- <p class="mb-4" style="font-size: 1.2em;"><strong>As Washington prepares for a future RUC system</strong> to fund transportation, these three priorities must be addressed:</p> -->
                         <!-- <p class="spacer pt-6" style="color: transparent;">.</p> -->
         
-                        <div class="row gx-5">
+                        <div class="row mt-3" style="justify-content: space-between;">
                       
                             <div class="col-lg-6  mb-lg-0 mt-3 pt-2 text-left">
-                                <div class="icon-stack icon-stack-xl mb-4 align-center"><img src="/img/why-ruc/A_RUC.png" loading="lazy" width="100px" height="93px"></div>
-                                <h3 classs="circle-header" style="margin-top: .2em; font-size: 1.66em; font-weight: 700;  color: #82A73F;">A RUC:</h3>
+                         
 
+                                <div class="iconrow"><img class="img-fluid" src="/img/why-ruc/A_RUC.png" loading="lazy" style="border-radius: 50%; width: 70px; height: 70px;">
+                                    <span classs="circle-header" style="margin-top: .25em; font-size: 1.8em; font-weight: 700;  color: #82A73F;">&nbsp;A RUC:</span></div>
                                 <div id="or-square"> 
-                                <ul id="or-square">
+                                <ul id="or-square" style="margin-right: 30px; margin-top: 18px;">
                                   <li class="orange-squares mb-2">Is a <span class="strong-teal">per-mile charge</span> drivers would pay based on how many miles they drive, not gallons of gas they buy</li>
                                   <li class="mb-2">Is a <span class="strong-teal">more fair system than the gas tax:</span> only pay for the miles you drive regardless of your vehicle type</li>
                                   <li  class="mb-2">Is <span class="strong-teal">built for a sustainable future</span> by helping fund our critical infrastructure while we transition away from fossil fuels for transportation</li>
                                 </ul>
                               </div>
                             </div>
-        
-                            <div class="col-lg-6 mb-lg-0 mt-3 pt-2 text-left">
-                                <div class="icon-stack icon-stack-xl mb-4"><img src="/img/why-ruc/CurrentGasTax.png" loading="lazy" width="100px" height="99px" style="border-radius: 50%;"></div>
-                                <h3 classs="circle-header" style="margin-top: .2em; font-size: 1.66em; font-weight: 700;  color: #82A73F;">The current gas tax </h3>
-                                <ul class="square-list-or" id="or-square">
+
+                            <div class="col-lg-6 text-left">
+                                <div class="iconrow" style="display: flex; flex-direction: row; margin-bottom: 18px;margin-top: 18px; "><img src="/img/why-ruc/CurrentGasTax.png" loading="lazy" width="70px" height="70px">
+                                <span classs="circle-header" style="margin-top: .25em; font-size: 1.8em; font-weight: 700;  color: #82A73F;">&nbsp;The current gas tax </span></div>
+                                <ul class="square-list-or" style="margin-top: 18px; margin-right: 30px;" id="or-square">
                                     <li class="mb-2"><span class="strong-teal">Does not track</span> with inflation or fuel prices</li>
                                     <li  class="mb-2"><span class="strong-teal">Does not account</span> for more fuel efficient and fully electric vehicles on our roads</li>
                                     <li><span class="strong-teal">Is not a reliable funding source</span> for necessary road improvements or maintenance over the long-term</li>
                                   </ul>
                             </div>
+
+
+
                   
                         </div>
 
 
                         <!-- ### row 2 start  -->
 
-                        <div class="row py-5 gx-5">
-                      
-                            <div class="col-lg-6 mb-5 mb-lg-0 text-left">
-                                <div class="icon-stack icon-stack-xl mb-4 align-center"><img src="/img/why-ruc/DriversNotDoubleTaxed.png" loading="lazy" width="100px" height="93px"></div>
-                                <h3 classs="circle-header" style="margin-top: .2em; font-size: 1.66em; font-weight: 700;  color: #82A73F;">Drivers will not be double taxed</h3>
-
+                        <div class="row">
+                            <div class="col-lg-6 text-left">
+                                <div class="iconrow" style="display: flex; flex-direction: row; margin-bottom: 18px;margin-top: 18px; "><img src="/img/why-ruc/CurrentGasTax.png" loading="lazy" width="70px" height="70px">
+                                <span classs="circle-header" style="margin-top: .25em; font-size: 1.8em; font-weight: 700;  color: #82A73F;">&nbsp;Drivers will not be double taxed</span></div>                    
+            
                                 <div id="or-square"> 
-                                <ul id="or-square">
+                                <ul id="or-square" style="margin-right: 30px; margin-top: 18px;">
                                   <li class="orange-squares mb-2"> <span class="strong-teal">Gas taxes paid at the pump will act as a pre-payment </span> of the RUC</li>
                                   <li class="mb-2"><span class="strong-teal">Credits for gas taxes paid at the pump are</span>are issued based on your vehicle’s estimated fuel efficiency</li>
                                   <li><span class="strong-teal">This pre-payment approach was successful </span> during a 2018-2019 RUC pilot, where participants were issued credits for any gas tax they paid when filling up at the pump</li>
@@ -206,10 +206,10 @@
                               </div>
                             </div>
         
-                            <div class="col-lg-6 mb-5 mb-lg-0 mt-3 pt-2 text-left">
-                                <div class="icon-stack icon-stack-xl mb-4"><img src="/img/why-ruc/WhyGradual.png" loading="lazy" width="100px" height="99px" style="border-radius: 50%;"></div>
-                                <h3 classs="circle-header" style="margin-top: .2em; font-size: 1.66em; font-weight: 700;  color: #82A73F;">Why a gradual transition to WA RUC?</h3>
-                                <ul class="square-list-or" id="or-square">
+                            <div class="col-lg-6 text-left">
+                                <div class="iconrow" style="display: flex; flex-direction: row; margin-bottom: 18px;margin-top: 18px; "><img src="/img/why-ruc/WhyGradual.png" loading="lazy" width="70px" height="70px" style="border-radius: 50%;">
+                                    <span classs="circle-header" style="margin-top: .25em; font-size: 1.8em; font-weight: 700;  color: #82A73F;">&nbsp;Why a gradual transition to WA RUC?</span></div>
+                                <ul class="square-list-or" id="or-square" style="margin-right: 1em;">
                                     <li class="mb-2"><span class="strong-teal">The state gas tax must remain in place to fund critical projects promised in the past,</span> including retiring debt that the state pledged to repay with gas tax revenue </li>
                                     <li class="mb-2"><span class="strong-teal">The gas tax ensures out-of-state drivers pay for using Washington roads,</span> while keeping travel smooth and easy for visitors to our state</li>                              
                                   </ul>
@@ -226,7 +226,7 @@
             <div class="row">
              <div class="col-md-9">
                 <div class="left-para">
-                 <h2 class="darkblue-wr fw-800" style="padding-top: 70px; font-size: 1.7em; font: arial-narrow;">THE GAS TAX IS NO LONGER FAIR</h2>
+                 <h2 class="darkblue-wr fw-800" style="padding-top: 70px; font-size: 1.7em; font: arial-narrow;">A RUC is a fairer way to pay for our roads</h2>
                     <p class="fw-500 mt-3">When the gas tax was created decades ago it was based upon a simple principle of user pays, user benefits.</p>
                     <p class="fw-500">However, as cars become more fuel efficient and don’t use gas, the gas tax has become a some users pay, all users benefit model.</p>
                     <p class="fw-700 darkblue-wr" style="color: #0F6873; opacity: 1.5;">RUC returns us to the user pay, user benefit principle.</p>       

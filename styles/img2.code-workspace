@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "img2",
+			"path": "../../waruc-beta2/img2"
+		},
+		{
+			"name": "wa-ruc-beta",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "wa-ruc-beta",
+		"liveServer.settings.port": 5501
+	}
+}

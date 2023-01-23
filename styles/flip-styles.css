@@ -52,36 +52,6 @@ body {
   padding-top: 10px;;
 
 }
-/* 
-#flipnav a {
-  position: relative;
-  text-decoration: none;
-  margin: 20px;
-}
-
-
-
-#flipnav a::before {
-  content: "";
-  position: absolute;            
-  height: 3px;
-  right: 15px;
-  bottom: -3px;
-  left: 0px;
-  background-color: #3498db;
-}
-
-
-
-
-#flipnav ul {        
-    display: flex;
-    align-items: center;
-}
-
-#flipnav ul li {
-    margin-right: 20px;
-} */
 
 
 h1 a {
@@ -102,18 +72,24 @@ h1, h2, h3 {
   font-family: "Duotone"; 
   font-weight: 500;
   color: #3498db;
-  /* letter-spacing: .1px; */
   }
+
+ .headerblue-flip {
+    font-family: "Duotone"; 
+    font-weight: 500;
+    color: #fff;
+    }
+    
   
 #flipnav nav {  
   font-size: 16px;
-  padding: 8px;
+  padding: 10px;
   margin: 3px 40px;
   display: flex;
-justify-content: space-around;
+justify-content: space-between;
 flex-direction: row;
 align-items: center;
-margin-right: 20px;
+margin-right: 10px;
 
 }
 
@@ -127,7 +103,6 @@ align-items: center;
 }
 #flipnav ul li {
   list-style-type: none;
-  /* padding: 5px; */
   margin: 5px;
 }
 #flipnav ul li a {
@@ -161,10 +136,18 @@ align-items: center;
   transform-origin: left;
 }
 
+.example {
+  color: #e3f5e0;
+  color: #f8efea; 
+  color: #eff4f8;
+
+}
 
 .flipblue {
   color: #1891d0;
+  font-size: 1.5em;
 }
+
 .blue-h2 {
   color: #1891d0;
   font-weight: 600;
@@ -182,29 +165,9 @@ align-items: center;
  }
 
   .card {
-    color: rgba(250, 250, 250, 0.8);
+    color: rgba(0, 0, 0 0.8);
     margin-bottom: 2rem;
   }
-
-  /* .btn {
-    border: 5px solid;
-    border-image-slice: 1;
-    background: var(--gradient) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    border-image-source:  var(--gradient) !important; 
-    text-decoration: none;
-    transition: all .4s ease;
-  }
-  
-  .btn:hover, .btn:focus {
-        background: var(--gradient) !important;
-    -webkit-background-clip: none !important;
-    -webkit-text-fill-color: #fff !important;
-    border: 5px solid #fff !important; 
-    box-shadow: #222 1px 0 10px;
-    text-decoration: underline;
-  } */
 
   #twocard-1 .card {
   
@@ -217,7 +180,6 @@ align-items: center;
       background: #fff;
       position: relative;
       overflow: hidden;
-
   }
 
   #twocard {
@@ -227,11 +189,15 @@ align-items: center;
 
   
   .twocard {
-    margin-left: 11%;
-    margin-right: 11%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin: 15px;    
+  }
+
+  .newtwo p {
+    color:rgb(84, 82, 105);
   }
 
 .flipcard {
@@ -244,12 +210,13 @@ align-items: center;
     font-weight: 600;
   }
   .centered {
-    font-size: 40px;
+    font-size: 44px;
     letter-spacing: 1px;
     font-weight: 600;
     color: #fff;
+    opacity: .75;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -258,31 +225,10 @@ align-items: center;
   .centered2 {
     line-height: 35px;
     font-size: 22px;
-    /* letter-spacing: 1px; */
     font-weight: 500;
-    /* color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%); */
   }
 
-  /* .img-area{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    align-items: right;
-    justify-content: space-between;
-  } */
-/* 
-  .img-area{
-    display: block;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  } */
+
   .threecard {
     margin-left: 10%;
     margin-right: 10%;
@@ -307,11 +253,28 @@ align-items: center;
 /* flip code btn */
 
 .button-container {
-  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-right: 4px;
   height: 100%;
   width: 100%;
   perspective: 1000px;
+  font-size: 16px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.flipblue-head3 {
+  font-family: "Duotone";
+  color: #1891d0;
+  font-size: 1.5em;
+}
+
+.flipblue-head1 {
+  font-family: "Duotone";
+  color: #1891d0;
+  font-size: 1.8em;
+  font-weight: 600;
 }
 .button-container .button-flipper {
   transition: 0.8s cubic-bezier(0.775, 0.07, 0.575, 0.995);
@@ -330,7 +293,6 @@ align-items: center;
   height: 35px;
   background-color: #1891d0;
   border: none;
-  font-size: 1em;
     font-weight: 600;
   border-radius: 4px;
   color: #ead70e;
@@ -345,7 +307,7 @@ align-items: center;
 
 .button-container .front-button a {
   color:#ead70e;
-  text-decoration: none;
+  text-decoration: none;  
 }
 
 .button-container .back-button {
@@ -356,7 +318,6 @@ align-items: center;
   border: none;
   font-weight: 600;
   border-radius: 4px;
-  font-size: 1em;
   color: #1891d0;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -367,15 +328,18 @@ align-items: center;
 
 .button-container .back-button a {
   color:#1891d0;
+  /* padding-bottom: 4px; */
 }
 
 
 .button-container2 {
-  display: flex;
-  align-items: right;
+ 
+  align-items: center;
   height: 100%;
   width: 100%;
   perspective: 1000px;
+  margin-bottom: 70px;
+  margin-top: 40px;
 }
 .button-container2 .button-flipper2 {
   transition: 0.8s cubic-bezier(0.775, 0.07, 0.575, 0.995);
@@ -431,8 +395,8 @@ align-items: center;
 
 .tworow-btn {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
- align-items: center;
 padding-top: 5px;
 padding-bottom: 16px;
  margin-bottom: 30px;
@@ -458,7 +422,7 @@ a:focus {
 #flipspan a.flip-animate {
   perspective: 1000px;
 }
-#flipspan a.flip-animate span {
+#flipspan a.flip-animate span { 
   position: relative;
   display: inline-block;
   padding: 0;
@@ -488,4 +452,21 @@ a:focus {
 
 #post-inner a {
   color: #1891d0;
+}
+
+
+#flipcaps {
+  color: #1891d0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+
+#flipcaps hr {
+  color:#ead70e;
+}
+
+
+.cardcol {
+  margin-bottom: 1.5em;
 }

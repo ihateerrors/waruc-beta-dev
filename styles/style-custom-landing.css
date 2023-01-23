@@ -194,7 +194,10 @@ position: relative;
 .page-subhead-wa-ruc-2 {
   font-size: 2em;
    font-weight: 700;
-   margin-top: .8em
+   margin-top: 3em;
+   color: #FAFAFA;
+   font-size: 35px;
+   margin-left: 1em;
 }
 
 .leftimg-vanish {

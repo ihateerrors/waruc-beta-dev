@@ -134,6 +134,7 @@
 }
 
 body {
+  width: 100vw;
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -141,7 +142,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -1773,6 +1774,8 @@ progress {
   .offset-xl-0 {
     margin-left: 0;
   }
+
+  /* flip code start */
 
   .offset-xl-1 {
     margin-left: 8.33333333%;
