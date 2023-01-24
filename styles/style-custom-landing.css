@@ -133,12 +133,20 @@ position: relative;
   margin-right: 25px; 
   text-align: left;
 }
-.leftcol-text {
+.leftcol-text2 {
   margin-left: 14%;
   margin-right: 1.2em;
   margin-top: 20%;
 }
+.leftcol-text2 {
+  margin-left: 14%;
+  margin-right: 1.2em;
+  margin-top: 50px;
+}
 
+/* #pilot-faq {
+  font-size: 40px;
+} */
 .rightcol-text {
   margin-right: 14%;
   margin-left: 3em;
@@ -324,6 +332,13 @@ h2 {
   color: rgb(15, 104, 115);
   font-weight: 600;
   font-size: 25px;
+}
+
+.strong-blue-tm {
+  color:rgb(15, 104, 115);
+  font-weight: 700;
+margin-top: 25px;
+
 }
 
 .bigger-darker {

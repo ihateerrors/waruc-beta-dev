@@ -5,17 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+      .question{
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+        .answers {
+          margin-bottom: 20px;
+          text-align: left;
+          display: inline-block;
+        }
+        .answers label{
+          display: block;
+          margin-bottom: 10px;
+        }
+        button{
+          font-family: 'Work Sans', sans-serif;
+            font-size: 22px;
+            background-color: #279;
+            color: #fff;
+            border: 0px;
+            border-radius: 3px;
+            padding: 20px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover{
+            background-color: #38a;
+        }
+  
+      </style>
 </head>
 <body>
     
 
 
-    <h1>Quiz on Important Facts</h1>
+    <h1>RUC Self-Evaluation</h1>
     <div class="quiz-container">
       <div id="quiz"></div>
     </div>
-    <button id="previous">Previous Question</button>
-    <button id="next">Next Question</button>
+    <!-- <button id="previous">Previous Question</button>
+    <button id="next">Next Question</button> -->
     <button id="submit">Submit</button>
     <div id="results"></div>
 
@@ -114,7 +145,7 @@
   const submitButton = document.getElementById('submit');
   const myQuestions = [
     {
-      question: "Is there existing legislation authorizing a RUC program?",
+      question: "",
       answers: {
         a: "Yes",
         b: "No",
@@ -159,38 +190,7 @@
 
 
 
-<style>
-    .question{
-        font-size: 30px;
-        margin-bottom: 10px;
-      }
-      .answers {
-        margin-bottom: 20px;
-        text-align: left;
-        display: inline-block;
-      }
-      .answers label{
-        display: block;
-        margin-bottom: 10px;
-      }
-      button{
-        font-family: 'Work Sans', sans-serif;
-          font-size: 22px;
-          background-color: #279;
-          color: #fff;
-          border: 0px;
-          border-radius: 3px;
-          padding: 20px;
-          cursor: pointer;
-          margin-bottom: 20px;
-      }
-      button:hover{
-          background-color: #38a;
-      }
 
-    </style>
 </body>
 </html>
 
-
-<div class="callout-box" style="float: right;"><a class="btn-lg btn-warning" href="https://waroadusagecharge.org/wp-content/uploads/2023/01/RUC-Annual-Report_01112023.pdf" target="_blank" role="button">Read our 2022 Annual Report</a></div>
