@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .question-row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.answer-yes, .answer-no {
+  margin-top: 10px;
+  padding: 10px;
+  display: none;
+}
+
+.question-row {
+    background-color: #cd4423;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.q-text {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+#yesno-row .yes-btn .no-btn {
+    border-radius: 5px;
+    color: #cd4423;
+    background-color: #fff;
+    border: none;
+    margin: 6px;
+    max-width: 12ch;
+}
+
+#yesno-row .yes-btn:hover {
+    border-radius: 5px;
+    background-color: #f75a33;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 6px;
+}
+#yesno-row .no-btn:hover {
+    border-radius: 5px;
+    background-color: #f75a33;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 6px;
+}
+
+.answer-no, .answer-yes {
+    margin-left: 30px;
+    background-color: rgb(230, 234, 237);
+    padding: 15px;
+}
+.answer-no, .answer-yes p {
+    margin: 20px 35px;
+}
+.buttongroup {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#challenges-and-strategies {
+        background-color: #337891;
+        color: #fff;
+        padding: 5% 10%;        
+    }
+        
+        
+        /* CUSTOM CSS
+        You can use the following CSS classes to customize the look of the accordion. */
+        .js-accordion-controller img svg { fill: hotpink;}
+        .c-accordion__title { } 
+        .c-accordion__item { max-width: 80vw; border-top:2px solid #23527c; border-bottom:2px solid #23527c;} /* The accordion item container */
+        .c-accordion__item h2 {}
+        .c-accordion__item.is-open {  } /* is-open is added to open accordion items */
+        .c-accordion__item.is-read {} /* is-read is added to accordion items that have been opened at least once */
+        .c-accordion__title { justify-content: center; padding-top: 8px;} /* An accordion item title */
+
+        .c-accordion__title--button { color: #67b059; background-color: hotpink;} /* An accordion item title that is using a `<button>` tag */
+        .c-accordion__title:hover {color: #67b059} /* To modify the style when hovering over an accordion item title */
+        .c-accordion__title.is-open {color: #67b059} 
+        .c-accordion__title:focus {} /* To modify the style when an accordion item title currently has broswer focus */
+        .c-accordion__content {background-color: rgb(233, 237, 240);} 
+        
+        #leadruc-accord  .c-accordion__item h2 {font-size: 1.4em;}
+        
+        </style>
+        
+</head>
+<body>
+ 
+
+
+
+<!-- wp:image {"align":"center","id":171,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large"><img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2022/12/lead-ruc-agencies-hero-1-1024x403.png" alt="" class="wp-image-171"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"align":"center","id":170,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large"><img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2022/12/LRA-video-placeholder-1024x500.png" alt="" class="wp-image-170"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2><br>Take the Self-Assessment </h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html /-->
+
+<!-- wp:heading {"style":{"color":{"text":"#23527c"}}} -->
+<h2 class="has-text-color" style="color:#23527c">RESOURCES FOR LEADING RUC IN YOUR STATE</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>As the Lead Road Usage Charge (RUC) Agency, you help drive your state's RUC exploration forward. Explore this page to view key resources for Lead RUC Agencies and take the self-assessment to get tailored recommendations for studying, implementing, or expanding RUC in your state.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div class="rowofbuttons">
+    <button style="background-color: #D78249;color: #fffff"><a href="#">Take the Self-Assessment</a></button> 
+    <button><a href="#">Navigate the RUC Framework</a></button> 
+    <button><a href="#">See the RUC Considerations</a></button> 
+    <button><a href="#">Review the Challenges and Strategies</a></button> 
+</div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div id="self-assessment-part1" style="background-color: #337891;color: #fff">
+        <div class="container"> 
+            <div class="textarea" style="padding: 30px;60px;margin: 15px 30px"> 
+    <h2><strong>SELF-ASSESSMENT:</strong> Part 1 - RUC Stage</h2>
+    <p>Please choose the answers that best describe your state’s current environment. When you ﬁnish, click Explore Your RUC Stage to  explore potential next steps for moving RUC forward for your agency. </p>
+    <div id="self-assess-quiz" class="container" style="background-color: white;color: black;margin: 14px;padding: 14px">    
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, sunt.</p>
+     </div> 
+      </div>         
+     </div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div id="self-assessment-part2">
+<h2><span style="color: #23527">SELF-ASSESSMENT:</span> PART 2 - RUC Considerations</h2>
+<p>These considerations and associated RUC building blocks may apply based on your Self-Assessment. Expand to learn more about these factors. Answer each of the following questions to learn about factors that may affect your state.</p>
+<div id="yesno-row">
+    <div class="container"> 
+  <div class="question-row">
+    <div class="q-text">My agency has electric vehicle (EV) adoption goals and/or gasoline-powered vehicle limitations, or other clean energy policies that may impact clean vehicle adoption</div>
+    <div class="buttongroup"> 
+    <button class="yes-btn" id="yesBtn">Yes</button>
+    <button class="no-btn" id="noBtn">No/Unsure</button>
+    </div>
+    </div>
+    <div class="answer-yes" id="divA">
+     <p>With the push to reduce greenhouse gas emissions and improve air quality, many states have adopted clean energy and/or climate change policies. States approaches to meet clean energy and climate change goals may include promoting sales of EVs through rebates or tax credits, or more aggressive tactics like restricting the sale of internal combustion engine (ICE) vehicles after a certain date.</p>
+     <p>These initiatives can directly impact transportation funding and create a more imminent need for an alternative revenue mechanism like RUC. An increasing number of states are developing clean energy policies and some auto manufacturers like Ford and GM pledging to convert their ﬂeets to all-electric.</p>
+
+     <p><strong>Check out the following Building Blocks to learn more</strong></p>
+     <div class="rowofbuttons"><button><a href="#">Determine Vision and  Policy Objectives for RUC</a></button><button><a href="#">Support Policy and  Legislation Development</a></button>
+     </div>
+    </div>
+    <div class="answer-no" id="divB">
+    <p>[ANSWERED "NO"] Since you answered "no" to the question, "My agency has electric vehicle (EV) adoption goals and/or gasoline-powered vehicle limitations, or other clean energy policies that may impact clean vehicle adoption," here's some text about that. </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod sint vitae ea nostrum autem iste reiciendis officiis quae delectus temporibus voluptates magnam veritatis harum similique, voluptatibus tempore reprehenderit porro repellendus doloremque? Quo sunt suscipit voluptate? Voluptatibus quas harum sapiente.</p>
+  </div>        
+    </div>
+
+        <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has recently completed public education and/or public opinion research about transportation funding</div>
+          <div class="buttongroup"> 
+          <button class="yes-btn" id="yesBtn2">Yes</button>
+          <button class="no-btn" id="noBtn2">No/Unsure</button>
+          </div>
+          </div>
+          <div class="answer-yes" id="divA2">
+           <p> YES, My agency has recently completed public education and/or public opinion research about transportation funding...   Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, laboriosam labore corrupti dolorum reiciendis quas fugit eos inventore, qui debitis rerum unde facere cum. Earum quae incidunt officiis mollitia explicabo?</p>
+          </div>
+          <div class="answer-no" id="divB2">
+            <p>[ANSWERED "NO"] Since you answered "no" to the question,  here's some text about that. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod sint vitae ea nostrum autem iste reiciendis officiis quae delectus temporibus voluptates magnam eritatis harum similique, voluptatibus tempore reprehenderit porro repellendus doloremque? Quo sunt suscipit voluptate? Voluptatibus quas harum sapiente.</p>
+        </div>        
+        </div>
+   
+     <!-- end Question 2  -->
+
+       <!-- start Question 3  -->
+       <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has conducted a RUC pilot</div>
+          <div class="buttongroup">               
+                 <button class="yes-btn" id="yesBtn3">Yes</button>
+                 <button class="no-btn" id="noBtn3">No/Unsure</button>
+            </div>
+          </div>
+
+       <div class="answer-yes" id="divA3">
+         This is Div A3
+       </div>
+       <div class="answer-no" id="divB3">
+        <p>[ANSWERED "NO"] Since you answered "no" to the question,  here's some text about that. </p>
+       </div>
+      </div>
+     <!-- end Question 3  -->
+
+       <!-- start Question 4  -->
+       <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency is a member of a multi-state RUC consortium</div>
+          <div class="buttongroup">  
+       <button class="yes-btn" id="yesBtn4">Yes</button>
+       <button class="no-btn" id="noBtn4">No/Unsure</button>
+          </div>
+          </div>
+       <div class="answer-yes" id="divA4">
+         This is Div A4
+       </div>
+       <div class="answer-no" id="divB4">
+        <p>[ANSWERED "NO"] Since you answered "no" to the question,  here's some text about that. </p>
+       </div>
+    </div>
+     
+     <!-- end Question 4 -->
+
+     <!-- start Question 5 -->
+     
+     <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency restricts how transportation-related revenue can be spent</div>
+          <div class="buttongroup">  
+          <button class="yes-btn" id="yesBtn5">Yes</button>
+          <button class="no-btn" id="noBtn5">No/Unsure</button>
+          </div>
+          </div>
+        <div class="answer-yes" id="divA5">
+       This is Div A5
+     </div>
+     <div class="answer-no" id="divB5">
+        <p>[ANSWERED "NO"] Since you answered "no" to the question,  here's some text about that. </p>
+     </div>
+    </div>
+   
+     <!-- end Question 5 -->
+
+      <!-- start Question 6 -->
+      <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has transportation bonding</div>
+          <div class="buttongroup">  
+      <button class="yes-btn" id="yesBtn6">Yes</button>
+      <button class="no-btn" id="noBtn6">No/Unsure</button>
+          </div>
+          </div>
+      <div class="answer-yes" id="divA6">
+      Since you have transportation bonding, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore.
+      </div>
+      <div class="answer-no" id="divB6">
+       <p>If your agency does NOT have transportation bonding, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore.</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum omnis nesciunt praesentium voluptatibus optio suscipit et architecto placeat quaerat dolorem voluptatum quia nihil dolore culpa illum, nam voluptatem aut error.</p>
+      </div>
+    </div>    
+     <!-- end Question 6 -->
+
+    <!-- start Question 7 -->
+    <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has the ability to enact new taxes through the legislature</div>
+          <div class="buttongroup">  
+    <button class="yes-btn" id="yesBtn7">Yes</button>
+    <button class="no-btn" id="noBtn7">No/Unsure</button>
+          </div>
+          </div>
+    <div class="answer-yes" id="divA7">
+       <p>Since you have the ability to enact new taxes through the legislature, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore.</p> 
+    </div>
+    <div class="answer-no" id="divB7">
+        <p>If your agency does NOT have the ability to enact new taxes through the legislature, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore.</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum omnis nesciunt praesentium voluptatibus optio suscipit et architecto placeat quaerat dolorem voluptatum quia nihil dolore culpa illum, nam voluptatem aut error.</p>
+    </div>
+   </div>
+     <!-- end Question 7 -->
+
+     <!-- start Question 8 -->
+     <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has existing vehicle safety and/or emissions inspections</div>
+          <div class="buttongroup">  
+     <button class="yes-btn" id="yesBtn8">Yes</button>
+     <button class="no-btn" id="noBtn8">No/Unsure</button>
+          </div>
+          </div>
+     <div class="answer-yes" id="divA8">
+      <p>DIV FOR YES response</p>
+     </div>
+     <div class="answer-no" id="divB8">
+     <p>Div for NO</p>   
+     </div>
+    </div>
+     <!-- end Question 8 -->
+     
+     <!-- start Question 9 -->
+     <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">There is signiﬁcant diversity between urban and rural areas</div>
+          <div class="buttongroup">  
+     <button class="yes-btn" id="yesBtn9">Yes</button>
+     <button class="no-btn" id="noBtn9">No/Unsure</button>
+                   </div>
+          </div>
+     <div class="answer-yes" id="divA9">
+       This is Div A9
+     </div>
+     <div class="answer-no" id="divB9">
+       This is Div B9
+     </div>
+    </div>
+     <!-- end Question 9 -->
+
+    <!-- start Question 10  -->
+    <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">There is a high degree of cross-border travel with other states relative to total traﬃc</div>
+          <div class="buttongroup">  
+    <button class="yes-btn" id="yesBtn10">Yes</button>
+    <button class="no-btn" id="noBtn10">No/Unsure</button>
+          </div>
+          </div>
+    <div class="answer-yes" id="divA10">
+      This is Div A10
+    </div>
+    <div class="answer-no" id="divB10">
+      This is Div B10
+    </div>
+  </div>
+
+      <!-- start Question 11  -->
+      <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My RUC lead agency has revenue collection powers</div>
+          <div class="buttongroup">  
+    <button class="yes-btn" id="yesBtn11">Yes</button>
+    <button class="no-btn" id="noBtn11">No/Unsure</button>
+          </div>
+          </div>
+    <div class="answer-yes" id="divA11">
+      This is Div A11
+    </div>
+    <div class="answer-no" id="divB11">
+      This is Div B11
+    </div>
+</div>
+<!-- closes section with div below -->
+</div>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div id="challenges-and-strategies" style="margin-top: 30px">
+
+    <div class="container"> 
+        <div class="textwrapper">
+     <h2 style="color:#fff">CHALLENGES AND STRATEGIES</h2>
+
+<p style="color:#fff;margin-top: 22px">These challenges and strategies, and associated building blocks are most relevant for the RUC Lead Agency during the Research &amp; Planning stage. The challenges are categorized as analytical, design, and policy and are each addressed by several strategies. </p>
+
+<ol class="cands-list" style="margin-left: 2em">
+   <li class="roundnum"><strong>&nbsp;Analytical Challenges:</strong> Also described as “myth busting”. Many challenges to RUC acceptance are based on misperceptions or assertions not supported by evidence. Analysis can help decisionmakers overcome the challenge by providing objective results that rebut a question, concern, or objection. However, objective facts may not sway an entrenched opinion.</li>
+   <li class="roundnum" style="margin-top: 12px"><strong>&nbsp;Design Challenges:</strong> Many objections to RUC are legitimate and based in fact. In these cases, changes to the technical or policy design of RUC can ameliorate the problem and help decisionmakers overcome barriers.</li>   
+   <li class="roundnum" style="margin-top: 12px"><strong>&nbsp;Policy Choices:</strong> Policy choices sometimes present themselves as challenges. In these cases, decisionmakers need actionable information—like the pros and cons of each choice, and sometimes even advice on how to decide—to inform their ultimate decisions.</li>
+</ol>
+   
+<p style="color:#fff">The strategies presented are not mutually exclusive. In fact, the proposed strategies are complementary, and it may be helpful to engage several or all strategies to overcome the challenge in a given state. Where relevant, strategies for overcoming these challenges reference the RUC system stages, activities, and building blocks that are described in more detail in the RUC Building Blocks.</p>
+</div>
+</div>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:spacer {"height":"25px"} -->
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1410} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h3 id="at-1410" class="c-accordion__title js-accordion-controller" role="button">Equity by Geography</h3><div id="ac-1410" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Conduct a thorough quantitative analysis using National Highway Travel Survey data and Environmental Protection Agency-reported fuel economy estimates. Stratify the data by urban and rural geographies (and possibly others, such as suburban). Since lower income and rural households tend to have older, less fuel-eﬃcient vehicles, a passenger vehicle RUC that does not vary by vehicle characteristics slightly improves vertical equity, assuming a ﬂat, revenue-neutral RUC rate. A RUC has been found to slightly improve urban vs rural equity by shifting some burden from rural to urban payers. The level of improvement, however, has been slight. Exact results will vary by state. To conduct this analysis of interstate commercial vehicles, data from the International Fuel Tax Agreement Clearinghouse and the International Registration Plan Data Repository can be accessed. Some jurisdictions may gather this information</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1411} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h3 id="at-1411" class="c-accordion__title js-accordion-controller" role="button">Equity by Income</h3><div id="ac-1411" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"16px"} -->
+<div style="height:16px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1412} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h3 id="at-1412" class="c-accordion__title js-accordion-controller" role="button">Equity by Vehicle Type</h3><div id="ac-1412" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1413} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h3 id="at-1413" class="c-accordion__title js-accordion-controller" role="button">Impact on Emissions</h3><div id="ac-1413" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1414} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h3 id="at-1414" class="c-accordion__title js-accordion-controller" role="button">Cost of Administration</h3><div id="ac-1414" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1415} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h3 id="at-1415" class="c-accordion__title js-accordion-controller" role="button">Data Security and Privacy Protection</h3><div id="ac-1415" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1416} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h3 id="at-1416" class="c-accordion__title js-accordion-controller" role="button">Interoperability Among Federal, State, and Local Jurisdictions</h3><div id="ac-1416" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1417} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h3 id="at-1417" class="c-accordion__title js-accordion-controller" role="button">Compliance and Enforcement</h3><div id="ac-1417" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1418} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h3 id="at-1418" class="c-accordion__title js-accordion-controller" role="button">Location-Based Mileage Reporting</h3><div id="ac-1418" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1419} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h3 id="at-1419" class="c-accordion__title js-accordion-controller" role="button">Scalability of Systems</h3><div id="ac-1419" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<figure class="wp-block-image aligncenter size-large"><img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2022/12/lead-ruc-agencies-hero-1-1024x403.png" alt="" class="wp-image-171"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"align":"center","id":170,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image aligncenter size-large"><img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2022/12/LRA-video-placeholder-1024x500.png" alt="" class="wp-image-170"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2>Take the Self-Assessment </h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html /-->
+
+<!-- wp:heading {"style":{"color":{"text":"#23527c"}}} -->
+<h2 class="has-text-color" style="color:#23527c">RESOURCES FOR LEADING RUC IN YOUR STATE</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>As the Lead Road Usage Charge (RUC) Agency, you help drive your state's RUC exploration forward. Explore this page to view key resources for Lead RUC Agencies and take the self-assessment to get tailored recommendations for studying, implementing, or expanding RUC in your state.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div class="rowofbuttons">
+    <button style="background-color: #D78249;color: #fffff"><a href="#">Take the Self-Assessment</a></button> 
+    <button><a href="#">Navigate the RUC Framework</a></button> 
+    <button><a href="#">See the RUC Considerations</a></button> 
+    <button><a href="#">Review the Challenges and Strategies</a></button> 
+</div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div id="self-assessment-part1" style="background-color: #337891;color: #fff">
+        <div class="container"> 
+            <div class="textarea" style="padding: 30px;60px;margin: 15px 30px"> 
+    <h2><strong>SELF-ASSESSMENT:</strong> Part 1 - RUC Stage</h2>
+    <p>Please choose the answers that best describe your state’s current environment. When you ﬁnish, click Explore Your RUC Stage to  explore potential next steps for moving RUC forward for your agency. </p>
+    <div id="self-assess-quiz" class="container" style="background-color: white;color: black;margin: 14px;padding: 14px">    
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, sunt.</p>
+     </div> 
+      </div>         
+     </div>
+    </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div id="self-assessment-part2">
+<h2><span style="color: #23527">SELF-ASSESSMENT:</span> PART 2 - RUC Considerations</h2>
+<p>These considerations and associated RUC building blocks may apply based on your Self-Assessment. Expand to learn more about these factors. Answer each of the following questions to learn about factors that may affect your state.</p>
+<div id="yesno-row">
+    <div class="container"> 
+  <div class="question-row">
+    <div class="q-text">My agency has electric vehicle (EV) adoption goals and/or gasoline-powered vehicle limitations, or other clean energy policies that may impact clean vehicle adoption</div>
+    <div class="buttongroup"> 
+    <button class="yes-btn" id="yesBtn">Yes</button>
+    <button class="no-btn" id="noBtn">No/Unsure</button>
+    </div>
+    </div>
+    <div class="answer-yes" id="divA">
+     <p>With the push to reduce greenhouse gas emissions and improve air quality, many states have adopted clean energy and/or climate change policies. States approaches to meet clean energy and climate change goals may include promoting sales of EVs through rebates or tax credits, or more aggressive tactics like restricting the sale of internal combustion engine (ICE) vehicles after a certain date.</p>
+     <p>These initiatives can directly impact transportation funding and create a more imminent need for an alternative revenue mechanism like RUC. An increasing number of states are developing clean energy policies and some auto manufacturers like Ford and GM pledging to convert their ﬂeets to all-electric.</p>
+
+     <p><strong>Check out the following Building Blocks to learn more</strong></p>
+     <div class="rowofbuttons"><button><a href="#">Determine Vision and  Policy Objectives for RUC</a></button><button><a href="#">Support Policy and  Legislation Development</a></button>
+     </div>
+    </div>
+    <div class="answer-no" id="divB">
+    <p>[ANSWERED "NO"] Since you answered "no" to the question, "My agency has electric vehicle (EV) adoption goals and/or gasoline-powered vehicle limitations, or other clean energy policies that may impact clean vehicle adoption," here's some text about that. </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod sint vitae ea nostrum autem iste reiciendis officiis quae delectus temporibus voluptates magnam veritatis harum similique, voluptatibus tempore reprehenderit porro repellendus doloremque? Quo sunt suscipit voluptate? Voluptatibus quas harum sapiente.</p>
+  </div>        
+    </div>
+
+        <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has recently completed public education and/or public opinion research about transportation funding</div>
+          <div class="buttongroup"> 
+          <button class="yes-btn" id="yesBtn2">Yes</button>
+          <button class="no-btn" id="noBtn2">No/Unsure</button>
+          </div>
+          </div>
+          <div class="answer-yes" id="divA2">
+           <p> YES, My agency has recently completed public education and/or public opinion research about transportation funding...   Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, laboriosam labore corrupti dolorum reiciendis quas fugit eos inventore, qui debitis rerum unde facere cum. Earum quae incidunt officiis mollitia explicabo?</p>
+          </div>
+          <div class="answer-no" id="divB2">
+            <p>[ANSWERED "NO"] Since you answered "no" to the question,  here's some text about that. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod sint vitae ea nostrum autem iste reiciendis officiis quae delectus temporibus voluptates magnam eritatis harum similique, voluptatibus tempore reprehenderit porro repellendus doloremque? Quo sunt suscipit voluptate? Voluptatibus quas harum sapiente.</p>
+        </div>        
+        </div>
+   
+     <!-- end Question 2  -->
+
+       <!-- start Question 3  -->
+       <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has conducted a RUC pilot</div>
+          <div class="buttongroup">               
+                 <button class="yes-btn" id="yesBtn3">Yes</button>
+                 <button class="no-btn" id="noBtn3">No/Unsure</button>
+            </div>
+          </div>
+
+       <div class="answer-yes" id="divA3">
+         This is Div A3
+       </div>
+       <div class="answer-no" id="divB3">
+        <p>[ANSWERED "NO"] Since you answered "no" to the question,  here's some text about that. </p>
+       </div>
+      </div>
+     <!-- end Question 3  -->
+
+       <!-- start Question 4  -->
+       <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency is a member of a multi-state RUC consortium</div>
+          <div class="buttongroup">  
+       <button class="yes-btn" id="yesBtn4">Yes</button>
+       <button class="no-btn" id="noBtn4">No/Unsure</button>
+          </div>
+          </div>
+       <div class="answer-yes" id="divA4">
+         This is Div A4
+       </div>
+       <div class="answer-no" id="divB4">
+        <p>[ANSWERED "NO"] Since you answered "no" to the question,  here's some text about that. </p>
+       </div>
+    </div>
+     
+     <!-- end Question 4 -->
+
+     <!-- start Question 5 -->
+     
+     <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency restricts how transportation-related revenue can be spent</div>
+          <div class="buttongroup">  
+          <button class="yes-btn" id="yesBtn5">Yes</button>
+          <button class="no-btn" id="noBtn5">No/Unsure</button>
+          </div>
+          </div>
+        <div class="answer-yes" id="divA5">
+       This is Div A5
+     </div>
+     <div class="answer-no" id="divB5">
+        <p>[ANSWERED "NO"] Since you answered "no" to the question,  here's some text about that. </p>
+     </div>
+    </div>
+   
+     <!-- end Question 5 -->
+
+      <!-- start Question 6 -->
+      <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has transportation bonding</div>
+          <div class="buttongroup">  
+      <button class="yes-btn" id="yesBtn6">Yes</button>
+      <button class="no-btn" id="noBtn6">No/Unsure</button>
+          </div>
+          </div>
+      <div class="answer-yes" id="divA6">
+      Since you have transportation bonding, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore.
+      </div>
+      <div class="answer-no" id="divB6">
+       <p>If your agency does NOT have transportation bonding, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore.</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum omnis nesciunt praesentium voluptatibus optio suscipit et architecto placeat quaerat dolorem voluptatum quia nihil dolore culpa illum, nam voluptatem aut error.</p>
+      </div>
+    </div>    
+     <!-- end Question 6 -->
+
+    <!-- start Question 7 -->
+    <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has the ability to enact new taxes through the legislature</div>
+          <div class="buttongroup">  
+    <button class="yes-btn" id="yesBtn7">Yes</button>
+    <button class="no-btn" id="noBtn7">No/Unsure</button>
+          </div>
+          </div>
+    <div class="answer-yes" id="divA7">
+       <p>Since you have the ability to enact new taxes through the legislature, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore.</p> 
+    </div>
+    <div class="answer-no" id="divB7">
+        <p>If your agency does NOT have the ability to enact new taxes through the legislature, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore.</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum omnis nesciunt praesentium voluptatibus optio suscipit et architecto placeat quaerat dolorem voluptatum quia nihil dolore culpa illum, nam voluptatem aut error.</p>
+    </div>
+   </div>
+     <!-- end Question 7 -->
+
+     <!-- start Question 8 -->
+     <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has existing vehicle safety and/or emissions inspections</div>
+          <div class="buttongroup">  
+     <button class="yes-btn" id="yesBtn8">Yes</button>
+     <button class="no-btn" id="noBtn8">No/Unsure</button>
+          </div>
+          </div>
+     <div class="answer-yes" id="divA8">
+      <p>DIV FOR YES response</p>
+     </div>
+     <div class="answer-no" id="divB8">
+     <p>Div for NO</p>   
+     </div>
+    </div>
+     <!-- end Question 8 -->
+     
+     <!-- start Question 9 -->
+     <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">There is signiﬁcant diversity between urban and rural areas</div>
+          <div class="buttongroup">  
+     <button class="yes-btn" id="yesBtn9">Yes</button>
+     <button class="no-btn" id="noBtn9">No/Unsure</button>
+                   </div>
+          </div>
+     <div class="answer-yes" id="divA9">
+       This is Div A9
+     </div>
+     <div class="answer-no" id="divB9">
+       This is Div B9
+     </div>
+    </div>
+     <!-- end Question 9 -->
+
+    <!-- start Question 10  -->
+    <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">There is a high degree of cross-border travel with other states relative to total traﬃc</div>
+          <div class="buttongroup">  
+    <button class="yes-btn" id="yesBtn10">Yes</button>
+    <button class="no-btn" id="noBtn10">No/Unsure</button>
+          </div>
+          </div>
+    <div class="answer-yes" id="divA10">
+      This is Div A10
+    </div>
+    <div class="answer-no" id="divB10">
+      This is Div B10
+    </div>
+  </div>
+
+      <!-- start Question 11  -->
+      <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My RUC lead agency has revenue collection powers</div>
+          <div class="buttongroup">  
+    <button class="yes-btn" id="yesBtn11">Yes</button>
+    <button class="no-btn" id="noBtn11">No/Unsure</button>
+          </div>
+          </div>
+    <div class="answer-yes" id="divA11">
+      This is Div A11
+    </div>
+    <div class="answer-no" id="divB11">
+      This is Div B11
+    </div>
+</div>
+<!-- closes section with div below -->
+</div>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div id="challenges-and-strategies" style="margin-top: 30px">
+
+    <div class="container"> 
+        <div class="textwrapper">
+     <h2 style="color:#fff">CHALLENGES AND STRATEGIES</h2>
+
+<p style="color:#fff;margin-top: 22px">These challenges and strategies, and associated building blocks are most relevant for the RUC Lead Agency during the Research &amp; Planning stage. The challenges are categorized as analytical, design, and policy and are each addressed by several strategies. </p>
+
+<ol class="cands-list" style="margin-left: 2em">
+   <li class="roundnum"><strong>&nbsp;Analytical Challenges:</strong> Also described as “myth busting”. Many challenges to RUC acceptance are based on misperceptions or assertions not supported by evidence. Analysis can help decisionmakers overcome the challenge by providing objective results that rebut a question, concern, or objection. However, objective facts may not sway an entrenched opinion.</li>
+   <li class="roundnum" style="margin-top: 12px"><strong>&nbsp;Design Challenges:</strong> Many objections to RUC are legitimate and based in fact. In these cases, changes to the technical or policy design of RUC can ameliorate the problem and help decisionmakers overcome barriers.</li>   
+   <li class="roundnum" style="margin-top: 12px"><strong>&nbsp;Policy Choices:</strong> Policy choices sometimes present themselves as challenges. In these cases, decisionmakers need actionable information—like the pros and cons of each choice, and sometimes even advice on how to decide—to inform their ultimate decisions.</li>
+</ol>
+   
+<p style="color:#fff">The strategies presented are not mutually exclusive. In fact, the proposed strategies are complementary, and it may be helpful to engage several or all strategies to overcome the challenge in a given state. Where relevant, strategies for overcoming these challenges reference the RUC system stages, activities, and building blocks that are described in more detail in the RUC Building Blocks.</p>
+</div>
+</div>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:spacer {"height":"25px"} -->
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<div id="leadruc-accord"> 
+
+<!-- wp:pb/accordion-item {"uuid":1410} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h2 id="at-1410" class="c-accordion__title js-accordion-controller" role="button">Equity by Geography</h2><div id="ac-1410" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Conduct a thorough quantitative analysis using National Highway Travel Survey data and Environmental Protection Agency-reported fuel economy estimates. Stratify the data by urban and rural geographies (and possibly others, such as suburban). Since lower income and rural households tend to have older, less fuel-eﬃcient vehicles, a passenger vehicle RUC that does not vary by vehicle characteristics slightly improves vertical equity, assuming a ﬂat, revenue-neutral RUC rate. A RUC has been found to slightly improve urban vs rural equity by shifting some burden from rural to urban payers. The level of improvement, however, has been slight. Exact results will vary by state. To conduct this analysis of interstate commercial vehicles, data from the International Fuel Tax Agreement Clearinghouse and the International Registration Plan Data Repository can be accessed. Some jurisdictions may gather this information</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1411} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h2 id="at-1411" class="c-accordion__title js-accordion-controller" role="button">Equity by Income</h2><div id="ac-1411" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"16px"} -->
+<div style="height:16px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1412} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h2 id="at-1412" class="c-accordion__title js-accordion-controller" role="button">Equity by Vehicle Type</h2><div id="ac-1412" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1413} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h2 id="at-1413" class="c-accordion__title js-accordion-controller" role="button">Impact on Emissions</h2><div id="ac-1413" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1414} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h2 id="at-1414" class="c-accordion__title js-accordion-controller" role="button">Cost of Administration</h2><div id="ac-1414" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1415} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h2 id="at-1415" class="c-accordion__title js-accordion-controller" role="button">Data Security and Privacy Protection</h2><div id="ac-1415" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1416} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h2 id="at-1416" class="c-accordion__title js-accordion-controller" role="button">Interoperability Among Federal, State, and Local Jurisdictions</h2><div id="ac-1416" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1417} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h2 id="at-1417" class="c-accordion__title js-accordion-controller" role="button">Compliance and Enforcement</h2><div id="ac-1417" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1418} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h2 id="at-1418" class="c-accordion__title js-accordion-controller" role="button">Location-Based Mileage Reporting</h2><div id="ac-1418" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:pb/accordion-item -->
+
+<!-- wp:spacer {"height":"15px"} -->
+<div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:pb/accordion-item {"uuid":1419} -->
+<div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0"><h2 id="at-1419" class="c-accordion__title js-accordion-controller" role="button">Scalability of Systems</h2><div id="ac-1419" class="c-accordion__content"><!-- wp:paragraph -->
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- /wp:paragraph --></div></div>
+
+</div>
+
+</body>
+</html>
+
+
+
+

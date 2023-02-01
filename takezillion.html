@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/style-custom-landing.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style> 
+
+      /* .question {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .response {
+        display: none;
+        margin-top: 10px;
+      }
+      .yesBtn,
+      .noBtn {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+      .hideBtn {
+        display: block;
+        margin-top: 10px;
+        cursor: pointer;
+      } */
+
+
+.question-row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.answer-yes, .answer-no {
+  margin-top: 10px;
+  padding: 10px;
+  display: none;
+}
+
+.question-row {
+    background-color: #cd4423;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.q-text {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+#yesno-row .yes-btn .no-btn {
+    border-radius: 5px;
+    color: #cd4423;
+    background-color: #fff;
+    border: none;
+    margin: 6px;
+    max-width: 12ch;
+}
+
+#yesno-row .yes-btn:hover {
+    border-radius: 5px;
+    background-color: #f75a33;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 6px;
+}
+#yesno-row .no-btn:hover {
+    border-radius: 5px;
+    background-color: #f75a33;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 6px;
+}
+
+.answer-no, .answer-yes {
+    margin-left: 30px;
+    background-color: rgb(230, 234, 237);
+    padding: 15px;
+}
+.answer-no, .answer-yes p {
+    margin: 20px 35px;
+}
+.buttongroup {
+    display: inline-flex;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+#challenges-and-strategies {
+        background-color: #337891;
+        color: #fff;
+        padding: 5% 10%;        
+    }
+
+
+    .rowofbuttons button  {
+  background-color: #879442; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  margin: 16px 30px;
+  padding: 10px 30px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  border-radius: 5px;
+font-size: 16px;
+text-transform: none;
+	white-space: normal; 
+}
+
+.rowofbuttons a {
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	text-transform: none;
+	white-space: none;
+}
+
+/* Clear floats (clearfix hack) */
+.rowofbuttons:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.rowofbuttons button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.rowofbuttons button:hover {
+  background-color: transparent;
+}
+
+.buttonimage-row {
+    background-color: transparent;
+    color: transparent;
+    display: inline-block;
+}
+
+.buttonimagerow img {
+    width: 200px;
+    height: 200px;
+}
+.buttonimage-row button  {
+ background-color: transparent;
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  border-radius: 5px;
+  font-size: 16px;
+   text-transform: none;
+	white-space: normal; 
+}
+
+.buttonimage-row a {
+		white-space: normal;
+        background-color: transparent;
+}
+
+/* Clear floats (clearfix hack) */
+.buttonimage-row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.buttonimage-row button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.buttonimage-row button:hover {
+ color: transparent; 
+}
+
+    </style>
+
+</head>
+<body>
+
+
+    <div class="buttonimage-row">      
+        <button><a href="#research-planning"><img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/01/research-planning.jpg" loading="lazy" alt="Research &amp; Planning" ></a></button>
+        <button><a href="#setup"><img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/01/setup-icon.jpg" alt="Setup"></a></button> 
+        <button><a href="#ongoing-operations"><img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/01/ongoing-icon.jpg"></a></button>
+        <button><a href="#transitioning-and-growing"><img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/01/transitioning-growing-icon.jpg" alt="Transitioning &amp; Growing"></a></button>  
+         </div>
+
+
+    <!--start Self-assessment part 1 -->
+    <div id="self-assessment-part1" style="background-color: #337891; color: #fff;">
+        <div class="container"> 
+            <div class="textarea" style="padding: 30px; 60px; margin: 15px 30px;"> 
+    <h2><strong>SELF-ASSESSMENT:</strong> Part 1 - RUC Stage</h2>
+    <p>Please choose the answers that best describe your state’s current environment. When you ﬁnish, click Explore Your RUC Stage to  explore potential next steps for moving RUC forward for your agency. </p>
+    <div id="self-assess-quiz" class="container" style="background-color: white; color: black; margin: 14px; padding: 14px;">    
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, sunt.</p>
+     </div> 
+      </div>         
+     </div>
+    </div>
+
+
+
+    <div class="buttonimage-row">      
+        <button><a href="#"><img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/01/research-planning.jpg" loading="lazy" alt="Research & Planning" style="width: 80px; height: 80px;"></a></button><button><a href="#"><img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/01/setup-icon.jpg" alt="Setup" style="width: 80px; height: 80px;"></a></button> <button><a href="#"><img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/01/ongoing-icon.jpg" style="width: 80px; height: 80px;"alt="Ongoing Operations"></a></button><button><a href="#"><img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/01/transitioning-growing-icon.jpg" style="width: 80px; height: 80px;" alt="Transitioning & Growing"></a></button>  
+         </div>
+
+
+
+    <!--end Self-assessment part 1 -->
+
+
+    <!-- start Self Assessment Part 2 -->
+<div id="self-assessment-part2">
+<h2><span style="color: #23527;">SELF-ASSESSMENT:</span> PART 2 - RUC Considerations</h2>
+<p>These considerations and associated RUC building blocks may apply based on your Self-Assessment. Expand to learn more about these factors. Answer each of the following questions to learn about factors that may affect your state.</p>
+<div id="yesno-row">
+    <div class="container"> 
+  <div class="question-row">
+    <div class="q-text">My agency has electric vehicle (EV) adoption goals and/or gasoline-powered vehicle limitations, or other clean energy policies that may impact clean vehicle adoption</div>
+    <div class="buttongroup"> 
+    <button class="yes-btn" id="yesBtn">Yes</button>
+    <button class="no-btn" id="noBtn">No/Unsure</button>
+    </div>
+    </div>
+    <div class="answer-yes" id="divA" style="display: none;">
+     <p>With the push to reduce greenhouse gas emissions and improve air quality, many states have adopted clean energy and/or climate change policies. States approaches to meet clean energy and climate change goals may include promoting sales of EVs through rebates or tax credits, or more aggressive tactics like restricting the sale of internal combustion engine (ICE) vehicles after a certain date.</p>
+     <p>These initiatives can directly impact transportation funding and create a more imminent need for an alternative revenue mechanism like RUC. An increasing number of states are developing clean energy policies and some auto manufacturers like Ford and GM pledging to convert their ﬂeets to all-electric.</p>
+
+     <p><strong>Check out the following Building Blocks to learn more</strong></p>
+     <div class="rowofbuttons"><button><a href="#">Determine Vision and  Policy Objectives for RUC</a></button><button><a href="#">Support Policy and  Legislation Development</a></button>
+     </div>
+    </div>
+    <div class="answer-no"  id="divB" style="display: none;">
+    <p>[ANSWERED "NO"] Since you answered "no" to the question, "My agency has electric vehicle (EV) adoption goals and/or gasoline-powered vehicle limitations, or other clean energy policies that may impact clean vehicle adoption," here's some text about that. </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod sint vitae ea nostrum autem iste reiciendis officiis quae delectus temporibus voluptates magnam veritatis harum similique, voluptatibus tempore reprehenderit porro repellendus doloremque? Quo sunt suscipit voluptate? Voluptatibus quas harum sapiente.</p>
+  </div>        
+    </div>
+
+        <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has recently completed public education and/or public opinion research about transportation funding</div>
+          <div class="buttongroup"> 
+          <button class="yes-btn" class="yes-btn" id="yesBtn2">Yes</button>
+          <button class="no-btn" id="noBtn2">No/Unsure</button>
+          </div>
+          </div>
+          <div class="answer-yes" id="divA2" style="display: none;">
+           <p> YES, My agency has recently completed public education and/or public opinion research about transportation funding...   Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, laboriosam labore corrupti dolorum reiciendis quas fugit eos inventore, qui debitis rerum unde facere cum. Earum quae incidunt officiis mollitia explicabo?</p>
+          </div>
+          <div class="answer-no"  id="divB2" style="display: none;">
+            <p>[ANSWERED "NO"] Since you answered "no" to the question,  here's some text about that. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod sint vitae ea nostrum autem iste reiciendis officiis quae delectus temporibus voluptates magnam eritatis harum similique, voluptatibus tempore reprehenderit porro repellendus doloremque? Quo sunt suscipit voluptate? Voluptatibus quas harum sapiente.</p>
+        </div>        
+        </div>
+   
+     <!-- end Question 2  -->
+
+       <!-- start Question 3  -->
+       <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has conducted a RUC pilot</div>
+          <div class="buttongroup">               
+                 <button class="yes-btn" id="yesBtn3">Yes</button>
+                 <button class="no-btn" id="noBtn3">No/Unsure</button>
+            </div>
+          </div>
+
+       <div class="answer-yes" id="divA3" style="display: none;">
+         This is Div A3
+       </div>
+       <div class="answer-no" id="divB3" style="display: none;">
+        <p>[ANSWERED "NO"] Since you answered "no" to the question,  here's some text about that. </p>
+       </div>
+      </div>
+     <!-- end Question 3  -->
+
+       <!-- start Question 4  -->
+       <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency is a member of a multi-state RUC consortium</div>
+          <div class="buttongroup">  
+       <button class="yes-btn" id="yesBtn4">Yes</button>
+       <button class="no-btn" id="noBtn4">No/Unsure</button>
+          </div>
+          </div>
+       <div class="answer-yes" id="divA4" style="display: none;">
+         This is Div A4
+       </div>
+       <div class="answer-no" id="divB4" style="display: none;">
+        <p>[ANSWERED "NO"] Since you answered "no" to the question,  here's some text about that. </p>
+       </div>
+    </div>
+     
+     <!-- end Question 4 -->
+
+     <!-- start Question 5 -->
+     
+     <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency restricts how transportation-related revenue can be spent</div>
+          <div class="buttongroup">  
+          <button class="yes-btn" id="yesBtn5">Yes</button>
+          <button class="no-btn" id="noBtn5">No/Unsure</button>
+          </div>
+          </div>
+        <div class="answer-yes" id="divA5" style="display: none;">
+       This is Div A5
+     </div>
+     <div class="answer-no" id="divB5" style="display: none;">
+        <p>[ANSWERED "NO"] Since you answered "no" to the question,  here's some text about that. </p>
+     </div>
+    </div>
+   
+     <!-- end Question 5 -->
+
+      <!-- start Question 6 -->
+      <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has transportation bonding</div>
+          <div class="buttongroup">  
+      <button class="yes-btn" id="yesBtn6">Yes</button>
+      <button class="no-btn" id="noBtn6">No/Unsure</button>
+          </div>
+          </div>
+      <div class="answer-yes"  id="divA6" style="display: none;">
+      Since you have transportation bonding, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore.
+      </div>
+      <div class="answer-no" id="divB6" style="display: none;">
+       <p>If your agency does NOT have transportation bonding, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore.</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum omnis nesciunt praesentium voluptatibus optio suscipit et architecto placeat quaerat dolorem voluptatum quia nihil dolore culpa illum, nam voluptatem aut error.</p>
+      </div>
+    </div>    
+     <!-- end Question 6 -->
+
+    <!-- start Question 7 -->
+    <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has the ability to enact new taxes through the legislature</div>
+          <div class="buttongroup">  
+    <button class="yes-btn" id="yesBtn7">Yes</button>
+    <button class="no-btn" id="noBtn7">No/Unsure</button>
+          </div>
+          </div>
+    <div class="answer-yes"  id="divA7" style="display: none;">
+       <p>Since you have the ability to enact new taxes through the legislature, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore.</p> 
+    </div>
+    <div class="answer-no" id="divB7" style="display: none;">
+        <p>If your agency does NOT have the ability to enact new taxes through the legislature, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, labore.</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum omnis nesciunt praesentium voluptatibus optio suscipit et architecto placeat quaerat dolorem voluptatum quia nihil dolore culpa illum, nam voluptatem aut error.</p>
+    </div>
+   </div>
+     <!-- end Question 7 -->
+
+     <!-- start Question 8 -->
+     <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My agency has existing vehicle safety and/or emissions inspections</div>
+          <div class="buttongroup">  
+     <button class="yes-btn" id="yesBtn8">Yes</button>
+     <button class="no-btn" id="noBtn8">No/Unsure</button>
+          </div>
+          </div>
+     <div class="answer-yes" id="divA8" style="display: none;">
+      <p>DIV FOR YES response</p>
+     </div>
+     <div class="answer-no" id="divB8" style="display: none;">
+     <p>Div for NO</p>   
+     </div>
+    </div>
+     <!-- end Question 8 -->
+     
+     <!-- start Question 9 -->
+     <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">There is signiﬁcant diversity between urban and rural areas</div>
+          <div class="buttongroup">  
+     <button class="yes-btn" id="yesBtn9">Yes</button>
+     <button class="no-btn" id="noBtn9">No/Unsure</button>
+                   </div>
+          </div>
+     <div class="answer-yes"  id="divA9" style="display: none;">
+       This is Div A9
+     </div>
+     <div class="answer-no" id="divB9" style="display: none;">
+       This is Div B9
+     </div>
+    </div>
+     <!-- end Question 9 -->
+
+    <!-- start Question 10  -->
+    <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">There is a high degree of cross-border travel with other states relative to total traﬃc</div>
+          <div class="buttongroup">  
+    <button class="yes-btn" id="yesBtn10">Yes</button>
+    <button class="no-btn" id="noBtn10">No/Unsure</button>
+          </div>
+          </div>
+    <div class="answer-yes" id="divA10" style="display: none;">
+      This is Div A10
+    </div>
+    <div class="answer-no" id="divB10" style="display: none;">
+      This is Div B10
+    </div>
+  </div>
+
+      <!-- start Question 11  -->
+      <div class="container"> 
+        <div class="question-row">
+          <div class="q-text">My RUC lead agency has revenue collection powers</div>
+          <div class="buttongroup">  
+    <button class="yes-btn" id="yesBtn11">Yes</button>
+    <button class="no-btn" id="noBtn11">No/Unsure</button>
+          </div>
+          </div>
+    <div class="answer-yes" id="divA11" style="display: none;">
+      This is Div A11
+    </div>
+    <div class="answer-no" id="divB11" style="display: none;">
+      This is Div B11
+    </div>
+</div>
+<!-- closes section with div below -->
+</div>
+</div> 
+        <!-- END Self Assessment Part 2 section -->
+
+
+
+<!-- START Challenges and Strategies section  -->
+
+
+<div id="challenges-and-strategies" style="margin-top: 30px;">
+
+    <div class="container"> 
+        <div class="textwrapper">
+     <h2 style="color:#fff">CHALLENGES AND STRATEGIES</h2>
+
+<p style="color:#fff; margin-top: 22px;">These challenges and strategies, and associated building blocks are most relevant for the RUC Lead Agency during the Research & Planning stage. The challenges are categorized as analytical, design, and policy and are each addressed by several strategies. </p>
+
+<ol class="cands-list" style="margin-left: 2em;">
+   <li class="roundnum"><strong>&nbsp;Analytical Challenges:</strong> Also described as “myth busting”. Many challenges to RUC acceptance are based on misperceptions or assertions not supported by evidence. Analysis can help decisionmakers overcome the challenge by providing objective results that rebut a question, concern, or objection. However, objective facts may not sway an entrenched opinion.</li>
+   <li class="roundnum" style="margin-top: 12px;"><strong>&nbsp;Design Challenges:</strong> Many objections to RUC are legitimate and based in fact. In these cases, changes to the technical or policy design of RUC can ameliorate the problem and help decisionmakers overcome barriers.</li>   
+   <li class="roundnum" style="margin-top: 12px;"><strong>&nbsp;Policy Choices:</strong> Policy choices sometimes present themselves as challenges. In these cases, decisionmakers need actionable information—like the pros and cons of each choice, and sometimes even advice on how to decide—to inform their ultimate decisions.</li>
+</ol>
+   
+<p style="color:#fff">The strategies presented are not mutually exclusive. In fact, the proposed strategies are complementary, and it may be helpful to engage several or all strategies to overcome the challenge in a given state. Where relevant, strategies for overcoming these challenges reference the RUC system stages, activities, and building blocks that are described in more detail in the RUC Building Blocks.</p>
+</div>
+</div>
+</div>
+
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi veritatis voluptatum id illum maiores natus optio. Incidunt quo totam esse fuga quasi velit natus molestias! Odit, distinctio saepe suscipit dolorem fuga quo laudantium deserunt at doloribus numquam sapiente soluta asperiores?</p>
+<!-- END Challenges and Strategies section  -->
+
+<script>
+const yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
+const divA = document.getElementById("divA");
+const divB = document.getElementById("divB");
+
+const yesBtn2 = document.getElementById("yesBtn2");
+const noBtn2 = document.getElementById("noBtn2");
+const divA2 = document.getElementById("divA2");
+const divB2 = document.getElementById("divB2");
+
+const yesBtn3 = document.getElementById("yesBtn3");
+const noBtn3 = document.getElementById("noBtn3");
+const divA3 = document.getElementById("divA3");
+const divB3 = document.getElementById("divB3");
+
+const yesBtn4 = document.getElementById("yesBtn4");
+const noBtn4 = document.getElementById("noBtn4");
+const divA4 = document.getElementById("divA4");
+const divB4 = document.getElementById("divB4");
+
+const yesBtn5 = document.getElementById("yesBtn5");
+const noBtn5 = document.getElementById("noBtn5");
+const divA5 = document.getElementById("divA5");
+const divB5 = document.getElementById("divB5");
+
+const yesBtn6 = document.getElementById("yesBtn6");
+const noBtn6 = document.getElementById("noBtn6");
+const divA6 = document.getElementById("divA6");
+const divB6 = document.getElementById("divB6");
+
+
+const yesBtn7 = document.getElementById("yesBtn7");
+const noBtn7 = document.getElementById("noBtn7");
+const divA7 = document.getElementById("divA7");
+const divB7 = document.getElementById("divB7");
+
+
+const yesBtn8 = document.getElementById("yesBtn8");
+const noBtn8 = document.getElementById("noBtn8");
+const divA8 = document.getElementById("divA8");
+const divB8 = document.getElementById("divB8");
+
+
+const yesBtn9 = document.getElementById("yesBtn9");
+const noBtn9 = document.getElementById("noBtn9");
+const divA9 = document.getElementById("divA9");
+const divB9 = document.getElementById("divB9");
+
+
+const yesBtn10 = document.getElementById("yesBtn10");
+const noBtn10 = document.getElementById("noBtn10");
+const divA10 = document.getElementById("divA10");
+const divB10 = document.getElementById("divB10");
+
+const yesBtn11 = document.getElementById("yesBtn11");
+const noBtn11 = document.getElementById("noBtn11");
+const divA11 = document.getElementById("divA11");
+const divB11 = document.getElementById("divB11");
+
+yesBtn.addEventListener("click", function() {
+  divA.style.display = "block";
+  divB.style.display = "none";
+});
+
+noBtn.addEventListener("click", function() {
+  divA.style.display = "none";
+  divB.style.display = "block";
+});
+
+yesBtn2.addEventListener("click", function() {
+  divA2.style.display = "block";
+  divB2.style.display = "none";
+});
+
+noBtn2.addEventListener("click", function() {
+  divA2.style.display = "none";
+  divB2.style.display = "block";
+});
+
+    yesBtn3.addEventListener("click", function() {
+  divA3.style.display = "block";
+  divB3.style.display = "none";
+});
+
+noBtn3.addEventListener("click", function() {
+  divA3.style.display = "none";
+  divB3.style.display = "block";
+});
+
+    yesBtn4.addEventListener("click", function() {
+    divA4.style.display = "block";
+    divB4.style.display = "none";
+    });
+
+   noBtn4.addEventListener("click", function() {
+   divA4.style.display = "none";
+   divB4.style.display = "block";
+    });
+
+
+    yesBtn5.addEventListener("click", function() {
+    divA5.style.display = "block";
+    divB5.style.display = "none";
+    });
+
+   noBtn5.addEventListener("click", function() {
+   divA5.style.display = "none";
+   divB5.style.display = "block";
+    });
+
+    
+    yesBtn6.addEventListener("click", function() {
+    divA6.style.display = "block";
+    divB6.style.display = "none";
+    });
+
+   noBtn6.addEventListener("click", function() {
+   divA6.style.display = "none";
+   divB6.style.display = "block";
+    });
+
+    yesBtn7.addEventListener("click", function() {
+    divA7.style.display = "block";
+    divB7.style.display = "none";
+    });
+
+   noBtn7.addEventListener("click", function() {
+   divA7.style.display = "none";
+   divB7.style.display = "block";
+    });
+
+    yesBtn8.addEventListener("click", function() {
+    divA8.style.display = "block";
+    divB8.style.display = "none";
+    });
+
+   noBtn8.addEventListener("click", function() {
+   divA8.style.display = "none";
+   divB8.style.display = "block";
+    });
+
+    yesBtn9.addEventListener("click", function() {
+    divA9.style.display = "block";
+    divB9.style.display = "none";
+    });
+
+   noBtn9.addEventListener("click", function() {
+   divA9.style.display = "none";
+   divB9.style.display = "block";
+    });
+
+    yesBtn10.addEventListener("click", function() {
+    divA10.style.display = "block";
+    divB10.style.display = "none";
+    }); 
+
+   noBtn10.addEventListener("click", function() {
+   divA10.style.display = "none";
+   divB10.style.display = "block";
+    });
+
+    yesBtn11.addEventListener("click", function() {
+    divA11.style.display = "block";
+    divB11.style.display = "none";
+    }); 
+  
+    noBtn11.addEventListener("click", function() {
+   divA11.style.display = "none";
+   divB11.style.display = "block";
+    });
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+

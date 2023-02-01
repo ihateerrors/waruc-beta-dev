@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/style-custom-landing.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style> 
+     
+        .c-accordion__item { max-width: 80vw; } /* The accordion item container */
+        .c-accordion__item.is-open {} /* is-open is added to open accordion items */
+        .c-accordion__item.is-read { background-color: hotpink;} /* is-read is added to accordion items that have been opened at least once */
+        .c-accordion__title {} /* An accordion item title */
+        .c-accordion__title--button { color: #67b059; background-color: hotpink;} /* An accordion item title that is using a `<button>` tag */
+        .c-accordion__title:hover {} /* To modify the style when hovering over an accordion item title */
+        .c-accordion__title:focus {} /* To modify the style when an accordion item title currently has broswer focus */
+        .c-accordion__content {} /* An accordion item content container */
+
+        /* input[type=range] {
+  width: 30px;
+}
+
+#divA, #divB {
+  margin-top: 10px;
+} */
+
+#container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.question-row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.answer-yes, .answer-no {
+  margin-top: 10px;
+}
+
+</style>
+</head>
+<body>
+
+
+
+      <div>
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+        <div id="divA" style="display: none;">
+          This is Div A <button id="closeDivA">Close</button>
+        </div>
+        <div id="divB" style="display: none;">
+          This is Div B <button id="closeDivB">Close</button>
+        </div>
+      </div>
+
+      <div id="container">
+        <div class="question-row">
+          <p>Question 1: Do you like apples?</p>
+          <button class="yesBtn">Yes</button>
+          <button class="noBtn">No</button>
+          <div class="answer-yes" style="display: none;">
+            You like apples. <button class="hideBtn">Hide</button>
+          </div>
+          <div class="answer-no" style="display: none;">
+            You don't like apples. <button class="hideBtn">Hide</button>
+          </div>
+        </div>
+        <div class="question-row">
+          <p>Question 2: Do you like bananas?</p>
+          <button class="yesBtn">Yes</button>
+          <button class="noBtn">No</button>
+          <div class="answer-yes" style="display: none;">
+            You like bananas. <button class="hideBtn">Hide</button>
+          </div>
+          <div class="answer-no" style="display: none;">
+            You don't like bananas. <button class="hideBtn">Hide</button>
+          </div>
+        </div>
+        ...
+        <div class="question-answer-area">
+          <div class="question-row">
+          <p>Question 9: Do you like nuts?</p>
+          <button class="yesBtn">Yes</button>
+          <button class="noBtn">No</button>
+          </div>
+          <div class="answer-yes" style="display: none;">
+            You like nuts <button class="hideBtn">Hide</button>
+          </div>
+          <div class="answer-no" style="display: none;">
+            You don't like nuts <button class="hideBtn">Hide</button>
+          </div>
+        </div>
+
+
+      </div> 
+      
+<!-- attempt 3 start  -->
+
+<div>
+    <p>Do you like pizza?</p>
+    <button data-answer="yes-answer-1" onclick="toggleAnswer(this)">Yes</button>
+    <button data-answer="no-answer-1" onclick="toggleAnswer(this)">No</button>
+    <div id="yes-answer-1" style="display:none">
+      <p>Great! Pizza is delicious!</p>
+      <!-- <button id="closeDiv1">Close</button> -->
+      <!-- <button onclick="toggleAnswer(this)">Close</button> -->
+    </div>
+    <div id="no-answer-1" style="display:none">
+      <p>Oh no, you're missing out!</p>
+      <button id="closeDiv1">Close</button>
+    </div>
+  </div>
+  
+  <div>
+    <p>Do you like ice cream?</p>
+    <button data-answer="yes-answer-2" onclick="toggleAnswer(this)">Yes</button>
+    <button data-answer="no-answer-2" onclick="toggleAnswer(this)">No</button>
+    <div id="yes-answer-2" style="display:none">
+      <p>Awesome! Ice cream is great!</p>
+      <!-- <button onclick="toggleAnswer(this)">Close</button> -->
+      <button id="closeDiv2">Close</button>
+    </div>
+    <div id="no-answer-2" style="display:none">
+      <p>Too bad, ice cream is a treat!</p>
+      <!-- <button onclick="toggleAnswer(this)">Close</button> -->
+      <!-- <button id="closeDiv2">Close</button> -->
+    </div>
+  </div>
+  
+  <div>
+    <p>fourth question ?</p>
+    <button data-answer="yes-answer-3" onclick="toggleAnswer(this)">Yes</button>
+    <button data-answer="no-answer-3" onclick="toggleAnswer(this)">No</button>
+    <div id="yes-answer-3" style="display:none">
+      <p>Awesome! Cookies are delicious!</p>
+      <!-- <button onclick="toggleAnswer(this)">Close</button> -->
+?
+    </div>
+    <div id="no-answer-3" style="display:none">
+      <p>Too bad, cookies are a classic!</p>
+      <!-- <button class="closebtn" onclick="toggleAnswer(this)">Close</button> -->
+      <!-- <button id="closeDiv3">Close</button> -->
+    </div>
+  </div>
+
+  <div>
+    <p>Do you like  bacon?</p>
+    <button data-answer="yes-answer-4" onclick="toggleAnswer(this)">Yes</button>
+    <button data-answer="no-answer-4" onclick="toggleAnswer(this)">No</button>
+    <div id="yes-answer-4" style="display:none">
+      <p>Awesome! Bacon is delicious!</p>
+      <!-- <button onclick="toggleAnswer(this)">Close</button> -->
+    </div>
+    <div id="no-answer-4" style="display:none">
+      <p>Too bad, bacon is awesome !</p>
+      <!-- <button id="closeDiv4">Close</button> -->
+      <!-- <button class="closebtn" onclick="toggleAnswer(this)">Close</button> -->
+    </div>
+  </div>
+
+
+
+
+<script>
+// const yesBtn = document.getElementById("yesBtn");
+// const noBtn = document.getElementById("noBtn");
+// const divA = document.getElementById("divA");
+// const divB = document.getElementById("divB");
+// const closeDivA = document.getElementById("closeDivA");
+// const closeDivB = document.getElementById("closeDivB");
+
+// yesBtn.addEventListener("click", function() {
+//   divA.style.display = "block";
+//   divB.style.display = "none";
+// });
+
+// noBtn.addEventListener("click", function() {
+//   divA.style.display = "none";
+//   divB.style.display = "block";
+// });
+
+// closeDivA.addEventListener("click", function() {
+//   divA.style.display = "none";
+// });
+
+// closeDivB.addEventListener("click", function() {
+//   divB.style.display = "none";
+// });
+
+// JavaScript function to toggle visibility of each 
+
+const closeDivA = document.getElementById("closeDiv1");
+const closeDivB = document.getElementById("closeDiv2");
+
+function toggleAnswer(elem) {
+  const answerId = elem.dataset.answer;
+  const answerElem = document.getElementById(answerId);
+  answerElem.style.display = answerElem.style.display === "block" ? "none" : "block";
+}
+
+closeDivA.addEventListener("click", function() {
+  divA.style.display = "none";
+});
+
+closeDivB.addEventListener("click", function() {
+  divB.style.display = "none";
+});
+
+
+
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+

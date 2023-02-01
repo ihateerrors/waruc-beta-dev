@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/style-custom-landing.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style> 
+     
+        .c-accordion__item { max-width: 80vw; } /* The accordion item container */
+        .c-accordion__item.is-open {} /* is-open is added to open accordion items */
+        .c-accordion__item.is-read { background-color: hotpink;} /* is-read is added to accordion items that have been opened at least once */
+        .c-accordion__title {} /* An accordion item title */
+        .c-accordion__title--button { color: #67b059; background-color: hotpink;} /* An accordion item title that is using a `<button>` tag */
+        .c-accordion__title:hover {} /* To modify the style when hovering over an accordion item title */
+        .c-accordion__title:focus {} /* To modify the style when an accordion item title currently has broswer focus */
+        .c-accordion__content {} /* An accordion item content container */
+
+        input[type=range] {
+  width: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<!-- 
+    <div class="quiz3">
+
+        <div id="first">This is the FIRST div</div>
+  <div id="second">This is the SECOND div</div>
+  <div id="third">This is the THIRD div</div>
+  <button id="toggle">Hide THIRD div</button>
+
+
+        
+        </div> -->
+    
+    </div>
+
+
+    <div class="second-try">
+
+  <div class="container">
+
+    <button id='show'>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eveniet inventore, molestias alias dolore iusto, distinctio repudiandae, pariatur est eius dolores deserunt voluptates quas quod quia expedita. Deserunt, ad eligendi.</p>
+      </button>
+      <button id='hide'>
+       <p>this is the other one</p>
+      </button>
+      <div>
+        hello
+      </div>
+      <div>
+        world
+      </div>
+
+  </div>
+
+    </div>
+    <script> 
+    const showBtn = document.querySelector('#show')
+    const hideBtn = document.querySelector('#hide')
+    const divs = document.querySelectorAll('div')
+    showBtn.addEventListener('click', () => {
+      for (const div of divs) {
+        div.style.display = 'block'
+      }
+    })
+    hideBtn.addEventListener('click', () => {
+      for (const div of divs) {
+        div.style.display = 'none'
+      }
+    })
+</script>
+    <!-- <script>
+    const targetDiv = document.getElementById("third");
+    const btn = document.getElementById("toggle");
+    btn.onclick = function () {
+      if (targetDiv.style.display !== "none") {
+        targetDiv.style.display = "none";
+      } else {
+        targetDiv.style.display = "block";
+      }
+    };
+  </script> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
