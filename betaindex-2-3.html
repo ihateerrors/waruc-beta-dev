@@ -16,11 +16,11 @@
         <link rel="icon" type="image/x-icon" href="waruc-favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <link rel="icon" type="image/x-icon" href="favicon.png" />
     </head>
     <body>
-              <main>
+         
                               
                     <!-- Page Header-->
                         <!-- <header class="page-header-ui page-header-ui-dark bg-img-cover overlay overlay-40" style="background-image: url('https://env.blob.core.windows.net/env-public/Mountain_and_Road.jpg'); min-height: 600px;">                         
@@ -40,40 +40,48 @@
                             </div>
                         </div>
                           </header> -->
-                      
-                            <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light" style="z-index: 1000000;">
-                              <div class="container">
-                                  <a class="navbar-brand text-primary" href="/"><img class="img-fluid" style="width:226px; height: auto;" src="img/Logo_full_color_horzional_sm.png" alt="WA-RUC logo"></a>
-                               
-                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
-                                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                      <ul class="navbar-nav ms-auto me-lg-5">
-                                          <li class="nav-item"><a class="nav-link" href="why-ruc.html">Why RUC?</a></li>
-                                          <li class="nav-item"><a class="nav-link" href="ruc-in-wa.html">RUC in Washington</a></li>
-                                          <li class="nav-item"><a class="nav-link" href="whats-next.html">What's Next?</a></li>
-                                          <!-- <li class="nav-item"><a class="nav-link" href="learn-more.html">Learn More</a></li> -->
-                                          <li class="nav-item dropdown">
-                                              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                               Learn More
-                                              </a>
-                                              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                                <li><a class="dropdown-item" href="learn-more.html#steering-waruc">Steering Committee</a></li>
-                                                <li><a class="dropdown-item" href="library.html"> Library</a></li>
-                                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                                              </ul>
-                                            </li>  
-                                          <li class="nav-item"><a class="nav-link" href="contact.html">Connect</a></li>                                                    
-                                        
+                          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <div class="container-fluid" style="margin-right: 20px;">
+                              <div class="navbar-brand"> <img class="img-fluid" style="width:200px; height: auto;" src="img/Logo_full_color_horzional_sm.png" alt="WA-RUC logo"></div>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/index">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="why-ruc.html">Why RUC?</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="ruc-in-wa.html">RUC in Washington</a></li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Learn More
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                                            <li><a class="dropdown-item" href="learn-more.html#steering-waruc">Steering Committee</a></li>
+                                        <li><a class="dropdown-item" href="library.html"> Library</a></li>
+                                        <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
                                       </ul>
-                                      <a class="btn fw-500 ms-md-4 btn-warning" href="survey.alchemer.com/s3/7061065/WARUCrecruit-WS">
-                                          <span style="color: #000; font-weight: 700;"> Join&nbsp;the&nbsp;pilot </span>
-                                          <i class="ms-2" data-feather="arrow-right"></i>
-                                      </a>
-                                  </div>
+                                  </li>
+                                  <!-- <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                  </li> -->
+                                </ul>
+                                <form class="d-flex">
+                                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                  <button class="btn btn-success" style="background-color: rgb(130,167,63);" type="submit">Search</button>
+                                </form>
                               </div>
+                            </div>
                           </nav>
-
- <!-- Page Header-->:
+                       
+                         
+                     <!-- ### END Navbar ### -->
+                     <main>
+ <!-- Page Header-->
  <header class="page-header bg-img-cover overlay overlay-30" style="height: 100%;; z-index: -10;">   
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="z-index: -1;" >
       <div class="carousel-inner" >
@@ -460,7 +468,9 @@
         <script src="js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
+       
+
+           <script>
             AOS.init({
                 disable: 'mobile',
                 duration: 600,
