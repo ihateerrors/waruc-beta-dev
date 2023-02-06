@@ -39,7 +39,7 @@
    margin-bottom: 40px; 
    margin-left: 40px;
   }
-  
+
 .bg-gray-wr {
   background-color: #f8f8f8;
 }
@@ -1305,4 +1305,9 @@ height: 900px;
 
   #whyruc-img1 {
     display: none;
+  }
+
+  #librarylink a {
+    color:rgb(15, 104, 115); 
+    font-weight: 600;
   }

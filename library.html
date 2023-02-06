@@ -16,6 +16,27 @@
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
         <link rel="icon" type="image/x-icon" href="favicon.png" />
+      
+       <!-- <script>
+        function myFunction() {
+            var input, filter, div, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myResults");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+              txtValue = a[i].text;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                a[i].style.display = "";
+              } else {
+                a[i].style.display = "none";
+              }
+            }
+            div.style.display = "block";
+          }
+          </script> -->
+  
+          
     </head>
     <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: sticky;">
@@ -48,7 +69,7 @@
               </li>
                     </ul>
               <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control me-2" type="search" id="searchInput2" placeholder="Search" aria-label="Search">
               <button class="btn btn-success" style="background-color: rgb(130,167,63);" type="submit">Search</button>
             </form>
           </div>
@@ -60,53 +81,146 @@
 
                     <!-- Page Header-->
                        
-                    <main style="width: 100vw;">
+                    <!-- <main style="width: 100vw;">
+                        <header class="page-header bg-img-cover overlay overlay-40" style="background-image: url('img/'); min-height: 600px;">                                            
+                  
+                     
+                            <div class="page-header position-relative">
+                          
+                                <div class="container">
+                                <div class="row gx-5 d-flex justify-content-left">
+                                    <div class="col-xl-12 col-lg-12 mt-2 text-left">
+                                        <div data-aos="fade-up">
+                                            <h1 class="page-subhead-wa-ruc-2" style="color: #FFF; margin-top: 2em;">Library</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          </header> -->
+
    
    <!-- ### Start Library  -->
-          <section id="library" class="bg-white py-10">
+     
+<!-- <input type="search" id="searchInput">
+<button id="searchButton">Search</button>
+<div class="libraryresult-wrap" style="color: hotpink;">
+<div id="searchResults" style="display:none; ">
+ 
+</div>
+</div> -->
 
-      <div class="container"> 
-            <h2 class="large-title-cap fw-700" style="font-size: 36px; margin-left: 55px;"> LIBRARY</h2>
+<!-- <input type="text" id="myInput"> <button id="searchButton" onclick="myFunction()" placeholder="Search for text.."></button>>Search</button>
+
+<div id="myResults" style="display:none"> </div> -->
 
 
 
-            <div class="callout-box" style="margin-top: -60px; float: right;"><a class="btn-lg btn-warning" href="https://waroadusagecharge.org/wp-content/uploads/2023/01/RUC-Annual-Report_01112023.pdf" target="_blank" role="button" rel="noopener">Download our 2022 Annual Report</a></div>
-            <div class="yellow-callout">
+<!-- Add more content -->
+
+<div class="container">
+    <div class="spacer" style="margin-top: 70px; line-height: 30px;"></div>
+    <h2 class="large-title-cap fw-700" style="font-size: 36px; margin-left: 55px;"> LIBRARY</h2>
+    <div class="callout-box" style="margin-top: -60px; float: right;"><a class="btn-lg btn-warning" href="media/RUC-Annual-Report_01112023.pdf" target="_blank" role="button" rel="noopener">Download our 2022 Annual Report</a></div>
+</div>
+
+      <!-- <div class="container">  -->
+       
+            <!-- <script async src="https://cse.google.com/cse.js?cx=9763fc2b7df294fd3">
+            </script>
+            <div class="gcse-search"></div> -->
+
+
+          
+            <div class="bg-beige-wr"> 
             <div class="row">
-            <div class="col-md-8">
-            <h2 id="final-report">FINAL REPORT AND RECOMMENDATIONS ON ROAD USAGE CHARGING SENT TO STATE LEGISLATURE</h2>
-            <p>On January 13, 2020, the <strong><a href="https://wstc.wa.gov/" target="_blank" rel="noopener noreferrer">Washington State Transportation Commission</a></strong> transmitted their<br />
+            <div  id="librarylink" class="col-md-9">
+                <p> </p>
+            <h2 id="final-report"><strong>FINAL REPORT AND RECOMMENDATIONS ON ROAD USAGE CHARGING SENT TO STATE LEGISLATURE</strong></h2><br>
+            <p>On January 13, 2020, the <strong><a class="text-green" href="https://wstc.wa.gov/" target="_blank" rel="noopener noreferrer">Washington State Transportation Commission</a></strong> transmitted their<br />
             final report on how Washington can begin a transition away from the state gas tax and toward a road usage<br />
-            charge system to the Governor, State Legislature and the Federal Highway Administration. <strong><a href="/final-report">Learn more and read the report.</a></strong></p>
+            charge system to the Governor, State Legislature and the Federal Highway Administration. <strong><a class="text-green" href="/final-report">Learn more and read the report.</a></strong></p>
             </div>
-            <div class="col-md-4"><a href="/final-report"> <img decoding="async" src="https://waroadusagecharge.org/wp-content/uploads/2020/01/volume-1-cover.png" alt="cover of final report volume 1" /></a></div>
+            <div class="col-md-3" id="hideimg"><a class="text-green"href="media/"> <img class="img-fluid" loading="lazy" src="media/volume-1-cover.png" alt="cover of final report volume 1" /></a></div>
             </div>
+           </div>
+      
+             
+
+         <div id="lib-contents" style="margin-left: 20%;"> 
+         <!-- <div class="container">  -->
+            <h2><strong>CONTENTS</strong></h2>
+            <ul style="font-weight: 500; color: #06233E;">
+                <li> <a href="#wstc-waruc-reports">Washington State Transportation Commission WA RUC Reports</a></li>
+                <li> <a href="#general-project-materials">General Project Materials</a></li>
+                <li> <a href="#spotlight-sessions">2022 & 2021 Research Spotlight Sessions</a></li>
+                <li> <a href="#steering-waruc">Steering Committee Meeting Materials</a></li>
+                <li> <a href="#forward-drive">Forward Drive Research Materials (2021 - Present)</a></li>
+                <li> <a href="#forward-drive">RUC Pilot Project Final Recommendations and Reports (2019 and 2020) </a></li>
+                <li> <a  href="#forward-drive">RUC Pilot Project Final Recommendations and Reports (2019 and 2020) </a></li>           
+            </ul>         
+<!-- 
+            </div> -->
+        </div>
+  <!-- START final report section -->
+
+  <div id="steering-waruc"> 
+    <div class="container">
+
+        <div id="wstc-waruc-reports"class="row">
+            <div class="col-md-11"> 
+        <h4 class="page-subheader-teal2">Washington State Transportation Commission WA RUC Reports (2019)</h4>
+        <p><a class="text-green" href="media/WA_RUC_SC_Report_2019_12-WEB.pdf" target="_blank" rel="noopener noreferrer">WA RUC Steering Committee Final Report of Findings</a><br />
+        <a class="text-green" href="media/WSTC-Final-Report-Vol-3-WEB-2020_03.pdf" target="_blank" rel="noopener noreferrer">WA RUC Steering Committee Final Report of Findings &#8211; Appendices</a><br />
+        <a class="text-green" href="media/2019-WSTC-WA-RUC-Recommendations.pdf" target="_blank" rel="noopener noreferrer">Washington State Transportation Commission WA RUC Recommendations &#8211; Adopted by the WSTC on<br />
+        December 17, 2019</a><br />
+        <a class="text-green" href="media/RUC-Oct-15-Slides.pdf" target="_blank" rel="noopener noreferrer">WA RUC Steering Committee Report and Final Assessment Slides &#8211; Presented to the WSTC on<br />
+        October 15, 2019</a></p>           
+        </div>
+        </div>
+
+        <div class="row" id="general-project-materials">
+            <div class="col-md-11"> 
+                <!-- <div class="bg-beige-wr">  -->
+                 <h4 class="page-subheader-teal2">General Project Materials</h4>
+                 <p><a class="text-green" href="media/RUC-Annual-Report_01112023.pdf" target="_blank" role="button" rel="noopener">WA RUC Assessment 2022 Annual Report</a><br />
+                 <a class="text-green" href="media/RUC_Financial_Impacts_Analysis_2021_0902.pdf" target="_blank" rel="noopener noreferrer">Analysis of Relative Financial Impacts of Transportation Taxes by<br />
+                 Household Income</a><br />
+                 <a class="text-green" href="media/2019_0730_WARUC_folio_Final_Web.pdf" target="_blank" rel="noopener noreferrer">Fact Sheet (July 2019)</a><br />
+                 <a class="text-green" href="media/WARUC_SteeringCommitteeRoster_Oct2022.pdf" target="_blank" rel="noopener noreferrer">Steering Committee Members</a><br />
+                 <a class="text-green" href="media/WARUC-2021-End-of-Year-Report.pdf" target="_blank" rel="noopener noreferrer">Washington State Transportation Commission RUC 2021 Annual Report</a><br />
+                 <a class="text-green" href="media/WA-RUC-Forward-Drive-Equity-Research-and-Outreach-Final-Report.pdf" target="_blank" rel="noopener noreferrer">WA RUC Forward Drive Equity Research and Outreach Final Report (June<br />
+                 2022)</a><br />
+                 <a class="text-green" href="media/WARUC_Report_Financial_Update_2022-07-11.pdf" target="_blank" rel="noopener noreferrer">WA RUC 2022 Financial Model (July 2022)</a></p>
+     
+     
+                <!-- </div>  -->
+              </div> 
             </div>
-            <p>&nbsp;</p>
-            <h4>Washington State Transportation Commission WA RUC Reports (2019)</h4>
-            <p><a class="text-green" href="/wp-content/uploads/2019/12/WA_RUC_SC_Report_2019_12-WEB.pdf" target="_blank" rel="noopener noreferrer">WA RUC Steering Committee Final Report of Findings</a><br />
-            <a class="text-green" href="/wp-content/uploads/2020/03/WSTC-Final-Report-Vol-3-WEB-2020_03.pdf" target="_blank" rel="noopener noreferrer">WA RUC Steering Committee Final Report of Findings &#8211; Appendices</a><br />
-            <a class="text-green" href="/wp-content/uploads/2019/12/2019-WSTC-WA-RUC-Recommendations.pdf" target="_blank" rel="noopener noreferrer">Washington State Transportation Commission WA RUC Recommendations &#8211; Adopted by the WSTC on<br />
-            December 17, 2019</a><br />
-            <a class="text-green" href="/wp-content/uploads/2019/10/RUC-Oct-15-Slides.pdf" target="_blank" rel="noopener noreferrer">WA RUC Steering Committee Report and Final Assessment Slides &#8211; Presented to the WSTC on<br />
-            October 15, 2019</a></p>
+     
+
+            <div class="row" id="spotlight-sessions">
+                <div class="col-md-11">
+                <h4 class="page-subheader-teal2"><strong>2022 & 2021 Research Spotlight Sessions</strong></h4> 
+                <ul>
+                    <li><strong>May 23, 2022</strong> – RUC Financial Modeling Results Spotlight Session <a class="text-green" href="https://youtu.be/7RKSlNmqmXw" target="_blank" rel="noopener noreferrer">recording</a> and <a class="text-green" href="media/May-2022-RUC-SC-Spotlight-Presentation.pdf" target="_blank" rel="noopener noreferrer">presentation</a></li>
+               <li> <strong>November 23, 2021</strong> – RUC Equity Spotlight <a class="text-green" href="https://youtu.be/6UW4cw7ZUP4" target="_blank" rel="noopener noreferrer">recording</a> and <a class="text-green" href="media/20211123_Equity_Spotlight_Presentation.pdf" target="_blank" rel="noopener noreferrer">presentation</a></li>
+               <li>    <strong>November 3, 2021</strong> – RUC Cost Reduction Spotlight <a class="text-green" href="https://youtu.be/Hu9Wp7UuRLc" target="_blank" rel="noopener noreferrer">recording</a> and <a class="text-green" href="media/20211103_Cost_Spotlight_Presentation.pdf" target="_blank" rel="noopener noreferrer">presentation</a></li>
+               <li> <strong>October 21, 2021</strong> – RUC Innovation Spotlight <a class="text-green" href="https://youtu.be/bc0lR-DXs28" target="_blank" rel="noopener noreferrer">recording</a> and <a class="text-green" href="media/20211021_Innovation_Spotlight_Presentation.pdf" target="_blank" rel="noopener noreferrer">presentation</a> </li>
+               <li> <strong>October 21, 2021</strong> – RUC Innovation Spotlight <a class="text-green" href="https://youtu.be/bc0lR-DXs28" target="_blank" rel="noopener noreferrer">recording</a> and <a class="text-green" href="media/20211021_Innovation_Spotlight_Presentation.pdf" target="_blank" rel="noopener noreferrer">presentation</a> </li>
+               <li>  <strong>June 1, 2021</strong> - RUC Innovation Spotlight <a class="text-green" href="media/2021/12/2021_0601_RUC_Innovation_Spotlight-r.pdf" target="_blank" rel="noopener noreferrer">presentation</a> </li>
+
+               <li> <strong>June 4, 2021</strong> – RUC Cost of Collection Spotlight <a class="text-green" href="https://www.youtube.com/watch?v=qOd_3qoSyb4" target="_blank" rel="noopener noreferrer">recording</a> and <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2021/12/2021_0604_RUC_Cost_Spotlight.pdf" target="_blank" rel="noopener noreferrer">presentation</a></li>
+               <li>    <strong>May 27, 2021</strong> – RUC Equity Spotlight <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2021/12/2021_0527_RUC_Equity_Spotlight.pdf" target="_blank" rel="noopener noreferrer">presentation</a></li>          
+               </ul>
+              </div>    
 
 
 
-            <h2> start new section HERE</h2>
-            <h4>General Project Materials</h4>
-            <p><a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2023/01/RUC-Annual-Report_01112023.pdf" target="_blank" role="button" rel="noopener">WA RUC Assessment 2022 Annual Report</a><br />
-            <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2021/09/RUC_Financial_Impacts_Analysis_2021_0902.pdf" target="_blank" rel="noopener noreferrer">Analysis of Relative Financial Impacts of Transportation Taxes by<br />
-            Household Income</a><br />
-            <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2019/07/2019_0730_WARUC_folio_Final_Web.pdf" target="_blank" rel="noopener noreferrer">Fact Sheet (July 2019)</a><br />
-            <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2022/11/WARUC_SteeringCommitteeRoster_Oct2022.pdf" target="_blank" rel="noopener noreferrer">Steering Committee Members</a><br />
-            <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2022/01/WARUC-2021-End-of-Year-Report.pdf" target="_blank" rel="noopener noreferrer">Washington State Transportation Commission RUC 2021 Annual Report</a><br />
-            <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2022/06/WA-RUC-Forward-Drive-Equity-Research-and-Outreach-Final-Report.pdf" target="_blank" rel="noopener noreferrer">WA RUC Forward Drive Equity Research and Outreach Final Report (June<br />
-            2022)</a><br />
-            <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2022/07/WARUC_Report_Financial_Update_2022-07-11.pdf" target="_blank" rel="noopener noreferrer">WA RUC 2022 Financial Model (July 2022)</a></p>
 
-
-
+     </div>
+    </div>
+  <!-- END final report section -->
 
      <!-- start steering box  -->
      <div id="steering-waruc"> 
@@ -156,7 +270,7 @@
                                 
                                     </p>
                                     <a class="text-green" href="media/2021/12/20211213_December_RUC_SC_Agenda.pdf" target="_blank" rel="noopener noreferrer">Agenda</a><br>
-                                     <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2021/12/20211213-RUC-SC-Presentation_Final.pdf">Presentation</a> </br>
+                                     <a class="text-green" href="media/20211213-RUC-SC-Presentation_Final.pdf">Presentation</a> </br>
                                      <a class="text-green" href="https://www.youtube.com/watch?v=hS3ysPt1tF0" target="_blank" rel="noopener noreferrer">Meeting recording</a></br>
                                 </div>
                             </div>
@@ -359,22 +473,9 @@
                 <ul class="or-square mr-4">
                    <li class="fw-600 mb-3"><a href="https://waroadusagecharge.org/wp-content/uploads/2021/09/RUC_Financial_Impacts_Analysis_2021_0902.pdf" target="_blank" rel="noopener noreferrer">Analysis of Relative Financial Impacts of Transportation Taxes by
                     Household Income</a></li>   
-                    <li class="fw-600">2021 Research Spotlight Sessions</li>             
+                             
                 </ul>
-
-                 <div class="left-para">
-                    <h4 class="page-subheader-teal2"><strong>2021 Research Spotlight Sessions</strong></h4> 
-                    <ul>
-                   <li> <strong>November 23, 2021</strong> – RUC Equity Spotlight <a class="text-green" href="https://youtu.be/6UW4cw7ZUP4" target="_blank" rel="noopener noreferrer">recording</a> and <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2021/12/20211123_Equity_Spotlight_Presentation.pdf" target="_blank" rel="noopener noreferrer">presentation</a></li>
-                   <li>    <strong>November 3, 2021</strong> – RUC Cost Reduction Spotlight <a class="text-green" href="https://youtu.be/Hu9Wp7UuRLc" target="_blank" rel="noopener noreferrer">recording</a> and <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2021/12/20211103_Cost_Spotlight_Presentation.pdf" target="_blank" rel="noopener noreferrer">presentation</a></li>
-                   <li> <strong>October 21, 2021</strong> – RUC Innovation Spotlight <a class="text-green" href="https://youtu.be/bc0lR-DXs28" target="_blank" rel="noopener noreferrer">recording</a> and <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2021/12/20211021_Innovation_Spotlight_Presentation.pdf" target="_blank" rel="noopener noreferrer">presentation</a> </li>
-                   <li> <strong>October 21, 2021</strong> – RUC Innovation Spotlight <a class="text-green" href="https://youtu.be/bc0lR-DXs28" target="_blank" rel="noopener noreferrer">recording</a> and <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2021/12/20211021_Innovation_Spotlight_Presentation.pdf" target="_blank" rel="noopener noreferrer">presentation</a> </li>
-                   <li>  <strong>June 1, 2021</strong> - RUC Innovation Spotlight <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2021/12/2021_0601_RUC_Innovation_Spotlight-r.pdf" target="_blank" rel="noopener noreferrer">presentation</a> </li>
-
-                   <li> <strong>June 4, 2021</strong> – RUC Cost of Collection Spotlight <a class="text-green" href="https://www.youtube.com/watch?v=qOd_3qoSyb4" target="_blank" rel="noopener noreferrer">recording</a> and <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2021/12/2021_0604_RUC_Cost_Spotlight.pdf" target="_blank" rel="noopener noreferrer">presentation</a></li>
-                   <li>    <strong>May 27, 2021</strong> – RUC Equity Spotlight <a class="text-green" href="https://waroadusagecharge.org/wp-content/uploads/2021/12/2021_0527_RUC_Equity_Spotlight.pdf" target="_blank" rel="noopener noreferrer">presentation</a></li>          
-                   </ul>
-                  </div>                    
+                
                 </div>
               </div>
              </div>
@@ -398,8 +499,7 @@
 
                         <li class="mb-2 fw-600"><a href="https://waroadusagecharge.org/wp-content/uploads/2020/01/WSTC-Final-Report-Vol-2-SC-Report-WEB-2020_01.pdf" target="_blank" rel="noopener noreferrer">Volume 2 – WA RUC Steering Committee Final Report of Findings for the WA RUC Assessment and Pilot Project </a></li> 
 
-                        <li class="mb-2 fw-600"><a href="https://waroadusagecharge.org/wp-content/uploads/2021/12/WSTC-Final-Report-Vol-3-WEB-2020_03.pdf" target="_blank" rel="noopener noreferrer">    
-                            Volume 3 – Appendices</a></li>                        
+                        <li class="mb-2 fw-600"><a href="https://waroadusagecharge.org/wp-content/uploads/2020/01/WSTC-Final-Report-Vol-2-SC-Report-WEB-2020_01.pdf" target="_blank" rel="noopener noreferrer">Appendices – Volume 3 </a></li>                        
                        </ul>
 
                       <div class="left-para" style="color: #000;">
@@ -430,12 +530,6 @@
                           <li><a href="https://waroadusagecharge.org/wp-content/uploads/2020/01/WA-RUC-A-24-Record-of-Decisions-WSTC.pdf" target="_blank" rel="noopener noreferrer">A-24 Record of Decisions, WA RUC Recommendations, Washington State Transportation Commission Meeting</a></li>
                         </ul>
                        </div>
-
-                       
-                            
-                            
-                    
-                
                      </div>
                    </div>
                   </div>
@@ -553,5 +647,52 @@
 	}
 	// ]]>
 </script>
+
+
+<!-- <script>
+    const searchInput = document.querySelector('#searchInput');
+    const searchButton = document.querySelector('#searchButton');
+    const searchResults = document.querySelectorAll('body *');
+    const searchResultDiv = document.querySelector('#searchResults');
+    let resultCounter = 0;
+    
+    searchButton.addEventListener('click', function() {
+      const searchTerm = searchInput.value.toLowerCase();
+      let results = '';
+      
+      searchResults.forEach(function(result) {
+        if (result.textContent.toLowerCase().indexOf(searchTerm) !== -1) {
+          resultCounter++;
+          result.setAttribute('id', `searchResult-${resultCounter}`);
+          results += `<a href="#searchResult-${resultCounter}">${result.parentElement.title}</a><br>`;
+        }
+      });
+      
+      if (results) {
+        searchResultDiv.style.display = 'block';
+        searchResultDiv.innerHTML = results;
+      } else {
+        searchResultDiv.style.display = 'none';
+        searchResultDiv.innerHTML = '';
+      }
+    });
+  </script> -->
+
+
+  <script>
+    document.getElementById("searchBtn").addEventListener("click", function(){
+      var searchTerm = document.getElementById("searchInput").value;
+      var links = Array.from(document.getElementsByTagName("a")).filter(function(link) {
+        return link.textContent.toLowerCase().includes(searchTerm.toLowerCase());
+      });
+      var results = document.getElementById("results");
+      results.style.display = "block";
+      results.innerHTML = "";
+      links.forEach(function(link, index) {
+        results.innerHTML += "<p><a href='" + link.href + "'>" + "Result " + (index + 1) + ": " + link.textContent.split(". ")[0] + "</a></p>";
+      });
+    });
+    </script>
+  
 </body>
 </html>
