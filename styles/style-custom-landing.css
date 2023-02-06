@@ -33,9 +33,13 @@
 }
 
 .bg-beige-wr {
-  background-color: #FEF8E8;
-  opacity: 1.5;
-}
+  background-color: rgb(243, 243,207, .55);
+  padding: 30px 50px;
+   margin-top: 40px; 
+   margin-bottom: 40px; 
+   margin-left: 40px;
+  }
+  
 .bg-gray-wr {
   background-color: #f8f8f8;
 }
