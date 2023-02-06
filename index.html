@@ -17,8 +17,52 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
         
         <link rel="icon" type="image/x-icon" href="favicon.png" />
+        <style>      
+        
+        header {
+    width: 100vw;
+    height: calc(100vw * 0.5625); /* 16:9 aspect ratio */
+}
+
+.carousel-inner {
+    width: 100vw;
+    height: calc(100vw * 0.5625); /* 16:9 aspect ratio */
+   z-index: 0; 
+   
+   /* min-height: 500px; max-width: 600px; */
+}
+
+#indexh1 {
+  color: #FFF; font-size: 38px; margin-top: -300px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: calc(100vw * 0.5625);
+ 
+}
+
+@media (min-width: 919px) {
+    header {
+      height: 600px;
+       width: auto;
+     
+    }
+.carousel-inner {
+        max-height: 600px;
+        width: auto;
+
+    } 
+    #indexh1 {color: #FFF; font-size: 40px; margin-top: -400px;}
+  
+}
+      
+      </style>
+   
     </head>
     <body>
+      <main>
+
       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: sticky;">
         <div class="container-fluid" style="margin-right: 20px;">
           <div class="navbar-brand"> <img class="img-fluid" style="width:200px; height: auto;" src="img/Logo_full_color_horzional_sm.png" alt="WA-RUC logo"></div>
@@ -58,21 +102,45 @@
    
      
  <!-- ### END Navbar ### -->
- <main>
 
  <!-- Page Header-->
- <header class="page-header bg-img-cover overlay overlay-50" style="z-index: -10;">   
+ <!-- <header class="page-header bg-img-cover overlay overlay-50" style="z-index: -10;">   
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="z-index: -1;" >
-      <!-- <div class="carousel-inner" style="min-height: 500px; width: auto;"> -->
-        <div class="carousel-inner">
+      <div class="carousel-inner"> 
+           <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3500">
+          <img src="img/Farm_and_sky-900x600.jpg" class="d-block w-100 overlay overlay-dark overlay-40"   alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3500">
+          <img src="img/Mountain_and_Road_blue-900x600.jpg" class="d-block w-100 overlay overlay-dark overlay-40"alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3500">
+          <img src="img/waruc-La_Conner_900x600.jpg" class="d-block w-100 overlay overlay-dark overlay-40" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev visually-hidden" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next visually-hidden" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</header> -->
+
+<header class="page-header bg-img-cover overlay overlay-50" style="z-index: -10;">                                
+         
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" style="z-index: -1;" data-bs-ride="carousel">
+      <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="3500">
-          <img src="img/Farm_and_sky-900x600.jpg" class="d-flex w-100 overlay overlay-dark overlay-40" sstyle="height: 100%; width: auto" alt="...">
+          <img src="img/Farm_and_sky-900x600.jpg" class="d-block w-100 overlay overlay-dark overlay-40"  alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="3500">
-          <img src="img/Mountain_and_Road_blue-900x600.jpg" class="d-flex w-100 overlay overlay-dark overlay-40" style="height: 100%; width: auto" alt="...">
+          <img src="img/Mountain_and_Road_blue-900x600.jpg" class="d-block w-100 overlay overlay-dark overlay-40"alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="3500">
-          <img src="img/waruc-La_Conner_900x600.jpg" class="d-flex w-100 overlay overlay-dark overlay-40" style="height: 100%; width: auto" alt="...">
+          <img src="img/waruc-La_Conner_900x600.jpg" class="d-block w-100 overlay overlay-dark overlay-40" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev visually-hidden" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -86,6 +154,8 @@
     </div>
 
 </header>
+
+
 <div class="page-header position-relative" style="z-index: 10000;">                          
   <div class="container">
   <div class="row gx-5 d-flex justify-content-left">
@@ -93,7 +163,7 @@
           <div data-aos="fade-up">
            <div class="page-subhead-wa-ruc-2"> 
             <div class="container4"> 
-            <h1 style="color: #FFF; font-size: 40px; margin-top: -400px;">Washington Road Usage Charge</h1>
+            <h1 id="indexh1">Washington Road Usage Charge</h1>
                                 <h2 style="font-size: 22px; margin-top: 20px; font-weight: 400; color: #fff;">Ready for the Road Ahead</h2>
                               </div>
                               </div>
@@ -229,7 +299,7 @@
                                        </h2>
                                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                                            <div class="card-body">
-                                          <a href="faq.html#without-gps"></a>  <img class="img-fluid" src="img/2023_0124_WARUC_Website_Personas_PRIVACY.png" alt="..." >
+                                          <a href="faq.html#without-gps"><img class="img-fluid" src="img/2023_0124_WARUC_Website_Personas_PRIVACY.png" alt="..." ></a>
                                                <p class="acccord-para"><strong></strong></p>
                                   
                                            </div>
