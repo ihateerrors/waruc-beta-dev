@@ -784,7 +784,7 @@ margin-bottom: 70px;
   .right-col {
       margin-top: -15px;
   }
-  @media(min-width: 700px) {
+  @media(min-width: 800px) {
       .right-col {
            margin-top: -10px;		
       }
@@ -1310,4 +1310,8 @@ height: 900px;
   #librarylink a {
     color:rgb(15, 104, 115); 
     font-weight: 600;
+  }
+
+  #carouselExampleFade img {
+    
   }
