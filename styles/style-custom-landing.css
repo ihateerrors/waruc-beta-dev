@@ -165,8 +165,16 @@ position: relative;
 .rightcol-text3 {
   /* margin-right: 2em; */
   margin-left: 14%;
-  margin-right: 12%;
- margin-top: 5em;
+  margin-right: 6%;
+ margin-top: 6em;
+ /* font-size: 1.2em; */
+}
+
+.rightcol-text5 {
+  /* margin-right: 2em; */
+  margin-left: 12%;
+  margin-right: 6%;
+ margin-top: 6em;
  /* font-size: 1.2em; */
 }
 
