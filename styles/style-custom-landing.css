@@ -156,6 +156,16 @@ position: relative;
   margin-top: 20%;
 }
 
+.homeintro-text {
+  margin-left: 16%; 
+  margin-top: 60px;
+  display: inline-block;
+  flex-wrap: wrap;
+  white-space: none;
+  margin-right: 10%;
+  font-size: 1.2em;
+}
+
 .white-p {
   margin-top: 2em;
   font-size: 20px;
@@ -237,7 +247,7 @@ position: relative;
 }
 .teal-on-white-box {
    box-sizing: border-box;
-  width: 18.5em;
+ width: 25em;
   margin-left: -20px;
   padding-top: 15px;
   padding-bottom: 5px;
