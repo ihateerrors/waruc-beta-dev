@@ -156,6 +156,27 @@ position: relative;
   margin-top: 20%;
 }
 
+.rightcol-text2 {
+  /* margin-right: 2em; */
+  margin-left: 5em;
+  margin-top: 20%;
+}
+
+.rightcol-text3 {
+  /* margin-right: 2em; */
+  margin-left: 14%;
+  margin-right: 12%;
+ margin-top: 5em;
+ /* font-size: 1.2em; */
+}
+
+.rightcol-text4 p {
+  /* margin-right: 2em; */
+  margin-left: 14%;
+  margin-right: 12%;
+ margin-top: 2em;
+ font-size: 1.2em;
+}
 .homeintro-text {
   margin-left: 16%; 
   margin-top: 60px;
@@ -217,8 +238,14 @@ position: relative;
    font-weight: 700;
    margin-top: 3em;
    color: #FAFAFA;
-   font-size: 35px;
+   /* font-size: 35px; */
    margin-left: 1em;
+}
+
+.page-header .carousel-item img {
+  object-fit: cover;
+  max-height: 100%;
+  width: 100%;
 }
 
 .leftimg-vanish {
