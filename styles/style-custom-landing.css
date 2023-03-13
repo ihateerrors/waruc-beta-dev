@@ -237,6 +237,10 @@ position: relative;
   font-size: 1.2em;
   margin-top: .76em;
 }
+
+.vanishingspace {
+  display: none;
+}
 .homeintro-text {
   margin-left: 16%; 
   margin-top: 45px;
