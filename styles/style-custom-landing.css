@@ -198,6 +198,12 @@ position: relative;
   float: right; 
 }
 
+.rightcol-text2b {
+  display: block;
+  margin-left: 5em;
+  margin-top: 3.5em;
+}
+
 .rightcol-text3 {
   /* margin-right: 2em; */
   margin-left: 14%;
@@ -520,6 +526,10 @@ margin-bottom: 70px;
   /* margin-bottom: 12px; */
 }
 
+.tlink2 {
+  color:#0D6873;
+  font-weight: 600;
+}
 .teal-link {
   color:#0D6873;
   font-size: 1.2em;
