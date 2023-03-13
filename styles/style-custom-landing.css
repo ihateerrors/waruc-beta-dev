@@ -175,6 +175,10 @@ position: relative;
   margin-right: 1.2em;
   margin-top: 50px;
 }
+.leftcol-text3 {
+  margin-left: 10%;
+  margin-right: 9%;
+}
 
 /* #pilot-faq {
   font-size: 40px;
@@ -236,6 +240,10 @@ position: relative;
 .rightcol-text4 p {
   font-size: 1.2em;
   margin-top: .76em;
+}
+.rightcol-text99 {
+  margin-left: 14%;
+  margin-right: 18%;
 }
 
 .vanishingspace {
