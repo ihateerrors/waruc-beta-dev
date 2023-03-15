@@ -35,7 +35,8 @@ p {
 }
 
 .header-ruc {
-  height: 0;
+  min-height: 550px;
+  max-height: 600px;
   overflow: hidden;
   padding-top: calc(600 / 1920 * 100%); /* Set the aspect ratio */
   position: relative;
@@ -64,7 +65,7 @@ margin-top: 20px;
   }
 
 .bg-gray-wr {
-  background-color: #f8f8f8;
+  background-color: #f5eeee;
 }
 .darkblue-wr {
   color:rgb(6, 35, 62);
@@ -132,7 +133,6 @@ p {
   justify-content: center;
   align-items: center;
 }
-
 .img-onright {
   align-items: right;
    margin-right: -12vw;
@@ -176,9 +176,20 @@ position: relative;
   margin-top: 50px;
 }
 .leftcol-text3 {
-  margin-left: 10%;
+  margin-left: 8%;
   margin-right: 9%;
 }
+.leftcol-text4 {
+  /* margin-left: 20%; */
+  margin-right: 1.2em;
+  margin-top: 1.2em;
+}
+.leftcol-text5 {
+  margin-left: 1%;
+  margin-right: 16%;;
+  margin-top: 1.2em;
+}
+
 
 /* #pilot-faq {
   font-size: 40px;
