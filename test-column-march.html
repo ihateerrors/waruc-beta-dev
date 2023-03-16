@@ -8,7 +8,7 @@
 
 
 <style>
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -27,11 +27,16 @@ body {
   flex: 1;
 }
 
+
+.description {
+ text-align: left; 
+ float: left;
+}
+
 .main-image img {
   width: 100px;
   height: 100px;
-  object-fit: cover;
-}
+
 
 .small-images {
   display: flex;
@@ -40,6 +45,57 @@ body {
 }
 
 .small-image {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  min-width: 45px;
+  min-height: 45px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container-comms {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  gap: 15px;
+}
+
+.item-comms  {
+  flex: 1;
+}
+
+.main-image-comms  {
+max-width: 125px;
+}
+
+.main-image-comms  img {
+  width: 100px;
+
+  height: 100px;
+  /* object-fit: cover; */
+}
+
+.small-images-comms  {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.small-image-comms {
   width: 35px;
   height: 35px;
   object-fit: cover;
@@ -48,33 +104,76 @@ body {
 }
 
 @media (max-width: 480px) {
-  .container {
+  .container-comms {
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
-
 </style>
 
 </head>
 <body>
-  <div class="container">
-    <div class="item main-image">
-      <img src="path/to/image1.jpg" alt="Main Image">
+  <div class="container-comms">
+    <div class="item-comms main-image-comms">
+      <img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/placeholder-image.png" alt="Thumbnail image of document">
     </div>
-    <div class="item description">
-      <p>Short description of the image...</p>
+    <div class="item-comms description-comms">
+      <p>Short description of the image... Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio porro quam a error libero omnis voluptatem, maxime necessitatibus praesentium exercitationem.</p>
     </div>
-    <div class="item small-images">
-      <img class="small-image" src="path/to/image2.jpg" alt="Small Image 1">
-      <img class="small-image" src="path/to/image3.jpg" alt="Small Image 2">
+    <div class="item-comms small-images">
+      <img class="small-image-comms" src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/icon-research-notext.png" alt="Icon: Research">
+      <img class="small-image-comms" src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/icon-print-comms.png" alt="Icon: Print Communications">
     </div>
   </div>
+
+  <div class="container-comms">
+    <div class="item-comms main-image-comms">
+      <img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/placeholder-image.png" alt="Thumbnail image of document">
+    </div>
+    <div class="item-comms description-comms">
+      <p>Short description of the image... Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio porro quam a error libero omnis voluptatem, maxime necessitatibus praesentium exercitationem.</p>
+    </div>
+    <div class="item-comms small-images">
+      <img class="small-image-comms" src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/icon-research-notext.png" alt="Icon: Research">
+      <img class="small-image-comms" src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/icon-print-comms.png" alt="Icon: Print Communications">
+    </div>
+  </div>
+
+  <div class="container-comms">
+    <div class="item-comms main-image-comms">
+      <img src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/placeholder-image.png" alt="Thumbnail image of document">
+    </div>
+    <div class="item-comms description-comms">
+      <p>Short description of the image... Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio porro quam a error libero omnis voluptatem, maxime necessitatibus praesentium exercitationem.</p>
+    </div>
+    <div class="item-comms small-images">
+      <img class="small-image-comms" src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/icon-research-notext.png" alt="Icon: Research">
+      <img class="small-image-comms" src="https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/icon-print-comms.png" alt="Icon: Print Communications">
+    </div>
+  </div>
+
+
 </body>
 </html>
 
 
-https://sr520construction.blob.core.windows.net/media/2023_March_PBB_NTMP_Final-compressed_2.pdf
 
-https://sr520construction.blob.core.windows.net/media/2023_March_PBB_NTMP_Final-compressed_2.pdf
+
+
+
+<!-- https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/icon-research-notext.png
+
+https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/icon-setup-notext.png
+
+https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/icon-transitioning-notext.png
+
+https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/icon-ongoing-notext.png
+
+https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/icon-print-comms.png
+
+https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/icon-digital-comms.png
+
+https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/icon-research-materials.png
+
+https://webresources-uat.com/nchrp1918/wp-content/uploads/sites/46/2023/03/placeholder-image.png -->
