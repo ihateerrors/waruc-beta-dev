@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Responsive Row</title>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.item {
+  flex: 1;
+}
+
+.main-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.small-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.small-image {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  min-width: 35px;
+  min-height: 35px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="item main-image">
+      <img src="path/to/image1.jpg" alt="Main Image">
+    </div>
+    <div class="item description">
+      <p>Short description of the image...</p>
+    </div>
+    <div class="item small-images">
+      <img class="small-image" src="path/to/image2.jpg" alt="Small Image 1">
+      <img class="small-image" src="path/to/image3.jpg" alt="Small Image 2">
+    </div>
+  </div>
+</body>
+</html>
+
+
+https://sr520construction.blob.core.windows.net/media/2023_March_PBB_NTMP_Final-compressed_2.pdf
+
+https://sr520construction.blob.core.windows.net/media/2023_March_PBB_NTMP_Final-compressed_2.pdf
