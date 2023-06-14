@@ -1,16 +1,23 @@
 
+li {
+  
+}
+
+.flipblue .centered {
+	color: #ead70e !important;
+}
 
 
-
-
-
-
+#menu-primary-menu {
+  color: rgb(236, 167, 121);
+}
 
 
 /* ### below here is old #### */
 
 
 .card {
+  word-break: keep-all;
     position: relative;
     display: flex;
     flex-direction: column;
