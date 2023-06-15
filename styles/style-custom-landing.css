@@ -1507,3 +1507,8 @@ padding: 12px 18px;
 .btn-waruc:hover {
   background-color: #0F6873;
 }
+.img-area,
+.two-cars-img {
+  max-width: 700px;
+  margin: 0 auto;
+}
