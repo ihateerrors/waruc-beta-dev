@@ -1517,6 +1517,10 @@ padding: 12px 18px;
 .road-sign img{
   max-width: 300px;
 }
+.yt-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 @media (max-width: 768px) {
   .leftimg-shrink {
