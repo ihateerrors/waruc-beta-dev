@@ -1480,3 +1480,50 @@ height: 900px;
 .navbar {
   z-index: 10000 !important;
 }
+
+
+
+
+/* ======== Carlos' style edits ========== */
+
+#indexh1 {
+
+}
+
+.btn-waruc {
+  color: #fff;
+  font-weight: 600;
+  background-color: #82A73F;
+  display: inline-flex;
+font-size: 1.2rem;
+border: 1px solid transparent;
+border-radius: .35rem;
+padding: 12px 18px;
+
+
+}
+.btn-waruc:hover {
+  background-color: #0F6873;
+}
+.img-area,
+.two-cars-img {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.road-sign-row {
+  max-width: 1200px;
+}
+.road-sign img{
+  max-width: 300px;
+}
+.yt-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .leftimg-shrink {
+    max-width: 50% !important;
+  }
+}
