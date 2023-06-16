@@ -15,12 +15,24 @@
   float: right;
 } */
 
+@font-face {
+  font-family: 'Metropolis Regular';
+  src: url('/fonts/Metropolis-Regular.otf') format('opentype');
+}
+
+
 body {
   box-sizing: border-box;
+  /* font-family: 'Metropolis Regular', sans-serif !important; */
 
+}
+
+h1, h2, h3 {
+  font-family: 'Metropolis Regular', sans-serif !important;
 }
 p {
   font-size: 1.1em;
+  font-family: 'Metropolis Regular', sans-serif !important;
 }
 
 .demo {
@@ -51,6 +63,11 @@ p {
   object-fit: cover;
 }
 
+.header-peagreen-bkg {
+  background-color:rgb(130, 167, 63, .8);
+  max-width: max-content;
+  border-radius: 3px;
+}
 
 /* WA-RUC Primary palatte  */
 
@@ -1526,4 +1543,15 @@ padding: 12px 18px;
   .leftimg-shrink {
     max-width: 50% !important;
   }
+}
+.nav-item .active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: red;
+}
+
+.active-nav-item {
+  font-weight: bold;
+  text-decoration: underline;
+  color: red;
 }
