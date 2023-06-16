@@ -1551,7 +1551,5 @@ padding: 12px 18px;
 }
 
 .active-nav-item {
-  font-weight: bold;
-  text-decoration: underline;
-  color: red;
+ font-weight: 600; text-decoration: underline; color: rgb(130, 167, 63);
 }
