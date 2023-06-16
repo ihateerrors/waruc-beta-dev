@@ -1495,8 +1495,6 @@ height: 900px;
   font-weight: 600;
   background-color: #82A73F;
   display: inline-flex;
-    align-items: center;
-    justify-content: center;
 font-size: 1.2rem;
 border: 1px solid transparent;
 border-radius: .35rem;
@@ -1511,4 +1509,17 @@ padding: 12px 18px;
 .two-cars-img {
   max-width: 700px;
   margin: 0 auto;
+}
+
+.road-sign-row {
+  max-width: 1200px;
+}
+.road-sign img{
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .leftimg-shrink {
+    max-width: 50% !important;
+  }
 }

@@ -306,11 +306,45 @@
       
      </div>
      <div style="justify-content: center; text-align: center; margin-top: 2.8em; margin-bottom: em;">
-      <figure>
+      <!-- <figure>
         <img class="img-fluid" src="img/whats-next/harmonizing RUC_rev.png" loading="lazy" alt="Graphic illustrating RUC processes" width="585" height="447">
         <figcaption></figcaption>
-      </figure>   
+      </figure>    -->
+      <div class="container road-sign-container">
+        <div class="row road-sign-row justify-content-center">
+          <div class="col road-sign">
+            <a data-bs-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+              <img src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-03.png" alt="Image 1">
+            </a>
+          </div>
+          <div class="col road-sign">
+            <a data-bs-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+              <img src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-04.png" alt="Image 2">
+            </a>
+          </div>
+          <div class="col road-sign">
+            <a data-bs-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+              <img src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-05.png" alt="Image 3">
+            </a>
+          </div>
+          <div class="col road-sign">
+            <a data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+              <img src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-06.png" alt="Image 4">
+            </a>
+          </div>
+          <div class="col road-sign">
+            <a data-bs-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse5">
+              <img src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-07.png" alt="Image 5">
+            </a>
+          </div>
+          <div class="col road-sign">
+            <a data-bs-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapse6">
+              <img src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-08.png" alt="Image 6">
+            </a>
+          </div>
+        </div>
       </div>
+            </div>
     </div>
   </section> 
 
@@ -544,9 +578,23 @@
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 	}
 	// ]]>
+
+  // #### Scrolls down to corresponding accordion when road-sign is clicked ###
+  document.addEventListener('DOMContentLoaded', () => {
+    const roadSignLinks = document.querySelectorAll('.road-sign a');
+    roadSignLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const target = link.getAttribute('href');
+        const accordionElement = document.querySelector(target);
+        if (accordionElement) {
+          accordionElement.parentElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  });
+  
 </script>
-
-
 
 </body>
 </html>
