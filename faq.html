@@ -341,6 +341,25 @@
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 	}
 	// ]]>
+  window.addEventListener('DOMContentLoaded', function() {
+  var hash = window.location.hash;
+  var accordionMap = {
+    '#FAQ-Eight': 'collapse8',
+    '#FAQ-Three': 'collapseThree',
+    '#FAQ-Six': 'collapse6',
+    '#FAQ-Five': 'collapse5',
+    '#FAQ-Seven': 'collapse7'
+  };
+
+  if (hash && accordionMap.hasOwnProperty(hash)) {
+    var accordionItem = document.getElementById(accordionMap[hash]);
+    if (accordionItem) {
+      accordionItem.classList.add('show');
+      // Optionally, you can scroll to the opened accordion item for better visibility
+      accordionItem.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+});
 </script>
 </body>
 </html>

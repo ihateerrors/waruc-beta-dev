@@ -1486,10 +1486,10 @@ height: 900px;
 
 /* ======== Carlos' style edits ========== */
 
-#indexh1 {
-
+.rucpersona {
+max-width: 900px;
+margin: 0 auto;
 }
-
 .btn-waruc {
   color: #fff;
   font-weight: 600;
