@@ -24,6 +24,7 @@
 body {
   box-sizing: border-box;
   /* font-family: 'Metropolis Regular', sans-serif !important; */
+  /* cursor: url('/img/CarIllustration_sideview_48.cur'), auto; */
 
 }
 
@@ -1552,4 +1553,13 @@ padding: 12px 18px;
 
 .active-nav-item {
  font-weight: 600; text-decoration: underline; color: rgb(130, 167, 63);
+}
+
+.custom-cursor {
+  /* Relative or absolute path to the cursor image file */
+  cursor: url('/img/CarIllustration_sideview_48.cur'), auto;
+}
+
+.custom-cursor a {
+  cursor: url('/img/CarIllustration_sideview_48.cur'), auto;
 }
