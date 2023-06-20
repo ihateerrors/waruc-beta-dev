@@ -1563,3 +1563,18 @@ padding: 12px 18px;
 .custom-cursor a {
   cursor: url('/img/CarIllustration_sideview_48.cur'), auto;
 }
+
+/* .road-sign img:hover {
+  background-color: #0057da;
+} */
+@keyframes wiggle {
+  0% { transform:translateX(0px); }
+  25% { transform:translateX(-5px); }
+  50% { transform:translateX(0px); }
+  75% { transform:translateX(5px); }
+  100% { transform:translateX(0px); }
+}
+
+.wiggle:hover {
+  animation: wiggle 0.5s infinite;
+}
