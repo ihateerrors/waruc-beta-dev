@@ -1578,3 +1578,11 @@ padding: 12px 18px;
 .wiggle:hover {
   animation: wiggle 0.5s infinite;
 }
+
+.headacc-wa {
+  color:rgb(130, 167, 63)
+}
+
+#hideimg {
+  justify-content: center; align-items: center; margin-left: 8%; margin-right: 3%;
+}
