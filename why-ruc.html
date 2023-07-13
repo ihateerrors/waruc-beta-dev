@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
  <html lang="en">
     <head>
@@ -26,57 +27,52 @@
                 <!-- ### END Navbar ### -->
                 <main style="width: 100vw;">
 
+      
                   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
                     <div class="container-fluid" style="margin-right: 20px;">
-                      <div class="navbar-brand"> <img class="img-fluid" style="width:200px; height: auto;" src="img/Logo_full_color_horzional_sm.png" alt="WA-RUC logo"></div>
+                      <div class="navbar-brand nav-item" id="index"> <a class="nav-link" href="index.html"><img class="img-fluid" style="width:200px; height: auto;" src="img/Logo_full_color_horzional_sm.png" alt="WA-RUC logo"></a></div>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <!-- <a class="nav-link active" aria-current="page" href="index.html">Home</a> -->
                           </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link" href="why-ruc.html">Why RUC?</a>
+                          <li class="nav-item dropdown" id="why-ruc">
+                            <a class="nav-link"  style="font-weight: 600; text-decoration: underline; color: rgb(130, 167, 63);"  href="why-ruc.html">Why RUC?</a>
                           </li>
-                            <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="moving-ruc-forward.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Moving RUC Forward
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="moving-ruc-forward.html">Systems are Ready</a></li>
-                               <li><a class="dropdown-item" href="moving-ruc-forward.html#forward-drive"><italic>Forward Drive</italic>&nbsp;Program</a></li>
-                                             </ul>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="research-and-testing.html">Research & Testing</a></li>
-                       
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="learn-more.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <li class="nav-item dropdown" id="moving-ruc-forward">
+                            <a class="nav-link" href="moving-ruc-forward.html">Moving RUC Forward</a>
+                           </li>
+                                          
+                        <li class="nav-item dropdown" id="where-are-we">
+                          <a class="nav-link" href="where-are-we-now.html">Where are we now?</a>
+                        </li>
+                          <li class="nav-item dropdown" id="learn-more">
+                            <a class="nav-link dropdown-toggle"  href="learn-more.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Learn More
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="past-pilot-research.html">Past Pilot Research</a></li>
                                <li><a class="dropdown-item" href="learn-more.html#steering-waruc">Steering Committee</a></li>
                                 <li><a class="dropdown-item" href="library.html"> Library</a></li>
                                 <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
                               </ul>
                           </li>
                 
-                          <li class="nav-item">
+                          <li class="nav-item" id="connect">
                             <a class="nav-link" href="contact.html">Connect</a></li>
                                 </ul>
                              </div>
                     </div>
                   </nav>
-               
-           <!-- ### END Navbar ### -->
           
           
                                  
 
                           <header class="header-ruc">
-                            <img id="header-image" src="img/emptyroad-wa-ruc.jpg" alt="Header Image">
+                            <img id="header-image" src="img/NorthCascades_Banner_Large.jpg" loading="lazy" alt="A rod running through the Cascade Mountains in Washington State">
                           </header>
                           
                           
@@ -85,7 +81,7 @@
                   
                <p>Charging by the mile, rather than by the gallon of gas or an annual vehicle registration fee, 
                 harmonizes transportation funding with climate policy objectives and efforts to bring greater equity to transportation taxation. 
-                A RUC preserves the user-pay, user-benefit funding approach, 
+                RUC preserves the user-pay, user-benefit funding approach, 
                 giving all drivers a way to contribute based upon how much we use the roads.</p>
               </div>
                                </div>
@@ -253,21 +249,24 @@
 
 
       <!-- ## by the numbers section START ## -->
-      <section class="bg-white" id="by-the-numbers">
+      <section class="bg-white" id="by-the-numbers" >
      <div class="container">
       
         <div class="row mb-5">
-            <div class="col-md-10">
-                <!-- <h2 class="fw-700 left-para mb-5">A TALE OF TWO CARS</h2> -->
+            <!-- <div class="col-md-10"> -->
+            
+                <div style="margin-left: 3%; align-items: center; text-align: center;">
+
                 <figure>
-                  <div class="img-area">
+                  <div class="img-area justify-content-center">
                      <img class="img-fluid two-cars-img" src="/img3/2023_0612_WARUC_WebsiteRefresh_Graphics_All-02_sourceless.png"
-                     loading="lazy" width="100%" height="100%"
+                     loading="lazy" width="100%" height="100%" style="justify-content: center; align-self: center; text-align: center;"
                      alt="illustration of a 2009 Camry, with caption reading 25mpg and 195 dollars fuel tax paid. And a 2019 Camry-hybrid, with caption reading 52mpg and 95 dollars fuel tax paid.">
-                     <figcaption>based on 10,000 miles driven</figcaption>
+                     <span style="font-style:italic; text-align: left; align-self: left; float: left; margin-left: 29px; margin-bottom: 20px;">based on 10,000 miles driven</span>
                   </div>
                 </figure>
-            </div>    
+              </div>
+            <!-- </div>     -->
         </div>
 
         <!-- <div class="row">
@@ -288,58 +287,50 @@
 
       
        <!-- ## Advancing RUC start ## -->
-       <section id="advancing-ruc" class="bg-white pb-3 mb-3"> 
+       <section id="advancing-ruc" class="bg-white pb-3 mb-3 custom-cursor"> 
         <div class="container">
          <h2 class="fw-700" style="font-size: 1.7em; color: rgb(130, 167, 63); margin-left: 12%; margin-bottom: 25px;">RUC HARMONIZES CLIMATE & ROAD FUNDING POLICIES </h2>   
      <div class="whatsnexttext" style="margin-left: 12%; margin-bottom: 25px; margin-right: 12%;">
-            <p>Under the current gas tax, polices around funding our roads require the continued consumption of fossil fuels, 
-              conflicting with the state’s environmental improvement efforts. RUC enables Washington to sustain usage-based 
-              funding without continuing to rely on fossil fuel consumption and emissions and replaces the gas tax with a  
-              user fee based upon the consumption of miles driven. </p>
+            <p>Under the current gas tax, Washington state depends on the continued consumption of fossil fuels to fund our roads. RUC would provide funding for critical transportation infrastructure without the dependency on fossil fuels by replacing a tax based on the number of gallons of gas consumed with one based on the number of miles driven.</p>
 
-            <p>As Washington state law drives a transition away from fossil-fuels, 
-              RUC provides funding for critical transportation infrastructure that will be used  
-              by highly fuel-efficient and alternatively-fueled vehicles. In addition, 
-              RUC can help incentivize this fleet transition by allowing policymakers to reward EV 
-              and hybrid vehicle mileage by offering RUC as an alternative to the flat fees ($225 and $75 respectively), 
-              and/or with a reduced introductory per-mile rate. </p>
+            <p>As a means of furthering Washington state’s environmental goals, RUC can also help incentivize a transition to high-efficiency and electric vehicles by offering it as an alternative to the EV and hybrid flat fees ($225 and $75 respectively), and/or with a reduced introductory per-mile rate.</p>
       
      </div>
-     <div style="justify-content: center; text-align: center; margin-top: 2.8em; margin-bottom: em;">
+     <div class="custom-cursor" style="justify-content: center; text-align: center; margin-top: 2.8em; margin-bottom: 2em;">
       <!-- <figure>
         <img class="img-fluid" src="img/whats-next/harmonizing RUC_rev.png" loading="lazy" alt="Graphic illustrating RUC processes" width="585" height="447">
         <figcaption></figcaption>
       </figure>    -->
       <div class="container road-sign-container">
-        <div class="row road-sign-row justify-content-center">
+        <div class="row road-sign-row justify-content-center"  style="justify-content: center; margin-left: 6%; margin-right: 6%;">
           <div class="col road-sign">
             <a data-bs-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
-              <img src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-03.png" alt="Image 1">
+              <img class="wiggle" src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-03.png" alt="Image 1">
             </a>
           </div>
           <div class="col road-sign">
             <a data-bs-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
-              <img src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-04.png" alt="Image 2">
+              <img class="wiggle" src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-04.png" alt="Image 2">
             </a>
           </div>
           <div class="col road-sign">
             <a data-bs-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
-              <img src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-05.png" alt="Image 3">
+              <img class="wiggle" src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-05.png" alt="Image 3">
             </a>
           </div>
           <div class="col road-sign">
             <a data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
-              <img src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-06.png" alt="Image 4">
+              <img class="wiggle" src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-06.png" alt="Image 4">
             </a>
           </div>
           <div class="col road-sign">
             <a data-bs-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse5">
-              <img src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-07.png" alt="Image 5">
+              <img class="wiggle" src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-07.png" alt="Image 5">
             </a>
           </div>
           <div class="col road-sign">
             <a data-bs-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapse6">
-              <img src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-08.png" alt="Image 6">
+              <img class="wiggle" src="/img3/road-signs/2023_0501_WARUC_RoadSignandCar_Illustration_v3-08.png" alt="Image 6">
             </a>
           </div>
         </div>
@@ -480,7 +471,7 @@
 
                 <div class="row gx-5 justify-content-center bg-beige-wr">
                     <div id="why-ruc" class="col-lg-9 col-md-11 text-center my-10">
-                     <p class="big-teal teal-wr">Learn more about the Washington RUC pilot and research program.</p><br><br>
+                     <p class="big-teal teal-wr">Learn more about the Washington RUC pilot and research program</p><br><br>
 
                       <a class="btn btn-warning btn-lg btn-block fw-700" style="color: #000; border-radius: 15px; font-size: 1.5em; padding-left: 2em; padding-right: 2em;" href="moving-ruc-forward.html">Moving RUC Forward</a>
                      
@@ -595,6 +586,3 @@
   });
   
 </script>
-
-</body>
-</html>

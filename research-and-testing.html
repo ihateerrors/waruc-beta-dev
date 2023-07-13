@@ -39,6 +39,13 @@
         p {
           font-size: 1.1em;
         }
+          @media (max-width: 768px) {
+            .responsive-image {
+              width: auto;
+              max-width: 100%;
+              height: auto;
+            }
+          }
         </style>
 
 <link rel="icon" type="image/x-icon" href="favicon.png" />
@@ -46,49 +53,46 @@
 <body>
   <main>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <div class="container-fluid" style="margin-right: 20px;">
-        <div class="navbar-brand"> <img class="img-fluid" style="width:200px; height: auto;" src="img/Logo_full_color_horzional_sm.png" alt="WA-RUC logo"></div>
+      <div class="container-fluid" style="margin-right: 20px; font-size: 17.6px;">
+        <div class="navbar-brand nav-item" id="index"> <a class="nav-link" href="index.html"><img class="img-fluid" style="width:200px; height: auto;" src="img/Logo_full_color_horzional_sm.png" alt="WA-RUC logo"></a></div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <!-- <a class="nav-link active" aria-current="page" href="index.html">Home</a> -->
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" id="why-ruc">
               <a class="nav-link" href="why-ruc.html">Why RUC?</a>
             </li>
-              <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="moving-ruc-forward.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item dropdown" id="moving-ruc-forward">
+              <a class="nav-link" href="moving-ruc-forward.html">
                 Moving RUC Forward
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="moving-ruc-forward.html">Systems are Ready</a></li>
-                 <li><a class="dropdown-item" href="moving-ruc-forward.html#forward-drive"><italic>Forward Drive</italic>&nbsp;Program</a></li>
-                               </ul>
+             </li>
+   
+            <li class="nav-item dropdown" id="where-are-we">
+              <a class="nav-link" href="where-are-we-now.html">Where are we now?</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="research-and-testing.html">Research & Testing</a></li>
-         
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown" id="learn-more">
               <a class="nav-link dropdown-toggle" href="learn-more.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Learn More
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="past-pilot-research.html">Past Pilot Research</a></li>
                  <li><a class="dropdown-item" href="learn-more.html#steering-waruc">Steering Committee</a></li>
                   <li><a class="dropdown-item" href="library.html"> Library</a></li>
                   <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
                 </ul>
             </li>
   
-            <li class="nav-item">
+            <li class="nav-item" id="connect">
               <a class="nav-link" href="contact.html">Connect</a></li>
                   </ul>
                </div>
       </div>
     </nav>
- 
  
 <!-- ### END Navbar ### -->
 
@@ -98,7 +102,7 @@
                     <!-- ### END Navbar ### -->
 
                     <!-- Page Header-->
-                        <header class="page-header bg-img-cover overlay overlay-40" style="background-image: url('https://env.blob.core.windows.net/env-public/RUCinWAHeroImage.png'); min-height: 500px;">                  
+                        <header class="page-header bg-img-cover overlay overlay-40" style="background-image: url('/img2/SamishBay_Banner_Large.jpg'); min-height: 500px;">                  
                             <div class="page-header position-relative">
                           
                                 <div class="container">
@@ -156,6 +160,7 @@
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen
   title="RUC demonstration video"
+  class="responsive-image"
 ></iframe>
 
     </div>
@@ -283,13 +288,12 @@
              </section> 
             <!-- 3 card row end  -->  
 
-           <section class="current-research-fd mt-5 pt-3"> 
+           <section class="current-research-fd mt-5 pt-3" id="current-research-forward-drive"> 
             <div class="row gx-5 justify-content-center">
            
                  <div class="container">
-
                   <div class="left-para">
-                    <h2 class="fw-700" style="font-size: 1.7em; font: arial-narrow; color:#0F6873; margin-bottom: 1em">CURRENT RESEARCH: FORWARD DRIVE</h2>
+                    <h2 class="fw-700" style="font-size: 1.7em; font: arial-narrow; color:#0F6873; margin-bottom: 1em">CURRENT RESEARCH: <italic>FORWARD DRIVE</italic></h2>
                     <p>The Washington State Transportation Commission applied for and received funding from the U.S. Federal Highway Administration’s Surface Transportation System Funding Alternatives program. This funded the <italic>Forward Drive</italic>  research program beginning in October 2020, which was informed by the WA RUC Final Report. </p>
                     <p>During the first stage of <italic>Forward Drive</italic>, the Commission explored various policy and program options and their projected revenues while taking into consideration the adoption of more fuel-efficient vehicles over time, the potential permanent impacts on how and when people drive due to the COVID-19 pandemic and impacts that may arise as vehicle automation progresses. </p>
                     <p>The second stage of <italic>Forward Drive</italic> began in November 2022 with the rollout of a series of mini-pilots to explore RUC implementation issues regarding user experience, cost effectiveness of the program, and program fairness for all drivers. <a href="moving-ruc-forward.html#forward-drive"  style="color:#0F6873; font-weight: 500;">Learn more about the 2022-2023 mini-pilots</a>.</p>

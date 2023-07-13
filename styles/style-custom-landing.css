@@ -15,12 +15,25 @@
   float: right;
 } */
 
+@font-face {
+  font-family: 'Metropolis Regular';
+  src: url('/fonts/Metropolis-Regular.otf') format('opentype');
+}
+
+
 body {
   box-sizing: border-box;
+  /* font-family: 'Metropolis Regular', sans-serif !important; */
+  /* cursor: url('/img/CarIllustration_sideview_48.cur'), auto; */
 
+}
+
+h1, h2, h3 {
+  font-family: 'Metropolis Regular', sans-serif !important;
 }
 p {
   font-size: 1.1em;
+  font-family: 'Metropolis Regular', sans-serif !important;
 }
 
 .demo {
@@ -51,6 +64,11 @@ p {
   object-fit: cover;
 }
 
+.header-peagreen-bkg {
+  background-color:rgb(130, 167, 63, .8);
+  max-width: max-content;
+  border-radius: 3px;
+}
 
 /* WA-RUC Primary palatte  */
 
@@ -1486,10 +1504,10 @@ height: 900px;
 
 /* ======== Carlos' style edits ========== */
 
-#indexh1 {
-
+.rucpersona {
+max-width: 900px;
+margin: 0 auto;
 }
-
 .btn-waruc {
   color: #fff;
   font-weight: 600;
@@ -1526,4 +1544,45 @@ padding: 12px 18px;
   .leftimg-shrink {
     max-width: 50% !important;
   }
+}
+.nav-item .active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: red;
+}
+
+.active-nav-item {
+ font-weight: 600; text-decoration: underline; color: rgb(130, 167, 63);
+}
+
+.custom-cursor {
+  /* Relative or absolute path to the cursor image file */
+  cursor: url('/img/CarIllustration_sideview_48.cur'), auto;
+}
+
+.custom-cursor a {
+  cursor: url('/img/CarIllustration_sideview_48.cur'), auto;
+}
+
+/* .road-sign img:hover {
+  background-color: #0057da;
+} */
+@keyframes wiggle {
+  0% { transform:translateX(0px); }
+  25% { transform:translateX(-5px); }
+  50% { transform:translateX(0px); }
+  75% { transform:translateX(5px); }
+  100% { transform:translateX(0px); }
+}
+
+.wiggle:hover {
+  animation: wiggle 0.5s infinite;
+}
+
+.headacc-wa {
+  color:rgb(130, 167, 63)
+}
+
+#hideimg {
+  justify-content: center; align-items: center; margin-left: 8%; margin-right: 3%;
 }

@@ -8,8 +8,9 @@
         <meta name="author" content="" />
         <title>Washington State Road Usage Charge (WA-RUC) | Frequently Asked Questions (FAQs) </title>
       
-        <link href="styles/style-custom-landing.css" rel="stylesheet" />
+      
         <link href="styles/styles.css" rel="stylesheet" />
+        <link href="styles/style-custom-landing.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="icon" type="image/x-icon" href="favicon.png" />
@@ -28,32 +29,29 @@
 
                       <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
                         <div class="container-fluid" style="margin-right: 20px;">
-                          <div class="navbar-brand"> <img class="img-fluid" style="width:200px; height: auto;" src="img/Logo_full_color_horzional_sm.png" alt="WA-RUC logo"></div>
+                          <div class="navbar-brand nav-item" id="index"> <a class="nav-link" href="index.html"><img class="img-fluid" style="width:200px; height: auto;" src="img/Logo_full_color_horzional_sm.png" alt="WA-RUC logo"></a></div>
                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                           </button>
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                               <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                         
                               </li>
                               <li class="nav-item dropdown">
                                 <a class="nav-link" href="why-ruc.html">Why RUC?</a>
                               </li>
-                                <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="moving-ruc-forward.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <li class="nav-item dropdown" id="moving-ruc-forward">
+                                <a class="nav-link" href="moving-ruc-forward.html">
                                   Moving RUC Forward
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="moving-ruc-forward.html">Systems are Ready</a></li>
-                                   <li><a class="dropdown-item" href="moving-ruc-forward.html#forward-drive"><italic>Forward Drive</italic> Program</a></li>
-                                                 </ul>
+                               </li>
+                              <li class="nav-item dropdown" id="where-are-we">
+                                <a class="nav-link" href="where-are-we-now.html">Where are we now?</a>
                               </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="research-and-testing.html">Research & Testing</a></li>
                            
                               <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="learn-more.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="learn-more.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="font-weight: 600; text-decoration: underline; color: rgb(130, 167, 63);">
                                   Learn More
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -79,111 +77,175 @@
                            <div class="col-lg-9">
                 
                               <div class="left-para mb-6"> 
-                                <h2 class="large-title-cap fw-700" style="font-size:36px; margin-bottom:18px; margin-top: 50px;text-decoration: underline;"> FAQs</h2>
+                                <h2 class="large-title-cap fw-700" style="font-size:36px; margin-bottom:18px; margin-top: 50px;"> FAQs</h2>
                 
                 
                                 <!--  ## start faq  -->
-                <h4 class="page-subheader-teal2">What is a road usage charge?</h4>
-                <p>A road usage charge is a per-mile charge drivers would pay based on how much they use Washington’s road system rather than pay by the gallons of gas they buy. This approach is similar to how people pay for their utilities, including electricity or water.</p>
-                
-                <h4 class="page-subheader-teal2">Why is a RUC needed?</h4>
-                <p><strong>To ensure sustainable, long-term funding.</strong> As more and more vehicles on Washington’s roads get better gas mileage, or don’t use gas at all, gas tax revenues will decline. Washington State has a goal to ban gas-powered cars by 2030, and under current regulations by 2035, all new vehicles must be Plug-in Hybrid Electric Vehicles (PHEV) or Zero Emission Vehicles (ZEV). This means that by 2035, the state is anticipated to see a potential 45% reduction in essential road, bridge and ferry maintenance revenue currently funded by the gas tax. Enacting a RUC now means that our state will be prepared for this transition and will we able to sustain needed transportation revenues to maintain and protect our roads.  </p>
-                <p>A road usage charge would provide a more stable source of transportation funding than the gas tax, since drivers would pay by the mile instead of by the gallon. </p>
-                
-             <a href="img/FAQ_Gas_Tax_Revenues.png" target="blank"> <img class="img-fluid" src="img/FAQ_Gas_Tax_Revenues.png" alt="graph compares the revenue that is generated per mile based on vehicle fuel efficiency" loading="lazy"/></a> <br>
+                                <div class="accordion">
+                                  <div class="accordion-item mb-3">
+                                      <h3 class="accordion-header" id="FAQ-One">
+                                          <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne"><span class="strong-blue-tm">What is a road usage charge (RUC)?</span></button>									
+                                      </h3>
+                                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                          <div class="card-body">
+                                              <p>A road usage charge is a per-mile charge drivers could pay based on how much they use Washington’s road system rather than pay by the gallons of gas they buy.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                  
+                  
+                                  <div class="accordion-item mb-3">
+                                    <h3 class="accordion-header" id="FAQ-Two">
+                                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"><span class="strong-blue-tm">Why is a RUC needed?</span></button>          
+                                    </h3>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                        <div class="card-body">
+                                          <p>A RUC can help ensure sustainable, long-term funding. As more vehicles on Washington’s roads get better gas mileage, or don’t use gas at all, gas tax revenues are projected to decline. Washington state aims to ban gas-powered cars by 2030, and under current regulations by 2035, all new vehicles must be Plug-in Hybrid Electric Vehicles (PHEV) or Zero Emission Vehicles (ZEV). By 2035, the state is anticipated to see a potential 45% reduction in essential road, bridge and ferry maintenance revenue currently funded by the gas tax (see graph below).  
+                                          A RUC also helps ensure everyone pays for the miles they drive, rather than how much gas is purchased. Drivers of older and less fuel-efficient vehicles pay more in gas tax than newer and high fuel-efficient vehicles. </p>
+                                          <a href="img/FAQ_Gas_Tax_Revenues.png" target="blank"> <img class="img-fluid" src="img/FAQ_Gas_Tax_Revenues.png" alt="graph compares the revenue that is generated per mile based on vehicle fuel efficiency" loading="lazy"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                  
+                  
+                                  <div class="accordion-item mb-3">
+                                      <h3 class="accordion-header" id="FAQ-Three">
+                                          <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree"><span class="strong-blue-tm">Will this be an additional tax?</span></button>          
+                                      </h3>
+                                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                          <div class="card-body">
+                                            <p>
+                                              No, the road usage charge is being considered as a replacement to the gas tax and electric and hybrid vehicle fees, not on top of or in addition to the gas tax and EV and hybrid fees. In Washington, a transition to a road usage charge would be gradual – more like a dial than a switch. During this gradual transition, no drivers would be taxed twice – they would only pay either a RUC or the gas tax and hybrid surcharges. In the case of EVs, drivers would pay either RUC or the annual surcharge.
+                                            </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- reason 4 start -->
+                                  <div class="accordion-item mb-3">
+                                    <h2 class="accordion-header" id="FAQ-Four">
+                                        <button type="button" class="accordion-button collapsed headacc-wa" data-bs-toggle="collapse" data-bs-target="#collapse4"><span class="strong-blue-tm">What would a per-mile RUC rate be?</span></button>                    
+                                    </h2>
+                                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                        <div class="card-body">
+                                          <p>In a potential RUC system, the Legislature will set the RUC rate. They would likely set a rate equivalent to today’s gas tax, based on a car that gets an average vehicle fuel efficiency of 21 mpg. This rate is 2.4 cents per mile, or approximately $24 per 1,000 miles driven. </p>
+                                          <p>For an average Washington vehicle that travels 12,000 miles annually, this is about $288 in RUC fees. This compares to about $289 an average fuel-efficiency vehicle pays yearly in gas tax.</p>
+                                          <p>Actual RUC fees would vary by vehicle type:</p>
+                                          <ul>
+                                            <li>Less fuel-efficient vehicles would pay less in a RUC system.</li>
+                                            <li>More fuel-efficient vehicles would pay more in a RUC system.</li>
+                                          </ul>
+                                          <p><strong>In a RUC system, all drivers would pay the same rate to use the roads – regardless of their vehicle’s fuel efficiency. </strong></p>
+                                          <div class="imagefaq">   
+                                            <figure class="img-fluid">
+                                            <a href="img/FAQ-Cost-of-Gas-TaxorRUC.png" target="_blank"><img class="img-fluid"  src="img/FAQ-Cost-of-Gas-TaxorRUC.png" loading="lazy" alt="..."></a>
+                                            <figcaption><italic>(Click on image to enlarge)</italic></figcaption>
+                                            </figure>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- reason 4 end-->
+                  
+                                          <!-- reason 5 start -->
+                                          <div class="accordion-item mb-3">
+                                            <h2 class="accordion-header" id="FAQ-Five">
+                                                <button type="button" class="accordion-button collapsed headacc-wa" data-bs-toggle="collapse" data-bs-target="#collapse5"><span class="strong-blue-tm">Does RUC discourage adoption of EVs?</span></button>                     
+                                            </h2>
+                                            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                                <div class="card-body">
+                                                  <p>While RUC would mean drivers of EVs and other highly fuel-efficient vehicles pay a little more in a RUC system compared to the gas tax, the overall cost advantage of owning an EVs, hybrid, or other fuel-efficient vehicle remains significant. For example, under RUC, owners of a Prius will pay $210 dollars per month less than the Ford pickup truck driver. A RUC system would also likely replace the current flat annual fees for hybrids and EVs.</p>
+                                                  <div class="imagefaq">   
+                                                    <figure class="img-fluid">
+                                                    <a href="img/FAQ_month_ fuel_RUC.png" target="_blank"><img class="img-fluid"  src="img/FAQ_month_ fuel_RUC.png" loading="lazy" alt="..."></a>
+                                                    <figcaption><italic>(Click on image to enlarge)</italic></figcaption>
+                                                    </figure>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- reason 5 end-->
+                  
+                          <!-- reason 6start -->
+                          <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="FAQ-Six">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse6"><span class="strong-blue-tm">Would rural drivers, who tend to drive further to access needed services and amenities, pay less with a RUC system than the gas tax?</span></button>                    
+                            </h2>
+                            <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                <div class="card-body">
+                                  <p>Two studies have looked at <a href="media/20150227URBANRURALREPORT.pdf" target="_blank">Washington state</a> and the<a href="https://www.ebp-us.com/sites/default/files/project/uploads/FINAL-REPORT---Financial-Impacts-of-RUC-on-Urban-and-Rural-Households_Corrected.pdf" target="_blank"> Western U.S.,</a> and examined whether a potential transition from the gas tax to a RUC would disproportionately affect rural households.</p>
+                                  <p>Some key findings:</p>
+                                  <ul>
+                                    <li>Rural residents tend to drive less fuel-efficient vehicles, which increases the amount of gas taxes they pay.</li>
+                                    <li>Rural drivers tend to travel longer distances per trip, but also tend to make less frequent trips than urban drivers.</li>
+                                    <li>In Washington, rural households are estimated to pay 4.8% less under a RUC system, and urban households are estimated to pay 1.0% more in transportation taxes under a RUC system compared with the current gas tax. </li>
+                                  </ul>
 
-                
-                <p><strong>To ensure everyone pays their fair share:</strong> Considering the range of MPG of today’s vehicles on the road, the gas tax has become less fair for drivers of older and less fuel efficient vehicles. For the same miles driven, drivers pay widely different amounts for their roadway use, depending on their vehicle’s MPG. This inequity is expected to grow each year as vehicle MPG continues to increase, and more and more cars on the road are hybrid or all-electric.</p>
-<!-- 
-               Honda hybrid vs non-hybrid here?  -->
-                
-                <div id="additional-tax"></div>
-                <h4 class="page-subheader-teal2">Will this be an additional tax?</h4>
-                <p>No, the road usage charge is being considered as a replacement to the gas tax, not on top of or in addition to the gas tax. In Washington, a transition to a gas tax would be gradual – more like a dial than a switch. Drivers of electric and hybrid vehicles would be the first to use a road usage charge in Washington. During this gradual transition, no drivers would ever be taxed twice – they would only pay either a RUC or the gas tax.</p>
-                
-                <div id="mid-sized"> </div>
-                <h4 class="page-subheader-teal2">When drivers can pay a RUC but the gas tax is still in place, how will I be reimbursed for the gas tax that is paid at the pump?  </h4>
-                <p>Gas taxes paid at the pump will be a pre-payment or credit towards one’s road usage charges.  Because of this, the remaining RUC charges due will likely be very small. </p>
-                
-                <div id="flat-rate"> </div>        
-                <h4 class="page-subheader-teal2">What will the per mile RUC rate be? </h4>
-                <p>The Legislature will set the RUC rate and will likely work from the current equivalent rate that drivers pay today if they drive a car that gets our state’s average vehicle fuel efficiency of 21 mpg, which is 2.5 cents per mile. </p>           
-                
-                <div id="paying-more"> </div>
-                <h4 class="page-subheader-teal2">How much would a road usage charge cost me each year?</h4>
-                
-                <p>Assuming the average vehicle per year travels 12,000 miles or a 1,000 miles traveled per month, using the gas tax equivalent rate of 2.4 cents-per-mile, this equates to a total of $24 per month, or $288 annually. Currently, drivers pay an average of $289.17 a year under the gas tax, nothing that all gas taxes paid would be credited towards your RUC charges in a future RUC system.  </p>
-                
-                
-<div class="imagefaq">   
-<figure class="img-fluid">
-<a href="img/FAQ-Cost-of-Gas-TaxorRUC.png" target="_blank"><img class="img-fluid"  src="img/FAQ-Cost-of-Gas-TaxorRUC.png" loading="lazy" alt="..."></a>
-<figcaption><italic>(Click on image to enlarge)</italic></figcaption>
-</figure>
-</div>
-
-<p>Actual RUC charges will vary by the type of vehicle you drive:  </p>
-<ul>
-<li>Less fuel-efficient vehicles will see a decrease in the amount of taxes paid. </li>
-<li>More fuel-efficient vehicles will see an increase in the amount of taxes paid.  </li>
-<li><strong>The total effect is that all drivers pay the same rate to use the roads – regardless of their vehicle’s MPG.</strong> </li>
-</ul>
-
-<div class="imagefaq">   
-  <figure class="img-fluid">
-  <a href="img/FAQ_month_ fuel_RUC.png" target="_blank"><img class="img-fluid"  src="img/FAQ_month_ fuel_RUC.png" loading="lazy" alt="..."></a>
-  <figcaption><italic>(Click on image to enlarge)</italic></figcaption>
-  </figure>
-  </div>
-  
-
-
-<p>While RUC does result in drivers of fuel-efficient vehicles paying a little more in taxes for transportation as compared to the gas tax, the overall cost advantage of owning a fuel efficient, hybrid, or EV remains significant. For example, under RUC, owners of a Prius will pay $210 dollars per month less than the Ford pickup truck driver. </p>
-
-<!-- <div class="imagefaq">   
-  <figure class="img-fluid">
-  <a href="img/FAQ_Gas_Tax_Revenues.png" target="_blank"><img class="img-fluid" src="img/FAQ-Cost-of-Gas-TaxorRUC.png"  alt="..."></a>
-  <figcaption><italic>(Click on image to enlarge)</italic></figcaption>
-  </figure>
-  </div> -->
-<div id="rural-driver"> </div>
-<h4 class="page-subheader-teal2">Would rural drivers, who tend to drive further to access needed services and amenities, pay less with a RUC system than the gas tax?</h4>
-<p>Given the cost impact of RUC compared to the gas tax, will be determined by your car’s MPG, rather than the miles driven, two key findings emerge: </p>
-
-<p>These findings are supported by two studies that looked at <a href="media/20150227URBANRURALREPORT.pdf" target="_blank">Washington state</a> and the <a href="https://www.ebp-us.com/sites/default/files/project/uploads/FINAL-REPORT---Financial-Impacts-of-RUC-on-Urban-and-Rural-Households_Corrected.pdf" target="_blank">Western U.S.</a> around whether a potential transition from the gas tax to a RUC would disproportionately affect rural households.  Some key findings: </p>
-
-<ul>
-    <li> Rural residents tend to drive less fuel-efficient vehicles, which increases the amount of gas taxes they pay. </li>
-    <li>Rural drivers tend to travel longer distances per trip, but also tend to make  less frequent trips than urban drivers.</li>
-    <li> In Washington, rural households are estimated  to pay 4.8% less under a RUC system, and urban households are estimated to pay 1.0% more in transportation taxes  under a RUC system compared with the current gas tax. </li>
-</ul>
-
-<h4 class="page-subheader-teal2" id="drive-out-of-state">What happens if I drive out of state?</h4>
-<p>As long as the gas tax continues to be collected in states, nothing will change when you travel out of state, nor will it change for visitors coming to Washington State.  Drivers will be able to fill up and pay the gas tax that goes to support the roads, just like we do today in all states. </p>
-<p>In the future, when the gas tax is removed, travel location around if you are in state and on a public road will become more important.  Technology solves this problem via the use of GPS.  Approaches using GPS were tested in the Washington State pilot in 2018-19, for the sole purpose of confirming miles driven were in-state and on public roads.   The State of Washington did not take possession of nor store  specific location data. Only the total number of miles driven in the state and on public roads was recorded. </p>
-
-<h4 class="page-subheader-teal2" id="without-gps">Can miles be reported without using GPS data?</h4>
-<p>Yes – Washington has tested multiple options for recording RUC mileage that do not rely on collecting location/ GPS data. Viable approaches include: </p>
-<ul>
-  <li> A mileage permit where drivers can pre-pay for a block of miles </li>
-  <li> An odometer reading where drivers would report their odometer at the time of their vehicle’s registration renewa</li>
-  <li> A plug-in device or a smartphone app that do not use GPS, essentially resulting in your total miles driven being collected and sent in via an automated system  </li>
-</ul>
-
-<h4 class="page-subheader-teal2" id="weight-issue">If a RUC program is implemented, will the per-mile rate be adjusted based on vehicle weight?</h4>
-<p>This will be a Legislative decision. Currently, highways are designed to support heavy vehicles over 30,000 pounds, and these heavy vehicles currently pay hefty weight fees to compensate for their impact.  Given this, a RUC rate based upon weight is not a necessity.</p>
-
-<h4 class="page-subheader-teal2">Does RUC disincentivize EV ownership?</h4>
-<p>No. Even when paying a RUC, the annual costs of owning and operating an EV will continue to be significantly lower than the cost to own and operate a gas-powered vehicle. A RUC system would also replace the current flat annual fees for hybrids and EVs. </p>
-
-<h4 class="page-subheader-teal2">How does RUC fit with Washington State’s climate policies?</h4>
-<p>RUC harmonizes transportation funding needs with our state’s climate policy objectives by ensuring that Washington can maintain and preserve funding for roads, bridges, and infrastructure, without depending on taxes from fossil fuels.</p>
-
-<h4 class="page-subheader-teal2">Did the gas tax just get raised?</h4>
-<p>Washington’s gas tax was last raised in 2016 to 49.4 cents per gallon. In 2022, Washington passed the Climate Commitment Act to curb carbon emissions establishes a comprehensive, market-based program to reduce carbon pollution and achieve the greenhouse gas limits set in state law. This law went into effect in January 2023 and does not raise the current gas tax. </p>
-<p>A chart from a June 2022 memo by the Washington Research Council, a free-market policy nonprofit, showed that the Climate Commitment Act cap-and-invest program could result in an increase in compliance costs of 46.6 cents per gallon in 2023. However, the chart itself states that the data should not be used to forecast fuel prices. Despite this disclaimer, the 46-cent figure has been repeatedy by other groups. It has sometimes been incorrectly cited as an official Department of Ecology estimate. This figure does not reflect Ecology’s analysis and it appears to be based on narrow, oversimplified assumptions.  </p>
-
-<p>Ecology’s analysis predicts minimal price impacts to the price of gas in 2023 and very modest impacts in future years. These are not “best case” outcomes. The impacts remain small when we evaluated them under a range of potential market scenarios. </p>
+                                </div>
+                              </div>
+                              
+                          </div>
+                          <!-- reason 6 end-->
+                          <!-- reason 7 start-->
+                          <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="FAQ-Seven">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse7"><span class="strong-blue-tm">What happens if I drive out of state?</span></button>                    
+                            </h2>
+                            <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                <div class="card-body">
+                                  <p>In a potential RUC system, nothing would change when you travel out of state as long as the gas tax continues to be collected. The same is true for visitors coming to Washington state. Drivers would be able to fill up and pay the gas tax that goes to support the roads.</p>
+                                </div>
+                              </div>
+                              
+                          </div>
+                          <!-- reason 8 start-->
+                          <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="FAQ-Eight">
+                                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse8"><span class="strong-blue-tm">Can miles be reported without using GPS data?</span></button>                    
+                            </h2>
+                            <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                <div class="card-body">
+                                  <p>Yes. Washington has tested multiple options for recording RUC mileage that do not rely on collecting location-based or GPS technology. Viable approaches include:</p>
+                                  <ul>
+                                    <li>A mileage permit where drivers can pre-pay for a block of miles.</li>
+                                    <li>An odometer reading where drivers would report their odometer at the time of their vehicle’s registration renewal.</li>
+                                    <li>A plug-in device or a smartphone app that does not use GPS, essentially resulting in the total miles driven being collected and sent in via an automated system.</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                              <h2 class="accordion-header" id="FAQ-Nine">
+                                  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse9"><span class="strong-blue-tm">If a RUC program is implemented, will the per-mile rate be adjusted based on vehicle weight?</span></button>                    
+                              </h2>
+                              <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                  <div class="card-body">
+                                    <p>This would be up to the Legislature to decide. Currently, highways are designed to support heavy vehicles over 30,000 pounds, and these heavy vehicles currently pay hefty weight fees to compensate for their impact. Given this, a RUC rate based on weight is not necessary. </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                              <h2 class="accordion-header" id="FAQ-Ten">
+                                  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse10"><span class="strong-blue-tm">How does RUC fit with Washington state’s climate policies?</span></button>                    
+                              </h2>
+                              <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                  <div class="card-body">
+                                    <p>RUC harmonizes transportation funding needs with our state’s climate policy objectives by ensuring that Washington can maintain and preserve funding for roads, bridges, and infrastructure, without depending on taxes from fossil fuels. </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                              <h2 class="accordion-header" id="FAQ-Eleven">
+                                  <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse11"><span class="strong-blue-tm">Did the gas tax just get raised?</span></button>                    
+                              </h2>
+                              <div id="collapse11" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                                  <div class="card-body">
+                                    <p>Washington’s gas tax was last raised in 2016 to 49.4 cents per gallon. In 2022, Washington passed the Climate Commitment Act to curb carbon emissions establishes a comprehensive, market-based program to reduce carbon pollution and achieve the greenhouse gas limits set in state law. This law went into effect in January 2023 and does not raise the current gas tax.</p>
+                                    <p>A chart from a June 2022 memo by the Washington Research Council, a free-market policy nonprofit, showed that the Climate Commitment Act cap-and-invest program could result in an increase in compliance costs of 46.6 cents per gallon in 2023. However, the chart itself states that the data should not be used to forecast fuel prices. Despite this disclaimer, the 46-cent figure has been repeated by other groups. It has sometimes been incorrectly cited as an official Department of Ecology estimate. This figure does not reflect Ecology’s analysis and it appears to be based on narrow, oversimplified assumptions.</p>
+                                    <p>Ecology’s analysis predicts minimal price impacts to the price of gas in 2023 and very modest impacts in future years. These are not “best case” outcomes. The impacts remain small when we evaluated them under a range of potential market scenarios. Learn more about the <a href="https://ecology.wa.gov/Air-Climate/Climate-Commitment-Act" target="_blank"> Climate Commitment Act</a>.</p>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
 <br><br>
 
 
@@ -276,6 +338,25 @@
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 	}
 	// ]]>
+  window.addEventListener('DOMContentLoaded', function() {
+  var hash = window.location.hash;
+  var accordionMap = {
+    '#FAQ-Eight': 'collapse8',
+    '#FAQ-Three': 'collapseThree',
+    '#FAQ-Six': 'collapse6',
+    '#FAQ-Five': 'collapse5',
+    '#FAQ-Seven': 'collapse7'
+  };
+
+  if (hash && accordionMap.hasOwnProperty(hash)) {
+    var accordionItem = document.getElementById(accordionMap[hash]);
+    if (accordionItem) {
+      accordionItem.classList.add('show');
+      // Optionally, you can scroll to the opened accordion item for better visibility
+      accordionItem.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+});
 </script>
 </body>
 </html>
