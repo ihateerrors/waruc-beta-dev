@@ -1,5 +1,8 @@
 /* Custom CSS! */
-
+:root {
+  --color-pea-green: rgb(130, 167, 63);
+  --color-teal: #0F6873;
+}
 /* .main {
   width: 100%;
 } */
@@ -1582,7 +1585,8 @@ padding: 12px 18px;
 }
 
 .headacc-wa {
-  color:rgb(130, 167, 63)
+  font-size: 1.2rem;
+  color: var(--color-teal) !important;
 }
 
 #hideimg {
@@ -1600,4 +1604,8 @@ padding: 12px 18px;
 
 .key-ruc-con .circle-para {
 padding-bottom: 1rem;
+}
+
+.cirle-num {
+  font-size: 1.5rem;
 }
