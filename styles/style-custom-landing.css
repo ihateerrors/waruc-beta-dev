@@ -1605,3 +1605,9 @@ padding-bottom: 1rem;
 ul.teal-markers li::marker {
   color: var(--color-teal);
 }
+
+.img-center {
+  max-width: 1200px;
+  text-align: center;
+  margin: 1rem auto;
+}
