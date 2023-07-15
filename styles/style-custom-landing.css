@@ -1611,3 +1611,38 @@ ul.teal-markers li::marker {
   text-align: center;
   margin: 1rem auto;
 }
+
+.icon-list {
+  list-style: none;
+}
+
+.icon-list li {
+  position: relative; /* Add this to create a positioning context */
+  padding-left: 2em; /* Add space for the bullet point */
+}
+
+.icon-list li::before {
+  position: absolute;
+  left: 0rem;
+  top: 0rem; 
+  font-weight: 900;
+  font-size: 1.5rem !important;
+  font: var(--fa-font-solid);
+  color: var(--color-teal);
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.privacy-icon::before {
+    content: "\e51f";
+  }
+.climate-icon::before {
+  content: "\f4d8";
+}
+.savings-icon::before {
+  content: "\f4d3";
+}
+.research-icon::before {
+  content: "\e5fd";
+}
