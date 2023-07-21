@@ -3,6 +3,7 @@
   --color-pea-green: #82A73F;
   --color-teal: #0F6873;
   --color-yellow: #E0B331;
+  --color-dark-blue: #06233E;
 }
 /* .main {
   width: 100%;
@@ -1602,6 +1603,9 @@ padding-bottom: 1rem;
 
 ul.teal-markers li::marker {
   color: var(--color-teal);
+}
+ul.dark-markers li::marker {
+  color: var(--color-dark-blue);
 }
 
 .img-center {
