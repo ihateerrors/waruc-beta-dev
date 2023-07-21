@@ -1,6 +1,6 @@
 /* Custom CSS! */
 :root {
-  --color-pea-green: rgb(130, 167, 63);
+  --color-pea-green: #82A73F;
   --color-teal: #0F6873;
   --color-yellow: #E0B331;
 }
@@ -1508,7 +1508,7 @@ margin: 0 auto;
 .btn-waruc {
   color: #fff;
   font-weight: 600;
-  background-color: #82A73F;
+  background-color: var(--color-pea-green);
   display: inline-flex;
 font-size: 1.2rem;
 border: 1px solid transparent;
@@ -1518,7 +1518,7 @@ padding: 12px 18px;
 
 }
 .btn-waruc:hover {
-  background-color: #0F6873;
+  background-color: var(--color-teal);
 }
 .img-area,
 .two-cars-img {
@@ -1561,9 +1561,7 @@ padding: 12px 18px;
   cursor: url('/img/CarIllustration_sideview_48.cur'), auto;
 }
 
-/* .road-sign img:hover {
-  background-color: #0057da;
-} */
+
 @keyframes wiggle {
   0% { transform:translateX(0px); }
   25% { transform:translateX(-5px); }
@@ -1612,6 +1610,9 @@ ul.teal-markers li::marker {
   margin: 1rem auto;
 }
 
+
+
+/* --- List with Icons for bullets -----  */
 .icon-list {
   list-style: none;
 }
