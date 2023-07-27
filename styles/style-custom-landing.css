@@ -1503,8 +1503,7 @@ height: 900px;
 /* ======== Carlos' style edits ========== */
 
 .rucpersona {
-max-width: 900px;
-margin: 0 auto;
+text-align: center;
 }
 .btn-waruc {
   color: #fff;
