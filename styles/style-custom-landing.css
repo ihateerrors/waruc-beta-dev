@@ -549,6 +549,7 @@ margin-bottom: 70px;
   margin-top: 1em; 
   font-size: 1.4em; 
   font-weight: 600;
+  color: var(--color-dark-blue);
 }
 .circle-header2 {
   /* margin-top: .2em;  */
@@ -1144,7 +1145,11 @@ margin-bottom: 70px;
 
 
  .headacc-wa2 {  
-  margin-left: 10px; font-size: 24px; font-weight: 600; letter-spacing: .3px; color: rgb(130, 167,63);
+  margin-left: 10px; 
+  font-size: 24px; 
+  font-weight: 600; 
+  letter-spacing: .3px;
+  color: var(--color-teal);
 }
 
           
