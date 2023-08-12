@@ -20272,7 +20272,9 @@ section {
 #myAccordion ul {
   font-size: 19.2px;
 }
-
+.left-para ul {
+  font-size: 17.6px;
+}
 
 @media (min-width: 992px) {
   .divider-right {
