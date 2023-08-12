@@ -194,31 +194,6 @@
                         </div>
 
 
-                        <!-- ### row 2 start  -->
-<!-- 
-                        <div class="row">
-                            <div class="col-lg-6 text-left">
-                                <div class="iconrow" style="display: flex; flex-direction: row; margin-bottom: 18px;margin-top: 18px; "><img src="/img/why-ruc/CurrentGasTax.png" loading="lazy" width="70px" height="70px">
-                                <span classs="circle-header" style="margin-top: .25em; font-size: 1.8em; font-weight: 700;  color: #82A73F;">&nbsp;Drivers will not be double taxed</span></div>                    
-            
-                                <div id="or-square"> 
-                                <ul id="or-square" style="margin-right: 30px; margin-top: 18px;">
-                                  <li class="orange-squares mb-2"> <span class="strong-teal">Gas taxes paid at the pump will act as a pre-payment </span> of the RUC</li>
-                                  <li class="mb-2"><span class="strong-teal">Credits for gas taxes paid at the pump </span>are issued based on your vehicle’s estimated fuel efficiency</li>
-                                  <li><span class="strong-teal">This pre-payment approach was successful </span> during a 2018-2019 RUC pilot, where participants were issued credits for any gas tax they paid when filling up at the pump</li>
-                                </ul>
-                              </div>
-                            </div>
-        
-                            <div class="col-lg-6 text-left">
-                                <div class="iconrow" style="display: flex; flex-direction: row; margin-bottom: 18px;margin-top: 18px; "><img src="/img/why-ruc/WhyGradual.png" loading="lazy" width="70px" height="70px" style="border-radius: 50%;">
-                                    <span classs="circle-header" style="margin-top: .25em; font-size: 1.8em; font-weight: 700;  color: #82A73F;">&nbsp;Why a gradual transition to WA RUC?</span></div>
-                                <ul class="square-list-or" id="or-square" style="margin-right: 1em;">
-                                    <li class="mb-2"><span class="strong-teal">The state gas tax must remain in place to fund critical projects promised in the past,</span> including retiring debt that the state pledged to repay with gas tax revenue </li>
-                                    <li class="mb-2"><span class="strong-teal">The gas tax ensures out-of-state drivers pay for using Washington roads,</span> while keeping travel smooth and easy for visitors to our state</li>                              
-                                  </ul>
-                            </div>                 
-                        </div> -->
                      </div>        
                 </section>
                            <!-- ### RUC 101 w/Icons section END ### -->
@@ -264,16 +239,7 @@
             <!-- </div>     -->
         </div>
 
-        <!-- <div class="row">
-            <div class="col-md-10">
-                <div class="img-area mt-2 mr-3 pr-2">
-                
-                    <img class="img-fluid" src="/img/why-ruc/2019Honda.png" width="500px" height="334px" loading="lazy" alt="illustration of a 2019 Honda Hybrid, with caption reading 52mpg and 42 dollars fuel tax paid"><br>
-                    <p class="mt-6" mr-4><i>SOURCES: Connecting for Solutions & U.S. News and World Report</i></p><br><br>
-                 </div>
-                 <div style="color: transparent; padding-bottom: 2.6em"> .</div>
-            </div>    
-          </div> -->
+
        </div>
       </section>
 
@@ -511,4 +477,19 @@
 	else {
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 	}
+    // #### Scrolls down to corresponding accordion when road-sign is clicked ###
+    document.addEventListener('DOMContentLoaded', () => {
+    const roadSignLinks = document.querySelectorAll('.road-sign a');
+    roadSignLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const target = link.getAttribute('href');
+        const accordionElement = document.querySelector(target);
+        if (accordionElement) {
+          accordionElement.parentElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  });
+  
 </script>
