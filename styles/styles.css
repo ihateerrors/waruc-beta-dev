@@ -20269,6 +20269,11 @@ section {
   font-weight: lighter;
 }
 
+#myAccordion ul {
+  font-size: 19.2px;
+}
+
+
 @media (min-width: 992px) {
   .divider-right {
     border-right: 0.0625rem solid #e0e5ec;
