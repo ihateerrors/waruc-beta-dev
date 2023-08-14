@@ -177,7 +177,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: calc(1.265rem + 0.18vw);
+  font-size: 1.7rem !important; 
 }
 @media (min-width: 1200px) {
   h2, .h2 {
