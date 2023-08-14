@@ -20268,12 +20268,10 @@ section {
 .testimonial .testimonial-position {
   font-weight: lighter;
 }
-
+#faq ul,
 #myAccordion ul {
   font-size: 19.2px;
-}
-.left-para ul {
-  font-size: 17.6px;
+
 }
 
 @media (min-width: 992px) {
@@ -20281,3 +20279,4 @@ section {
     border-right: 0.0625rem solid #e0e5ec;
   }
 }
+
