@@ -16,6 +16,7 @@
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
         <link rel="icon" type="image/x-icon" href="favicon.png" />
+
     </head>
     <body>
 
@@ -103,7 +104,9 @@
                                         <div class="card-body">
                                           <p>A RUC can help ensure sustainable, long-term funding. As more vehicles on Washington’s roads get better gas mileage, or don’t use gas at all, gas tax revenues are projected to decline. Washington state aims to ban gas-powered cars by 2030, and under current regulations by 2035, all new vehicles must be plug-in hybrid electric vehicles (PHEV) or zero emission vehicles (ZEV). By 2035, the state is anticipated to see a potential 45% reduction in essential road, bridge and ferry maintenance revenue currently funded by the gas tax (see graph below).  
                                           A RUC also helps ensure everyone pays for the miles they drive, rather than how much gas is purchased. Drivers of older and less fuel-efficient vehicles pay more in gas tax than newer and high fuel-efficient vehicles. </p>
-                                          <a href="img/FAQ_Gas_Tax_Revenues.png" target="blank"> <img class="img-fluid" src="img/FAQ_Gas_Tax_Revenues.png" alt="graph compares the revenue that is generated per mile based on vehicle fuel efficiency" loading="lazy"></a>
+                                          <p>
+                                            See the graph in the below <a role="button" id="faq-link"  class="teal-link" href="#FAQ-Five" onclick="console.log('hello')">FAQ</a> that shows estimates for the cost of fuel and RUC for a variety of vehicles on Washington’s roads. 
+                                          </p>
                                         </div>
                                     </div>
                                 </div>
@@ -157,7 +160,7 @@
                                         <p>While RUC would mean drivers of EVs and other highly fuel-efficient vehicles pay a little more in a RUC system compared to the gas tax, the overall cost advantage of owning an EVs, hybrid, or other fuel-efficient vehicle remains significant. For example, under RUC, owners of a Prius will pay $210 dollars per month less than the Ford pickup truck driver. A RUC system would also likely replace the current flat annual fees for hybrids and EVs.</p>
                                         <div class="imagefaq">   
                                           <figure class="img-fluid">
-                                          <a href="img/FAQ_month_ fuel_RUC.png" target="_blank"><img class="img-fluid"  src="img/FAQ_month_ fuel_RUC.png" loading="lazy" alt="..."></a>
+                                          <a href="img/2023 Sep WARUC Gas and RUC Cost Graph 2.PNG.png" target="_blank"><img class="img-fluid"  src="img/2023 Sep WARUC Gas and RUC Cost Graph 2.PNG.png" loading="lazy" alt="..."></a>
                                           <figcaption><italic>(Click on image to enlarge)</italic></figcaption>
                                           </figure>
                                         </div>
@@ -359,6 +362,15 @@
     }
   }
 });
+const faqLink = document.getElementById('faq-link');
+const accFive = document.getElementById('collapse5');
+const accTwo = document.getElementById('collapseTwo');
+
+faqLink.addEventListener('click', ()=> {
+  accFive.classList.add('show');
+  accTwo.classList.remove('show');
+})
+
 </script>
 </body>
 </html>
