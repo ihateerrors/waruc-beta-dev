@@ -1,5 +1,10 @@
 /* Custom CSS! */
-
+:root {
+  --color-pea-green: #82A73F;
+  --color-teal: #0F6873;
+  --color-yellow: #E0B331;
+  --color-dark-blue: #06233E;
+}
 /* .main {
   width: 100%;
 } */
@@ -86,7 +91,6 @@ margin-top: 20px;
   background-color: #f5eeee;
 }
 .darkblue-wr {
-  color:rgb(6, 35, 62);
   color: #06233E;
 }
 .darkorange-wr {
@@ -460,21 +464,12 @@ position: relative;
     text-decoration: underline;
    }
 
-.or-square li::marker {
-color: #E0B331;
-  /* content:"□  " ; */
-  list-style-type: square;
-  height: 20px;
-  width: 20px;
-  /* fill:rgb(211, 79, 29); */
-  margin-left: -1em;
-  margin-top: 5px;
-}
+
   #or-square {
     font-size: 18px;
    }
 #or-square li::marker {
-color: #E0B331;
+color: var(--color-yellow);
   /* content:"□  " ; */
   list-style-type: square;
   height: 20px;
@@ -553,6 +548,7 @@ margin-bottom: 70px;
   margin-top: 1em; 
   font-size: 1.4em; 
   font-weight: 600;
+  color: var(--color-dark-blue);
 }
 .circle-header2 {
   /* margin-top: .2em;  */
@@ -1148,7 +1144,11 @@ margin-bottom: 70px;
 
 
  .headacc-wa2 {  
-  margin-left: 10px; font-size: 24px; font-weight: 600; letter-spacing: .3px; color: rgb(130, 167,63);
+  margin-left: 10px; 
+  font-size: 24px; 
+  font-weight: 600; 
+  letter-spacing: .3px;
+  color: var(--color-teal);
 }
 
           
@@ -1320,6 +1320,7 @@ margin-bottom: 70px;
 }
 
 .accordion-button {
+  max-height: 132px;
   position: relative;
   display: flex;
   align-items: center;
@@ -1376,6 +1377,7 @@ margin-bottom: 70px;
 
 .accordion-header {
   margin-bottom: 0;
+  
 }
 
 .accordion-item {
@@ -1505,13 +1507,12 @@ height: 900px;
 /* ======== Carlos' style edits ========== */
 
 .rucpersona {
-max-width: 900px;
-margin: 0 auto;
+text-align: center;
 }
 .btn-waruc {
   color: #fff;
   font-weight: 600;
-  background-color: #82A73F;
+  background-color: var(--color-pea-green);
   display: inline-flex;
 font-size: 1.2rem;
 border: 1px solid transparent;
@@ -1521,7 +1522,7 @@ padding: 12px 18px;
 
 }
 .btn-waruc:hover {
-  background-color: #0F6873;
+  background-color: var(--color-teal);
 }
 .img-area,
 .two-cars-img {
@@ -1564,9 +1565,7 @@ padding: 12px 18px;
   cursor: url('/img/CarIllustration_sideview_48.cur'), auto;
 }
 
-/* .road-sign img:hover {
-  background-color: #0057da;
-} */
+
 @keyframes wiggle {
   0% { transform:translateX(0px); }
   25% { transform:translateX(-5px); }
@@ -1580,9 +1579,78 @@ padding: 12px 18px;
 }
 
 .headacc-wa {
-  color:rgb(130, 167, 63)
+  font-size: 1.2rem;
+  color: var(--color-teal) !important;
 }
 
 #hideimg {
   justify-content: center; align-items: center; margin-left: 8%; margin-right: 3%;
+}
+
+.key-ruc-con>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.key-ruc-con .btn-waruc {
+  margin-top: auto;
+}
+
+.key-ruc-con .circle-para {
+padding-bottom: 1rem;
+}
+
+.cirle-num {
+  font-size: 1.5rem;
+}
+
+ul.teal-markers li::marker {
+  color: var(--color-teal);
+}
+ul.dark-markers li::marker {
+  color: var(--color-dark-blue);
+}
+
+.img-center {
+  max-width: 1200px;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+
+
+/* --- List with Icons for bullets -----  */
+.icon-list {
+  list-style: none;
+}
+
+.icon-list li {
+  position: relative; /* Add this to create a positioning context */
+  padding-left: 2em; /* Add space for the bullet point */
+}
+
+.icon-list li::before {
+  position: absolute;
+  left: 0rem;
+  top: 0rem; 
+  font-weight: 900;
+  font-size: 1.5rem !important;
+  font: var(--fa-font-solid);
+  color: var(--color-teal);
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.privacy-icon::before {
+    content: "\e51f";
+  }
+.climate-icon::before {
+  content: "\f4d8";
+}
+.savings-icon::before {
+  content: "\f4d3";
+}
+.research-icon::before {
+  content: "\e5fd";
 }
