@@ -20286,3 +20286,16 @@ section#key-considerations .reg-font {
   font-family: "Metropolis Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 }
+
+.sub-list {
+  list-style: disc;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+.sub-list li a {
+  text-decoration: none;
+  color: var(--bs-teal);
+}
+.sub-list li a:hover {
+  text-decoration: underline;
+}
