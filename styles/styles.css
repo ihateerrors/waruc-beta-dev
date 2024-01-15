@@ -20316,7 +20316,10 @@ section#key-considerations .reg-font {
 .report-btn a {
   text-decoration: underline;
 }
-
+.report-btn h3 {
+  font-weight: 800;
+  font-size: 2rem;
+}
 .report-btn a:hover {
   text-decoration: none;
 }
